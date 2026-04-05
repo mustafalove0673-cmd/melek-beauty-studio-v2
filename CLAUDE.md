@@ -1,7 +1,89 @@
-# 🧠 CLAUDE CODE - VİRAL 3D WEBSITE ÜRETİM SİSTEMİ v3.0
+# 🧠 CLAUDE CODE - VİRAL 3D WEBSITE ÜRETİM SİSTEMİ v4.0
 
 > **Bu dosya Claude Code'un beynidir.** Her mesajda bu talimatları okur ve uygular.
-> Tek bir "tema [isim]" komutunda, sıfırdan %100 Awwwards-seviye viral website üretir.
+> Tek bir "tema [isim]" komutunda, 177 GitHub repo'sundan en uygun 25-30 tanesini SEÇER,
+> bu repo'ların tekniklerini KULLANARAK sıfırdan %100 Awwwards-seviye viral website üretir.
+
+---
+
+## 🗄️ AKTİF REPO KAPASİTE SİSTEMİ (YENİ v4.0)
+
+### 177 Repo → 3 Türe Ayrıldı
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  TOPLAM 177 GITHUB REPO SİSTEMDE AKTİF                     │
+│                                                              │
+│  📦 KURULU PAKETLER (19 adet - projede npm install edilmiş)  │
+│  ├── three, @react-three/fiber, @react-three/drei            │
+│  ├── @react-three/postprocessing, @react-spring/three        │
+│  ├── gsap, framer-motion, @studio-freight/lenis             │
+│  ├── @use-gesture/react, three-mesh-bvh                     │
+│  ├── shadcn/ui (components), lucide-react, next-themes       │
+│  ├── zustand, react-email, next.js, tailwindcss              │
+│  ├── prisma, tailwindcss-animate, tw-animate-css             │
+│  └── → BU PAKETLER DOĞRUDAN KODDA KULLANILIR                │
+│                                                              │
+│  📋 REFERANS REPO'LAR (50+ adet - desen kalıpları)          │
+│  ├── Awwwards-Winning, GSAP-Awwwards-Website                │
+│  ├── apple-react-gsap-threejs, Animated-DesignsP1           │
+│  ├── react-bits, magicui, thebookofshaders                  │
+│  └── → BU REPO'LARDAN TASARIM ÖRNEĞİ ALINIR                │
+│                                                              │
+│  📚 BİLGİ REPO'LAR (100+ adet - dokümantasyon)              │
+│  ├── awesome-frontend, awesome-threejs, awesome-webgl        │
+│  ├── awesome-creative-coding, ui-ux-resources                │
+│  └── → BU REPO'LAR ARAŞTIRMA İÇİN KULLANILIR               │
+└─────────────────────────────────────────────────────────────┘
+```
+
+### Repo → Kod Eşleştirme Tablosu
+
+| Kurulu Paket | Hangi Repo'dan | Koddaki Kullanımı |
+|-------------|---------------|-------------------|
+| `three` | mrdoob/three.js (#14) | `import * as THREE from 'three'` → Mesh, Material, Scene |
+| `@react-three/fiber` | pmndrs/react-three-fiber (#64) | `<Canvas>`, `useFrame()`, `useThree()` |
+| `@react-three/drei` | pmndrs/drei (#65) | `<Float>`, `<Sparkles>`, `<Grid>`, `<Environment>` |
+| `@react-three/postprocessing` | pmndrs/postprocessing (#66) | `<Bloom>`, `<DepthOfField>`, `<Vignette>` |
+| `@react-spring/three` | FormidableLabs/react-spring (#61) | `<animated.mesh>`, spring fizik animasyon |
+| `gsap` | greensock/GSAP (#59) | `gsap.timeline()`, `ScrollTrigger` |
+| `framer-motion` | framer/motion (#16) | `<motion.div>`, `useInView()`, page transitions |
+| `@studio-freight/lenis` | darkroomengineering/lenis (#69) | `useLenisSmoothScroll()` → ultra-smooth scroll |
+| `@use-gesture/react` | pmndrs/use-gesture (#120) | `useDrag()`, `usePinch()` → 3D interaksiyon |
+| `three-mesh-bvh` | gkjohnson/three-mesh-bvh (#132) | Hızlandırılmış raycasting |
+| `zustand` | pmndrs/zustand | Global state management |
+| `react-email` | resendl/react-email (#168) | Email template builder |
+| `lucide-react` | lucide/lucide (#102) | `<Building2>`, `<Phone>` vb 1600+ ikon |
+| `shadcn/ui` | shadcn-ui/ui (#12) | `<Button>`, `<Card>`, `<Dialog>` vb UI bileşenler |
+
+### Repo → Hook Eşleştirme Tablosu
+
+| Hook Dosyası | Hangi Repo'lar | Ne Yapar |
+|-------------|---------------|----------|
+| `use-lenis.ts` | lenis (#69) | Ultra-smooth scroll |
+| `use-scroll-reveal.ts` | GSAP (#59) + framer (#16) | Scroll tetiklemeli animasyon |
+| `use-count-up.ts` | GSAP (#59) | Animasyonlu sayaç |
+| `use-mobile.ts` | web-quality-skills (#18) | Mobile tespit, 3D gizleme |
+
+### Capability Sistemi Nasıl Çalışır?
+
+```typescript
+// src/lib/repo-capabilities.ts dosyasında tanımlı
+import { generateSiteConfig } from '@/lib/repo-capabilities';
+
+// "tema villa inşaatı" yazıldığında:
+const config = generateSiteConfig('villa inşaatı');
+
+// Otomatik döner:
+// config.sector → "Inşaat & Mimari"
+// config.colors → { primary: '#4A90D9', secondary: '#C5A55A', ... }
+// config.threeConcept → "Blueprint grid + Villa wireframe + ..."
+// config.activeRepos.installed → ['mrdoob/three.js', 'pmndrs/react-three-fiber', ...]  (19 kurulu)
+// config.activeRepos.reference → ['theatre-js/theatre', 'Awwwards-Winning', ...]   (10 referans)
+// config.capabilities → ['3d-render-engine', 'smooth-scroll', 'timeline-animation', ...]
+// config.sections → [{ name: 'Hero3D', usesRepos: [...] }, { name: 'Features', ... }]
+// config.animations → { scroll: true, tilt: false, parallax: false, spring: true }
+```
 
 ---
 
