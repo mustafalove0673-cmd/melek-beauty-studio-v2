@@ -1,64 +1,94 @@
 'use client'
 
-import { Phone, Mail, MapPin, ArrowUp } from 'lucide-react'
-
-const links = [
-  { title: 'Hizmetler', items: ['Konut Yapımı', 'Ticari Yapılar', 'Dekorasyon', 'Mimari Tasarım', 'Anahtar Teslim'] },
-  { title: 'Şirket', items: ['Hakkımızda', 'Projeler', 'Kariyer', 'Blog'] },
-  { title: 'Yasal', items: ['Gizlilik Politikası', 'Kullanım Şartları', 'KVKK'] },
-]
+import { motion } from 'framer-motion'
+import { Play, Github, ExternalLink, Heart } from 'lucide-react'
 
 export default function Footer() {
   return (
-    <footer className="relative border-t border-border bg-card">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-14">
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+    <footer className="mt-auto border-t border-border bg-card/50">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
           {/* Brand */}
-          <div>
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center">
-                <span className="font-heading font-bold text-primary-foreground text-lg">Ö</span>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+          >
+            <div className="flex items-center gap-2.5 mb-4">
+              <div className="w-9 h-9 rounded-xl bg-accent flex items-center justify-center">
+                <Play className="w-4 h-4 text-background fill-background" />
               </div>
-              <div>
-                <span className="font-heading font-bold text-[15px] text-foreground">ÖZKAN</span>
-                <span className="text-muted-foreground text-[11px] ml-1.5">YAPI</span>
-              </div>
+              <span className="font-bold text-lg tracking-tight">
+                VİDEO<span className="text-accent">.</span>
+              </span>
             </div>
-            <p className="text-sm text-muted-foreground leading-relaxed mb-5 max-w-xs">
-              2004&apos;ten bu yana premium inşaat ve mimari çözümlerle hayallere hayat veriyoruz.
+            <p className="text-sm text-muted-foreground leading-relaxed max-w-xs">
+              Teknoloji, yazılım ve yapay zeka videolarını tek bir yerde keşfedin.
             </p>
-            <div className="space-y-2">
-              {[
-                { icon: Phone, text: '+90 312 000 00 00' },
-                { icon: Mail, text: 'info@ozkanyapi.com.tr' },
-                { icon: MapPin, text: 'Çankaya, Ankara' },
-              ].map((item) => (
-                <div key={item.text} className="flex items-center gap-2 text-sm text-muted-foreground">
-                  <item.icon className="w-4 h-4 text-primary/60" />
-                  {item.text}
-                </div>
+          </motion.div>
+
+          {/* Links */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.1, duration: 0.5 }}
+          >
+            <h4 className="font-semibold text-sm mb-4 text-foreground">Hızlı Bağlantılar</h4>
+            <div className="space-y-2.5">
+              {['Videolar', 'Kategoriler', 'İstatistikler', 'Popüler'].map((link) => (
+                <a
+                  key={link}
+                  href={`#${link.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '')}`}
+                  className="block text-sm text-muted-foreground hover:text-accent transition-colors"
+                >
+                  {link}
+                </a>
               ))}
             </div>
-          </div>
+          </motion.div>
 
-          {links.map((g) => (
-            <div key={g.title}>
-              <h4 className="font-heading font-semibold text-sm mb-4">{g.title}</h4>
-              <ul className="space-y-2.5">
-                {g.items.map((item) => (
-                  <li key={item}><a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">{item}</a></li>
-                ))}
-              </ul>
+          {/* Social */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2, duration: 0.5 }}
+          >
+            <h4 className="font-semibold text-sm mb-4 text-foreground">Kaynaklar</h4>
+            <div className="space-y-2.5">
+              <a
+                href="https://github.com"
+                target="_blank"
+                rel="noopener"
+                className="flex items-center gap-2 text-sm text-muted-foreground hover:text-accent transition-colors"
+              >
+                <Github className="w-3.5 h-3.5" />
+                GitHub
+              </a>
+              <a
+                href="https://instagram.com/selahattin.unlu/"
+                target="_blank"
+                rel="noopener"
+                className="flex items-center gap-2 text-sm text-muted-foreground hover:text-accent transition-colors"
+              >
+                <ExternalLink className="w-3.5 h-3.5" />
+                Instagram
+              </a>
             </div>
-          ))}
+          </motion.div>
         </div>
 
+        {/* Bottom */}
         <div className="pt-8 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-xs text-muted-foreground">© {new Date().getFullYear()} ÖZKAN Yapı. Tüm hakları saklıdır.</p>
-          <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-            className="w-9 h-9 rounded-full bg-muted hover:bg-primary/10 flex items-center justify-center transition-colors group">
-            <ArrowUp className="w-4 h-4 text-muted-foreground group-hover:text-primary transition-colors" />
-          </button>
+          <p className="text-xs text-muted-foreground">
+            © 2026 VİDEO. Tüm hakları saklıdır.
+          </p>
+          <p className="flex items-center gap-1 text-xs text-muted-foreground">
+            <span>Sevildiyle yapıldı</span>
+            <Heart className="w-3 h-3 text-rose-400 fill-rose-400" />
+          </p>
         </div>
       </div>
     </footer>
