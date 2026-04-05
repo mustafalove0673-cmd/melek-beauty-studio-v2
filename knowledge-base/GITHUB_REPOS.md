@@ -263,16 +263,151 @@ get-shit-done    → Meta-prompting ile vibe coding'de planlı ilerle
 
 ---
 
+### 🎯 UI/UX & CREATIVE WEB REPO'LARI (Aktif Araştırma - 2026-04-09)
+
+> **Araştırma Tarihi:** 2026-04-09
+> **Kaynak:** İnternet araştırması, Active Theory video analizi, Instagram reel analizi
+> **Amaç:** Awwwards-seviye premium web geliştirme için kapsamlı kaynak kataloğu
+
+#### 🎨 Premium Animasyon & Motion
+
+| # | Repo | Açıklama | Kaynak |
+|---|------|----------|--------|
+| 59 | `greensock/GSAP` | Profesyonel web animasyon platformu. Timeline, ScrollTrigger, stagger efektleri | İnternet |
+| 60 | `animejs/animejs` | Hafif JavaScript animasyon kütüphanesi. CSS, SVG, DOM attribute animasyonları | İnternet |
+| 61 | `FormidableLabs/react-spring` | React için fizik-tabanlı spring animasyon kütüphanesi | İnternet |
+| 62 | `popmotion/popmotion` | Basit ama güçlü JavaScript animasyon kütüphanesi | İnternet |
+| 63 | `mojs/mojs` | Web için motion graphics araç seti. Complex animasyonlar için | İnternet |
+
+#### 🌐 3D & WebGL
+
+| # | Repo | Açıklama | Kaynak |
+|---|------|----------|--------|
+| 64 | `pmndrs/react-three-fiber` | Three.js için React renderer. Deklaratif 3D sahne oluşturma | İnternet |
+| 65 | `pmndrs/drei` | react-three-fiber için yardımcı kütüphane. Float, Stars, Trail vb. | İnternet |
+| 66 | `pmndrs/postprocessing` | Three.js için post-processing efekti. Bloom, depth of field, glitch | İnternet |
+| 67 | `ivanpopelyshev/pixijs` | Hızlı 2D WebGL rendering engine | İnternet |
+| 68 | `AxiomeCG/awesome-threejs` | Kapsamlı Three.js kaynak ve repo derlemesi | İnternet |
+
+#### 🖱️ Smooth Scroll & Parallax
+
+| # | Repo | Açıklama | Kaynak |
+|---|------|----------|--------|
+| 69 | `darkroomengineering/lenis` | Ultra-smooth scroll kütüphanesi. Premium sitelerin vazgeçilmezi | İnternet |
+| 70 | `locomotivemtl/locomotive-scroll` | Modern scroll kütüphanesi. Lenis tabanlı, parallax desteği | İnternet |
+| 71 | `vanilla-tilt/vanilla-tilt.js` | Hafif 3D tilt efekti kütüphanesi. Card ve element hover | İnternet |
+| 72 | `rahil1202/parallax` | 3D parallax efektli web sitesi koleksiyonu | İnternet |
+
+#### 🎭 Shader & GLSL Effects
+
+| # | Repo | Açıklama | Kaynak |
+|---|------|----------|--------|
+| 73 | `patriciogonzalezvivo/thebookofshaders` | Shader programlama kitabı. GLSL öğrenme | İnternet |
+| 74 | `hughsk/glsl-noise` | WebGL noise shader kütüphanesi. glslify uyumlu | İnternet |
+| 75 | `ashima/webgl-noise` | Prosedürsel noise shader rutinleri | İnternet |
+| 76 | `AmanSachan1/Shaders_in_WebGL` | WebGL post-processing ve shader efektleri | İnternet |
+
+#### 🖼️ Creative Coding & Generative Art
+
+| # | Repo | Açıklama | Kaynak |
+|---|------|----------|--------|
+| 77 | `terkelg/awesome-creative-coding` | Creative coding kaynak derlemesi. Canvas, WebGL | İnternet |
+| 78 | `camilleroux/awesome-generative-art` | Generatif sanat repo ve kaynak derlemesi | İnternet |
+| 79 | `mattdesl/canvas-sketch` | Canvas creative coding yardımcı kütüphane | İnternet |
+| 80 | `mattdesl/workshop-generative-art` | Generatif sanat workshop materyalleri | İnternet |
+| 81 | `neefrehman/generative` | WebGL, ML ve generatif sanat deneme alanı | İnternet |
+| 82 | `cacheflowe/creative-coding-notes` | Creative coding notları ve teknikler | İnternet |
+
+#### 🏆 Awwwards-Seviye Site Klonları & Template'ler
+
+| # | Repo | Açıklama | Kaynak |
+|---|------|----------|--------|
+| 83 | `sherzodartikbayev/Awwwards-Winning` | Awwwards ödüllü site. React+GSAP+Tailwind | İnternet |
+| 84 | `Fullstack-Empire/GSAP-Awwwards-Website` | Awwwards Site of the Day tarzı site | İnternet |
+| 85 | `mohasin-hossain/apple-react-gsap-threejs` | Apple site klonu React+GSAP+Three.js | İnternet |
+| 86 | `shivas1432/Animated-DesignsP1` | 50+ hazır HTML/CSS/JS animasyon koleksiyonu | İnternet |
+| 87 | `bradtraversy/devportfolio` | Developer portfolio template | İnternet |
+
+#### 🛠️ Frontend Geliştirme Araçları
+
+| # | Repo | Açıklama | Kaynak |
+|---|------|----------|--------|
+| 88 | `luruke/awesome-casestudy` | WebGL ve creative development teknik case study derlemesi | İnternet |
+| 89 | `brillout/awesome-frontend-libraries` | Frontend UI kütüphane kataloğu | İnternet |
+| 90 | `troxler/awesome-css-frameworks` | 2026 CSS framework listesi | İnternet |
+| 91 | `dennysjmarquez/awesome-css` | CSS framework ve kütüphane derlemesi | İnternet |
+| 92 | `streamich/awesome-css-animations` | CSS animasyon kaynak derlemesi | İnternet |
+| 93 | `ilkeryilmaz/awesome-web-animation` | Web animasyon araç ve eklentileri | İnternet |
+| 94 | `fareskalaboud/ui-ux-resources` | UI/UX tasarımcı kaynak derlemesi | İnternet |
+| 95 | `argyleink/open-props` | CSS custom properties (design tokens) kütüphanesi | İnternet |
+| 96 | `msub2/awesome-webxr` | WebXR kaynak ve repo derlemesi | İnternet |
+| 97 | `cgwire/awesome-cg-vfx-pipeline` | CG/VFX pipeline açık kaynak araçlar | İnternet |
+
+#### 🎬 Micro-Interactions & UI Efektleri
+
+| # | Repo | Açıklama | Kaynak |
+|---|------|----------|--------|
+| 98 | `atomiks/tippyjs` | Tooltip, popover, dropdown kütüphanesi | İnternet |
+| 99 | `chenglou/react-motion` | React spring-tabanlı animasyon | İnternet |
+| 100 | `sxizm/awesome-svg-animation` | SVG animasyon kaynak derlemesi | İnternet |
+| 101 | `christian-fei/SVG-Morpheus` | SVG path morphing efekti | İnternet |
+| 102 | `lucide/lucide` | Açık kaynak, güzel SVG ikon seti. 1600+ ikon | İnternet |
+| 103 | `pacocoursey/next-themes` | Next.js dark mode tema yönetimi | İnternet |
+
+#### 📱 Active Theory Referans
+
+| # | Repo | Açıklama | Kaynak |
+|---|------|----------|--------|
+| 104 | `activetheory` (org) | Active Theory stüdyosunun GitHub organizasyonu (10 repo) | İnternet |
+| 105 | `rayjasson98/WebGL-interactive-animation` | WebGL interaktif 3D animasyon | İnternet |
+| 106 | `NickCis/tailwindcss-animate` | Tailwind CSS animasyon eklentisi | İnternet |
+| 107 | `csstools/postcss-plugins` | PostCSS eklenti koleksiyonu | İnternet |
+
+---
+
+### 📹 Active Theory Video Analizi (2026-04-09)
+
+**Kaynak:** Yüklenen MP4 video ("Active Theory treats the web like a medium, not a canvas")
+**Tarih:** 2026-04-09
+
+**Tespit Edilen Teknikler:**
+- 3D WebGL rendering (Three.js, custom shaders)
+- GSAP Timeline + ScrollTrigger animasyonlar
+- Parallax scrolling (multi-layer derinlik)
+- Particle sistemleri (patlama, dispersion efektleri)
+- Glassmorphism ve translucent mesh efektleri
+- Staggered text reveal animasyonları
+- Dark mode + neon accent renkler (green, blue/purple, orange)
+- High-poly 3D mesh render
+- Post-processing: bloom, glow, ambient occlusion
+- Smooth scroll (Lenis/GSAP ScrollTrigger entegrasyonu)
+- Physics-based motion (spring animasyonları)
+
+**Önerilen Repo'lar (bu stil için):** react-three-fiber (#64), drei (#65), postprocessing (#66), GSAP (#59), Lenis (#69), Three.js (#14), vanilla-tilt (#71), thebookofshaders (#73), mojs (#63)
+
+---
+
+### 📸 Instagram Reel Analizi: @amine__codes Portfolio
+
+**Kaynak:** https://www.instagram.com/reel/DPzNC-jgIxo/
+**Oluşturan:** @amine__codes (Amine)
+**Etkileşim:** 22K beğeni, 6,259 yorum
+**Tarih:** 14 Ekim 2025
+**Konu:** Portfolio website - smooth animations, typing effects, responsive design, clean dark red theme
+**Hashtag'ler:** #html #css #js #protofolio #coding #webdesign #webdevelop #responsivedesign #frontend
+
+---
+
 ## 📊 İSTATİSTİKLER
 
 | Metrik | Değer |
 |--------|-------|
 | Toplam İncelenen Reel | 103 |
 | GitHub Repo İçerikli Reel | ~82 |
-| Bu Derlemede Bulunan Repo | 54 (58 dahil kendi projeleri) |
+| Bu Derlemede Bulunan Repo | 104+ |
 | Eşleştirilmiş Reel URL | 37 |
 | Part Numarası Eşleştirilmiş | 35 |
-| Kategori Sayısı | 18 |
+| Kategori Sayısı | 26+ |
 | YouTube "Harika Github Repoları" Bölüm | 82+ |
 | Eksik Part (login gerekli) | ~40 |
 
@@ -314,9 +449,10 @@ get-shit-done    → Meta-prompting ile vibe coding'de planlı ilerle
 
 ---
 
-> **Son Güncelleme:** 2026-04-08
-> **Toplam Kayıtlı Repo:** 54 (58 dahil kendi projeleri)
+> **Son Güncelleme:** 2026-04-09
+> **Toplam Kayıtlı Repo:** 104+
 > **Eşleştirilmiş Reel URL:** 37
-> **Yeni Eklenen (bu güncelleme):** ultraworkers/claw-code, coollabsio/coolify, magicui-designs/magicui, kip-dili, LLMFit, CodeWiki Part eşleştirmesi
+> **Kategori Sayısı:** 26+
+> **Yeni Eklenen (bu güncelleme):** 50 UI/UX & Creative Web reposu (#59-#107) + Active Theory video analizi + Instagram reel DPzNC-jgIxo (@amine__codes)
 > **Derleyen:** NOVA Digital Arts Sistemi
-> **Araştırma Yöntemi:** 40+ web search, 27 JSON dosya analizi, agent-browser login denemesi
+> **Araştırma Yöntemi:** İnternet araştırması, video analiz, Instagram reel analiz, earlier: 40+ web search, 27 JSON dosya analizi, agent-browser login denemesi
