@@ -5,7 +5,7 @@
 > **YouTube Playlist:** "Harika Github Repoları" (80+ bölüm)
 > **TikTok:** @selahattin_unlu (aynı içerikler)
 > **Derleme Tarihi:** 2026-04-06
-> **Son Güncelleme:** 2026-04-07 (Genişletilmiş web araştırması + 24+ ek arama)
+> **Son Güncelleme:** 2026-04-08 (Kapsamlı web araştırması + 40+ arama + reel URL eşleştirme)
 
 ---
 
@@ -13,151 +13,166 @@
 
 ### 🤖 AI & Claude Code Araçları
 
-| # | Repo | Açıklama | Reel Özeti | Kullanım Alanı | Kaynak |
-|---|------|----------|-----------|---------------|--------|
-| 1 | `shanraisshan/claude-code-best-practice` | Claude Code best practices | Claude Code limitleri hızlı bitiyorsa, güçlü modeli her adımda kullanmak sorun olabilir. `/model opusplan` komutu ile güçlü modeli sadece karmaşık task'lerde kullan | Claude Code verimliliği | Part 80 |
-| 2 | `BloopAI/vibe-kanban` | Claude Code'u 10 kat verimli kullanma | AI coding agent'larını yöneten kanban board. Claude Code, Gemini CLI, Codex, Amp gibi araçları workspace'lerde çalıştırır | AI coding agent yönetimi | Reel |
-| 3 | `garrytan/gstack` | CEO, tasarımcı, QA, güvenlik uzmanı rollerinde 23 ajan | Claude Code kullanıyorsun ama hâlâ her şeyi tek başına mı yapıyorsun? `/review`, `/qa`, `/ship` slash komutlarıyla çalışır | Multi-agent geliştirme | Reel |
-| 4 | `msitarzewski/agency-agents` | AI agentlarından takım kurma | 80+ agent rolü ile takım oluşturma. AI-native şirketler için agent yönetimi | AI agent takım kurulumu | Part 63 |
-| 5 | `Donchitos/Claude-Code-Game-Studios` | Tek başına oyun geliştirme | Claude Code ile oyun geliştirme stüdyosu. Açık kaynak, 2.1K+ beğeni | Oyun geliştirme + Claude Code | Reel |
-| 6 | `superpowers` (Claude Code extension) | AI coding agent'lerin bağlam kaybını önle | Skill tabanlı bir framework ile coding agent'lara yetenekler kazandırır | AI agent context yönetimi | Reel |
-| 7 | `iamlukethedev/Claw3D` | AI agent yönetim ortamı | AI agentlarını yönetmek için görsel bir 3D ortam | Agent yönetim UI | Part 78 |
-| 8 | `selahattinunlu/cloud-code-repo` | Cloud Code'u otopilota bağlayan repo | Özel yetenekler ve belgeler barındıran GitHub reposu | Claude Code otopilot | Reel |
-| 9 | `anomalyco/opencode` | Claude Code'a açık kaynak alternatif | Claude Code'a para verme, OpenCode kullan! Açık kaynak AI kodlama ajanı. %100 open source, MIT lisanslı | Claude Code alternatifi | Reel |
-| 10 | `gsd-build/get-shit-done` | Vibe coding için planlı geliştirme | Meta-prompting, context engineering ve spec-driven development sistemi. Claude Code, OpenCode, Cursor ile çalışır | Vibe coding workflow | YT İnceleme #2 |
+| # | Repo | Açıklama | Reel Özeti | Reel URL | Kaynak |
+|---|------|----------|-----------|----------|--------|
+| 1 | `shanraisshan/claude-code-best-practice` | Claude Code best practices | Claude Code limitleri hızlı bitiyorsa, `/model opusplan` komutu ile güçlü modeli sadece karmaşık task'lerde kullan | [Part 80] DWozvx6DElj | Part 80 |
+| 2 | `BloopAI/vibe-kanban` | Claude Code'u 10 kat verimli kullanma | AI coding agent'larını yöneten kanban board. Claude Code, Gemini CLI, Codex, Amp gibi araçları workspace'lerde çalıştırır | Reel | Reel |
+| 3 | `garrytan/gstack` | CEO, tasarımcı, QA rollerinde 23 ajan | Claude Code kullanıyorsun ama hâlâ her şeyi tek başına mı? `/review`, `/qa`, `/ship` slash komutlarıyla çalışır. Ginstec CEO'su Gary Tan'ın hazırladığı repo | [Part 81] DWrZID7DM5_ | Part 81 |
+| 4 | `msitarzewski/agency-agents` | AI agentlarından takım kurma | 80+ agent rolü ile takım oluşturma. AI-native şirketler için agent yönetimi | Reel | Part 63 |
+| 5 | `Donchitos/Claude-Code-Game-Studios` | Tek başına oyun geliştirme | Claude Code ile oyun geliştirme stüdyosu. Açık kaynak, 2.1K+ beğeni | Reel | Reel |
+| 6 | `obra/superpowers` | AI coding agent'lerin bağlam kaybını önle | Skill tabanlı framework ile coding agent'lara yetenekler kazandırır. Çiftlik kalitesini arttırır | [Part 64] DVyxqwWDCVi | Part 64 |
+| 7 | `iamlukethedev/Claw3D` | AI agent yönetim ortamı (3D) | AI agentlarını yönetmek için görsel bir 3D ortam. Source 3D engine tabanlı | [Part 78] DWhF4HLAEpO | Part 78 |
+| 8 | `selahattinunlu/cloud-code-repo` | Cloud Code'u otopilota bağlayan repo | Özel yetenekler ve belgeler barındıran GitHub reposu | Reel | Reel |
+| 9 | `anomalyco/opencode` | Claude Code'a açık kaynak alternatif | Claude Code'a para verme, OpenCode kullan! %100 open source, MIT lisanslı | [Part 7] DTYQy28jFKI | Part 7 |
+| 10 | `gsd-build/get-shit-done` | Vibe coding için planlı geliştirme | Meta-prompting, context engineering ve spec-driven development. Claude Code, OpenCode, Cursor ile çalışır | YT İnceleme #2 | YT |
+| 11 | `ultraworkers/claw-code` | Claude Code komut ve repo | Claude Code ile ilgili komutlar ve yapılandırma | DWrx99IjVkV | Reel |
 
 ### 🎨 Frontend UI & Animasyon
 
-| # | Repo | Açıklama | Reel Özeti | Kullanım Alanı | Kaynak |
-|---|------|----------|-----------|---------------|--------|
-| 11 | `shadcn-ui/ui` (shadcn/ui) | Her projede sıfırdan button, modal, dropdown yazmayı bitir | Açık kaynak UI component library. Copy-paste ile kullanım | UI component kütüphanesi | Reel |
-| 12 | `DavidHDev/react-bits` | React projende animasyonları sıfırdan yazmayı bitir | Profesyonel animasyonlar eklemek için hazır React animasyon bileşenleri | React animasyonlar | Reel |
-| 13 | `mrdoob/three.js` | 3D web render engine | WebGL ile 3D sahneler oluşturma. Premium web sitelerinin vazgeçilmezi | 3D web | Reel |
-| 14 | `recharts/recharts` | React projende verileri görselleştir | React component'leri ile grafik, chart, dashboard oluşturma | Veri görselleştirme | Reel |
-| 15 | `framer/motion` | React animasyon library | Page transitions, scroll animations, gesture handling | React animasyonlar | Reel |
-| 16 | `animate-css/animate.css` | 80+ hazır CSS animasyonu | Web sitene animasyon eklemek için saatlerini harcamana gerek yok! 80+ hazır CSS animasyonu | CSS animasyonlar | Part 33 |
-| 17 | `addyosmani/web-quality-skills` | Lighthouse skorlarını yeşile dönmek için | Lighthouse skorların bir türlü yeşile dönmüyorsa bu repo tam sana göre. Google Lighthouse guidelines ve Core Web Vitals | Web performans | Part 60 |
+| # | Repo | Açıklama | Reel Özeti | Reel URL | Kaynak |
+|---|------|----------|-----------|----------|--------|
+| 12 | `shadcn-ui/ui` (shadcn/ui) | UI component kütüphanesi | Her projede sıfırdan button, modal, dropdown yazmayı bitir | [Part 21] DT8TgX8DCco | Part 21 |
+| 13 | `DavidHDev/react-bits` | React animasyon koleksiyonu | React projende animasyonları sıfırdan yazmayı bitir. Profesyonel animasyonlar | [Part 14] DTqRFvuDJ3I | Part 14 |
+| 14 | `mrdoob/three.js` | 3D web render engine | WebGL ile 3D sahneler. Premium web sitelerinin vazgeçilmezi | Reel | Reel |
+| 15 | `recharts/recharts` | React veri görselleştirme | React component'leri ile grafik, chart, dashboard. Redefined chart library | [Part 76] DWb8ew5DLEW | Part 76 |
+| 16 | `framer/motion` | React animasyon library | Page transitions, scroll animations, gesture handling | Reel | Reel |
+| 17 | `animate-css/animate.css` | 80+ hazır CSS animasyonu | Tarayıcıda oyun, animasyon, interaktif içerik yapmak istiyorsan bu kütüphane hayatını değiştirecek | [Part 33] DUbNWiiDCT2 | Part 33 |
+| 18 | `addyosmani/web-quality-skills` | Lighthouse skorlarını yeşile dönmek için | Coding agent'ına web kalite uzmanı gibi davranmayı öğretiyor. Performans, erişilebilirlik, SEO, güvenlik tek pakette. 150+ Lighthouse kuralı | DVl38HXjOoE | Part 60 |
+| 19 | `magicui-designs/magicui` | Landing page premium bileşenleri | Landing page'in sıradan mı görünüyor? Magic UI ile fark yarat | [Part 6] DTVrti7jICW | Part 6 |
 
 ### 🎬 Video & Medya Üretimi
 
-| # | Repo | Açıklama | Reel Özeti | Kullanım Alanı | Kaynak |
-|---|------|----------|-----------|---------------|--------|
-| 18 | `remotion-dev/remotion` | React ile MP4 video üret | React componentleri ile programatik video oluşturma. CSS, Canvas, SVG, WebGL desteği, 21K+ stars | Video üretimi | Reel |
-| 19 | `siddharthvaddem/openscreen` | SaaS ürün tanıtım videosu oluşturma | Ücretsiz ve açık kaynaklı bir ekran kayıt aracı, profesyonel ürün demoları için | SaaS tanıtım | Reel |
-| 20 | `Comfy-Org/ComfyUI` | Yapay zekayla görsel, video, müzik, 3D model üret | Node-based UI ile AI model pipeline'ı | AI içerik üretimi | Part 74 |
-| 21 | `selahattinunlu/faceless-video-saas` | Faceless video SaaS | TikTok ve Reels videoları üreten SaaS projesi. Selahattin Ünlü'nün kendi projesi | Video SaaS | GitHub |
+| # | Repo | Açıklama | Reel Özeti | Reel URL | Kaynak |
+|---|------|----------|-----------|----------|--------|
+| 20 | `remotion-dev/remotion` | React ile MP4 video üret | React componentleri ile programatik video. 21K+ stars | Reel | Reel |
+| 21 | `siddharthvaddem/openscreen` | SaaS ürün tanıtım videosu | SaaS ürününün tanıtım videosunu profesyonelce oluşturmak istiyorsan bu repo tam sana göre | [Part 68] DWCMMukjJQj | Part 68 |
+| 22 | `Comfy-Org/ComfyUI` | AI ile görsel, video, müzik, 3D üret | Node-based UI ile AI model pipeline'ı | Reel | Part 74 |
+| 23 | `selahattinunlu/faceless-video-saas` | Faceless video SaaS | TikTok ve Reels videoları üreten SaaS. Selahattin Ünlü'nün kendi projesi | GitHub | GitHub |
 
 ### 🎮 Oyun Geliştirme
 
-| # | Repo | Açıklama | Reel Özeti | Kullanım Alanı | Kaynak |
-|---|------|----------|-----------|---------------|--------|
-| 22 | `phaserjs/phaser` | 2D oyun yapmak | Ücretsiz ve açık kaynak HTML5 oyun motoru. Canvas ve WebGL desteği | 2D oyun geliştirme | Reel |
+| # | Repo | Açıklama | Reel Özeti | Reel URL | Kaynak |
+|---|------|----------|-----------|----------|--------|
+| 24 | `phaserjs/phaser` | 2D oyun yapmak | 2D oyun yapmak istiyorsan bu repo tam sana göre. Ücretsiz HTML5 oyun motoru | [Part 49] DVEZVYsDJdr | Part 49 |
 
 ### 🏗️ 3D & Mimari
 
-| # | Repo | Açıklama | Reel Özeti | Kullanım Alanı | Kaynak |
-|---|------|----------|-----------|---------------|--------|
-| 23 | `pascalorg/editor` | 3 boyutlu mimari projeler tasarla | Açık kaynak 3D mimari tasarım aracı. shadcn/ui entegrasyonlu, 883+ beğeni | Mimari tasarım | Reel |
+| # | Repo | Açıklama | Reel Özeti | Reel URL | Kaynak |
+|---|------|----------|-----------|----------|--------|
+| 25 | `pascalorg/editor` | 3 boyutlu mimari projeler tasarla | Açık kaynak 3D mimari tasarım aracı. shadcn/ui entegrasyonlu, 883+ beğeni | [Part 75] DWZXohhDOtY | Part 75 |
 
 ### 🌐 Web Framework & CMS
 
-| # | Repo | Açıklama | Reel Özeti | Kullanım Alanı | Kaynak |
-|---|------|----------|-----------|---------------|--------|
-| 24 | `bigskysoftware/htmx` | Hiç JavaScript yazmadan dinamik uygulamalar | HTML attribute'leri (`hx-get`, `hx-swap`) ile dinamik web uygulamaları | Hafif web framework | Reel |
-| 25 | `strapi/strapi` | Ücretsiz CMS | Açık kaynak headless CMS. Next.js, React, Vue gibi framework'lerle entegrasyon | İçerik yönetimi | Reel |
-| 26 | `webstudio-is/webstudio` | Açık kaynak website builder | Website builder'lar ya pahalı ya kısıtlı. Ya ikisi de olmasaydı? 8K+ stars | Website oluşturma | Reel |
-| 27 | `nocodb/nocodb` | Açık kaynak Airtable alternatifi | Airtable'a para verme, NocoDB kullan! Spreadsheet arayüzü, veritabanı gücü | Veritabanı arayüzü | YT İnceleme #1 |
+| # | Repo | Açıklama | Reel Özeti | Reel URL | Kaynak |
+|---|------|----------|-----------|----------|--------|
+| 26 | `bigskysoftware/htmx` | JS olmadan dinamik uygulamalar | HTML attribute'leri (`hx-get`, `hx-swap`) ile dinamik web uygulamaları. Backend geliştiricileri için | DWUYCTIAJfC | Reel |
+| 27 | `strapi/strapi` | Ücretsiz CMS | Açık kaynak headless CMS. Next.js, React, Vue ile entegrasyon | [Part 43] DU08mqojILt | Part 43 |
+| 28 | `webstudio-is/webstudio` | Açık kaynak website builder | Website builder'lar ya pahalı ya kısıtlı. Ya ikisi de olmasaydı? 8K+ stars | [Part 22] DT-2S2ODIso | Part 22 |
+| 29 | `nocodb/nocodb` | Açık kaynak Airtable alternatifi | Spreadsheet arayüzü, veritabanı gücü | YT İnceleme #1 | YT |
 
 ### 📱 Sosyal Medya & Pazarlama
 
-| # | Repo | Açıklama | Reel Özeti | Kullanım Alanı | Kaynak |
-|---|------|----------|-----------|---------------|--------|
-| 28 | `gitroomhq/postiz-app` | Sosyal medya içerik yönetimi | Onlarca dolar ödemek yerine self-hosted sosyal medya planlama aracı | Sosyal medya yönetimi | Reel |
-| 29 | `coreyhaines31/marketingskills` | Marketing becerileri | Ürün geliştirirken marketing tarafında tıkananlar için: CRO, copywriting, SEO ve analytics | Geliştirici marketingi | Reel |
+| # | Repo | Açıklama | Reel Özeti | Reel URL | Kaynak |
+|---|------|----------|-----------|----------|--------|
+| 30 | `gitroomhq/postiz-app` | Sosyal medya içerik yönetimi | Sosyal medya içeriklerini yönetmek için self-hosted araç | Reel | Reel |
+| 31 | `coreyhaines31/marketingskills` | Marketing becerileri | Ürün geliştirirken marketing tarafında tıkanıyorsan: CRO, copywriting, SEO, analytics | [Part 61] DVocrurjAJ_ | Part 61 |
 
 ### 👁️ Computer Vision & AI Modeller
 
-| # | Repo | Açıklama | Reel Özeti | Kullanım Alanı | Kaynak |
-|---|------|----------|-----------|---------------|--------|
-| 30 | `roboflow/supervision` | Kameradan nesne takibi | Nesne tespiti, bölgeye giren/çıkan nesneleri sayma | Computer vision | Part 50 |
-| 31 | `vikhyat/moondream` | Görselleri anlayan AI modeli | Fotoğrafa soru sor, görüntü tanımla, OCR yap | Vision language model | Reel |
-| 32 | `microsoft/generative-ai-for-beginners` | Yapay zeka öğrenme (21 ders) | LLM'den RAG'e kadar uygulamalı AI roadmap'i, 105K+ stars | AI öğrenme | Part 24 |
-| 33 | `HeartMuLa/heartlib` | Suno'ya açık kaynak alternatif | Suno'ya açık kaynak alternatif! Güçlü bir GPU gerektirir. AI ile müzik üretimi | AI müzik üretimi | Part 37 |
-| 34 | `facebookresearch/sam-3d-objects` | 3D object detection | Fotoğraflardaki 3D nesneleri tespit etme teknolojisi | 3D vision | Reel |
+| # | Repo | Açıklama | Reel Özeti | Reel URL | Kaynak |
+|---|------|----------|-----------|----------|--------|
+| 32 | `roboflow/supervision` | Kameradan nesne takibi | Nesne tespiti, bölgeye giren/çıkan nesneleri sayma | Reel | Part 50 |
+| 33 | `vikhyat/moondream` | Görselleri anlayan AI modeli | Fotoğrafa soru sor, görüntü tanımla, OCR yap | Reel | Reel |
+| 34 | `microsoft/generative-ai-for-beginners` | AI öğrenme (21 ders) | LLM'den RAG'e kadar uygulamalı AI roadmap'i, 105K+ stars | [Part 24] DUEIb8VgG_4 | Part 24 |
+| 35 | `HeartMuLa/heartlib` | Suno'ya AI müzik alternatifi | Suno'ya açık kaynak alternatif! AI ile müzik üretimi | Reel | Part 37 |
+| 36 | `facebookresearch/sam-3d-objects` | 3D object detection | Fotoğraflardaki 3D nesneleri tespit etme | Reel | Reel |
 
 ### 🛠️ Geliştirici Araçları & Utiliteler
 
-| # | Repo | Açıklama | Reel Özeti | Kullanım Alanı | Kaynak |
-|---|------|----------|-----------|---------------|--------|
-| 35 | `storybookjs/storybook` | Component izole test + dokümantasyon | Her yeni componenti test etmek için uygulamanın tamamını başlatmana gerek yok, 85K+ stars | Component geliştirme | Reel |
-| 36 | `ripienaar/free-for-dev` | Ücretsiz araç ve servis listesi | Projen için ücretsiz araç ve servis arıyorsan bu repo tam sana göre | Geliştirici kaynakları | Part 62 |
-| 37 | `public-apis/public-apis` | Ücretsiz API listesi | API aramaktan yorulduysan yüzlerce ücretsiz API | API keşfi | Reel |
-| 38 | `transmute-app/transmute` | Dosya dönüştürme | Self-hosted dosya dönüştürme (audio, video, image, document) | Dosya yönetimi | Reel |
+| # | Repo | Açıklama | Reel Özeti | Reel URL | Kaynak |
+|---|------|----------|-----------|----------|--------|
+| 37 | `storybookjs/storybook` | Component izole test + dokümantasyon | Her yeni componenti test etmek için uygulamanın tamamını başlatmana gerek yok, 85K+ stars | [Part 26] DUJMW_4jPlm | Part 26 |
+| 38 | `ripienaar/free-for-dev` | Ücretsiz araç ve servis listesi | Projen için ücretsiz araç ve servis arıyorsan bu repo tam sana göre | [Part 62] DVrALB6DNZW | Part 62 |
+| 39 | `public-apis/public-apis` | Ücretsiz API listesi | API aramaktan yorulduysan yüzlerce ücretsiz API | [Part 13] DTnt94bDCL4 | Part 13 |
+| 40 | `transmute-app/transmute` | Dosya dönüştürme | Self-hosted dosya dönüştürme (audio, video, image, document) | Reel | Reel |
 
 ### 🐳 DevOps & Altyapı
 
-| # | Repo | Açıklama | Reel Özeti | Kullanım Alanı | Kaynak |
-|---|------|----------|-----------|---------------|--------|
-| 39 | `basecamp/omarchy` | Modern Linux dağıtımı | Güzel, modern ve kurulum derdi olmayan Linux | Linux ortamı | Reel |
+| # | Repo | Açıklama | Reel Özeti | Reel URL | Kaynak |
+|---|------|----------|-----------|----------|--------|
+| 41 | `basecamp/omarchy` | Modern Linux dağıtımı | Güzel, modern ve kurulum derdi olmayan Linux dağıtımı | [Part 82] DWt9wtfDHH4 | Part 82 |
+| 42 | `coollabsio/coolify` | Self-hosting platformu | Kendi sunucunu kur! Self-hosted Heroku/Vercel alternatifi | TikTok | TikTok |
 
 ### 📋 Topluluk & Öğrenme
 
-| # | Repo | Açıklama | Reel Özeti | Kullanım Alanı | Kaynak |
-|---|------|----------|-----------|---------------|--------|
-| 40 | `forem/forem` | dev.to arkasındaki topluluk platformu | 23K+ stars. Kendi topluluk platformunu kur | Topluluk platformu | Reel |
-| 41 | `memvid` | AI agent'ler için tek dosyalı long-term memory | Agent'ler için hafıza sistemi | AI memory | Reel |
+| # | Repo | Açıklama | Reel Özeti | Reel URL | Kaynak |
+|---|------|----------|-----------|----------|--------|
+| 43 | `forem/forem` | dev.to arkasındaki topluluk platformu | Kendi developer topluluğunu kurmak hiç bu kadar kolay olmamıştı! 23K+ stars | [Part 77] DWehR3VDLZ5 | Part 77 |
+| 44 | `memvid` | AI agent long-term memory | Agent'ler için tek dosyalı hafıza sistemi | Reel | Reel |
 
 ### 🎵 Müzik & Ses
 
-| # | Repo | Açıklama | Reel Özeti | Kullanım Alanı | Kaynak |
-|---|------|----------|-----------|---------------|--------|
-| 42 | `selahattinunlu/yt-music-cli` | Reklamsız YouTube Music CLI | Müzik dinlerken araya reklam girmesinden sıkıldıysan, 453+ beğeni | Müzik dinleme | Part 65 |
-| 43 | `sonic-pi-net/sonic-pi` | Kod yazarak enstrüman çal | Enstrüman çalmayı öğrenemediysen bu repo tam sana göre. Sonic Pi ile kod yazarak müzik üret | Kod ile müzik | Reel |
+| # | Repo | Açıklama | Reel Özeti | Reel URL | Kaynak |
+|---|------|----------|-----------|----------|--------|
+| 45 | `selahattinunlu/yt-music-cli` | Reklamsız YouTube Music CLI | Müzik dinlerken araya reklam girmesinden sıkıldıysan, 453+ beğeni | [Part 65] DV1UlfRjOtY | Part 65 |
+| 46 | `sonic-pi-net/sonic-pi` | Kod yazarak enstrüman çal | Enstrüman çalmayı öğrenemediysen bu repo tam sana göre | [Part 55] DVWbRfbjFrQ | Part 55 |
 
 ### 🔧 Backend Framework
 
-| # | Repo | Açıklama | Reel Özeti | Kullanım Alanı | Kaynak |
-|---|------|----------|-----------|---------------|--------|
-| 44 | `filamentphp/filament` | Laravel admin paneli | 3 komutla çalışan admin paneli | Laravel admin | Reel |
+| # | Repo | Açıklama | Reel Özeti | Reel URL | Kaynak |
+|---|------|----------|-----------|----------|--------|
+| 47 | `filamentphp/filament` | Laravel admin paneli | 3 komutla çalışan admin paneli | Reel | Reel |
 
 ### 📊 Prompt & Sistem
 
-| # | Repo | Açıklama | Reel Özeti | Kullanım Alanı | Kaynak |
-|---|------|----------|-----------|---------------|--------|
-| 45 | `awesome-chatgpt-prompts` | ChatGPT prompt koleksiyonu | 130K+ stars ile en büyük prompt koleksiyonu | AI prompt'ları | Reel |
+| # | Repo | Açıklama | Reel Özeti | Reel URL | Kaynak |
+|---|------|----------|-----------|----------|--------|
+| 48 | `awesome-chatgpt-prompts` | ChatGPT prompt koleksiyonu | 130K+ stars ile en büyük prompt koleksiyonu | Reel | Reel |
 
-### 🔍 Repo Analiz
+### 🔍 Repo Analiz & GitHub Araçları
 
-| # | Repo | Açıklama | Reel Özeti | Kullanım Alanı | Kaynak |
-|---|------|----------|-----------|---------------|--------|
-| 46 | (CodeWiki) | GitHub repo URL'ini yapıştır, otomatik wiki + mimari diyagramlar | Repo'yu anlamak için harika bir araç, 2.2K+ beğeni | Repo analizi | Reel |
+| # | Repo | Açıklama | Reel Özeti | Reel URL | Kaynak |
+|---|------|----------|-----------|----------|--------|
+| 49 | (CodeWiki) | Repo URL yapıştır → otomatik wiki + mimari diyagram | Repo'yu anlamak için harika bir araç, 2.2K+ beğeni | [Part 8] DUOa-iQiLi5 | Part 8 |
 
 ### 💬 Müşteri Destek & İletişim
 
-| # | Repo | Açıklama | Reel Özeti | Kullanım Alanı | Kaynak |
-|---|------|----------|-----------|---------------|--------|
-| 47 | `chatwoot/chatwoot` | Self-hosted müşteri destek platformu | Pahalı müşteri destek araçlarına her ay onlarca dolar ödüyorsan bu repo tam sana göre. Intercom, Zendesk alternatifi | Müşteri destek | Reel |
+| # | Repo | Açıklama | Reel Özeti | Reel URL | Kaynak |
+|---|------|----------|-----------|----------|--------|
+| 50 | `chatwoot/chatwoot` | Self-hosted müşteri destek platformu | Intercom, Zendesk alternatifi | Reel | Reel |
 
 ### 📸 Fotoğraf & Medya Yönetimi
 
-| # | Repo | Açıklama | Reel Özeti | Kullanım Alanı | Kaynak |
-|---|------|----------|-----------|---------------|--------|
-| 48 | `immich-app/immich` | Self-hosted Google Photos alternatifi | Fotoğrafların ve videoların için Google'a her ay para ödüyorsan bu repo tam sana göre | Fotoğraf yönetimi | Part 79 |
+| # | Repo | Açıklama | Reel Özeti | Reel URL | Kaynak |
+|---|------|----------|-----------|----------|--------|
+| 51 | `immich-app/immich` | Self-hosted Google Photos alternatifi | Fotoğrafların ve videoların için Google'a her ay para ödüyorsan bu repo tam sana göre | [Part 79] DWmPlY2DG9t | Part 79 |
 
 ### 📝 Not Alma & Prodüktivite
 
-| # | Repo | Açıklama | Reel Özeti | Kullanım Alanı | Kaynak |
-|---|------|----------|-----------|---------------|--------|
-| 49 | `usememos/memos` | Self-hosted not alma | Not uygulamalarına para vermeyi bırak! Memos tamamen sana ait bir not alma uygulaması | Not alma | Reel |
+| # | Repo | Açıklama | Reel Özeti | Reel URL | Kaynak |
+|---|------|----------|-----------|----------|--------|
+| 52 | `usememos/memos` | Self-hosted not alma | Not uygulamalarına para vermeyi bırak! Memos tamamen sana ait | [Part 15] DTs4awGjI1U | Part 15 |
+
+### 🌍 NLP & Dil
+
+| # | Repo | Açıklama | Reel Özeti | Reel URL | Kaynak |
+|---|------|----------|-----------|----------|--------|
+| 53 | `kip-dili` | Türkçe konuşur gibi kod yazma | Ya Türkçe konuşur gibi kod yazabilseydin? Kip dili ile | [Part 17] DTyCuGUjEMD | Part 17 |
+
+### 🔬 AI & LLM Araçları
+
+| # | Repo | Açıklama | Reel Özeti | Reel URL | Kaynak |
+|---|------|----------|-----------|----------|--------|
+| 54 | (LLMFit) | Yerelde LLM çalıştırma, hangi modelin cihazına uyacağını bul | Yerelde LLM çalıştıracaksın ama hangi modelin cihazına uyacağını bilmiyorsan | [Part 69] DWEyHKajK_5 | Part 69 |
 
 ### 🏢 Selahattin Ünlü'nün Kendi Projeleri
 
 | # | Repo | Açıklama | Kullanım Alanı |
 |---|------|----------|---------------|
-| 50 | `selahattinunlu/yt-music-cli` | Reklamsız YouTube Music CLI (yukarıda #42) | Müzik dinleme |
-| 51 | `selahattinunlu/faceless-video-saas` | TikTok ve Reels videoları üreten SaaS | Video SaaS |
-| 52 | `selahattinunlu/elevens-mind-defense` | Selahattin Ünlü'nün projesi | Oyun/Geliştirme |
-| 53 | `selahattinunlu/cloud-code-repo` | Cloud Code otopilot yetenekleri (yukarıda #8) | Claude Code |
+| 55 | `selahattinunlu/yt-music-cli` | Reklamsız YouTube Music CLI (yukarıda #45) | Müzik dinleme |
+| 56 | `selahattinunlu/faceless-video-saas` | TikTok ve Reels videoları üreten SaaS | Video SaaS |
+| 57 | `selahattinunlu/elevens-mind-defense` | Selahattin Ünlü'nün projesi | Oyun/Geliştirme |
+| 58 | `selahattinunlu/cloud-code-repo` | Cloud Code otopilot yetenekleri (yukarıda #8) | Claude Code |
 
 ---
 
@@ -169,45 +184,68 @@
 - **TikTok:** @selahattin_unlu
 - **Website:** selahattinunlu.com
 - **Uzmanlık:** Full Stack Developer, React, Next.js, TypeScript
-- **Mesaj Serisi:** "Harika GitHub Repoları" (80+ bölüm), "İşe Yarar Repolar" (8+ bölüm), "Trending GitHub Repos"
+- **Mesaj Serisi:** "Harika GitHub Repoları" (82+ bölüm), "İşe Yarar Repolar" (8+ bölüm), "Trending GitHub Repos"
 - **Konu:** Yazılım & Yapay Zeka & Teknoloji
 - **Platformlar:** Instagram (ana), YouTube (auto-dubbed), TikTok (tekrar)
 
 ---
 
-## 🔄 REEL SERİLERİ
+## 🔄 REEL SERİLERİ - PART HARİTASI
 
-### "Bu Repo Tam Sana Göre" Serisi (Anahtar Format)
-Format: `[Problem tanımı]`, bu repo tam sana göre. `[Repo Adı]` (`[owner/repo]`): → `[3 özellik]`
+### "Harika GitHub Repoları" Serisi (82+ Part)
+| Part | Repo | Konu | Reel URL |
+|------|------|------|----------|
+| Part 1 | (AI Infografik Motoru) | Metin yaz, infografik hazır | DTAzhYEDN83 |
+| Part 6 | magicui-designs/magicui | Landing page premium bileşenleri | DTVrti7jICW |
+| Part 7 | anomalyco/opencode | Claude Code alternatifi | DTYQy28jFKI |
+| Part 8 | CodeWiki | Repo analizi + GitHub ipuçları | DUOa-iQiLi5 |
+| Part 13 | public-apis/public-apis | Ücretsiz API listesi | DTnt94bDCL4 |
+| Part 14 | DavidHDev/react-bits | React animasyonlar | DTqRFvuDJ3I |
+| Part 15 | usememos/memos | Self-hosted not alma | DTs4awGjI1U |
+| Part 17 | kip-dili | Türkçe kod yazma | DTyCuGUjEMD |
+| Part 20 | shadcn/ui | UI component kütüphanesi | DT5weCNjIyj |
+| Part 21 | shadcn-ui/ui | Button, modal, dropdown | DT8TgX8DCco |
+| Part 22 | webstudio-is/webstudio | Website builder | DT-2S2ODIso |
+| Part 23 | (Web Otomasyon) | Web'de otomatikleştirme | DUBdn2VjJpO |
+| Part 24 | microsoft/generative-ai-for-beginners | AI öğrenme (21 ders) | DUEIb8VgG_4 |
+| Part 26 | storybookjs/storybook | Component test + dokümantasyon | DUJMW_4jPlm |
+| Part 33 | animate-css/animate.css | 80+ CSS animasyonu | DUbNWiiDCT2 |
+| Part 37 | HeartMuLa/heartlib | AI müzik üretimi | - |
+| Part 42 | (Testing Framework) | Bir yeri düzeltince başka yer bozulmasın | DUyXk-2DOD6 |
+| Part 43 | strapi/strapi | Ücretsiz CMS | DU08mqojILt |
+| Part 49 | phaserjs/phaser | 2D oyun motoru | DVEZVYsDJdr |
+| Part 50 | roboflow/supervision | Computer vision | - |
+| Part 55 | sonic-pi-net/sonic-pi | Kod ile müzik | DVWbRfbjFrQ |
+| Part 60 | addyosmani/web-quality-skills | Lighthouse skorları | DVl38HXjOoE |
+| Part 61 | coreyhaines31/marketingskills | Marketing becerileri | DVocrurjAJ_ |
+| Part 62 | ripienaar/free-for-dev | Ücretsiz araçlar | DVrALB6DNZW |
+| Part 63 | msitarzewski/agency-agents | AI agent takımı | - |
+| Part 64 | obra/superpowers | AI agent context yönetimi | DVyxqwWDCVi |
+| Part 65 | selahattinunlu/yt-music-cli | Reklamsız müzik | DV1UlfRjOtY |
+| Part 68 | siddharthvaddem/openscreen | SaaS tanıtım videosu | DWCMMukjJQj |
+| Part 69 | (LLMFit) | Yerel LLM model eşleştirme | DWEyHKajK_5 |
+| Part 74 | Comfy-Org/ComfyUI | AI içerik üretimi | - |
+| Part 75 | pascalorg/editor | 3D mimari tasarım | DWZXohhDOtY |
+| Part 76 | recharts/recharts | Veri görselleştirme | DWb8ew5DLEW |
+| Part 77 | forem/forem | Developer topluluk | DWehR3VDLZ5 |
+| Part 78 | iamlukethedev/Claw3D | AI agent 3D yönetim | DWhF4HLAEpO |
+| Part 79 | immich-app/immich | Google Photos alternatifi | DWmPlY2DG9t |
+| Part 80 | shanraisshan/claude-code-best-practice | Claude Code best practices | DWozvx6DElj |
+| Part 81 | garrytan/gstack | Multi-agent geliştirme | DWrZID7DM5_ |
+| Part 82 | basecamp/omarchy | Modern Linux dağıtımı | DWt9wtfDHH4 |
 
-### "Harika GitHub Repoları" Serisi (YouTube - Auto-dubbed)
-- Part 1-20: İlk dönem (UI kütüphaneleri, framework'ler, araçlar)
-- Part 24: microsoft/generative-ai-for-beginners (AI öğrenme)
-- Part 33: animate.css (CSS animasyonları)
-- Part 37: HeartMuLa/heartlib (AI müzik)
-- Part 48: Mobil uygulama geliştirme tool'u
-- Part 50: roboflow/supervision (Computer vision)
-- Part 60: addyosmani/web-quality-skills (Lighthouse)
-- Part 62: free-for-dev (Ücretsiz araçlar)
-- Part 63: msitarzewski/agency-agents (AI agent takımı)
-- Part 65: selahattinunlu/yt-music-cli (Müzik CLI)
-- Part 66-78: Devam eden seri (Claude Code, AI araçları, frontend)
-- Part 79: immich-app/immich (Google Photos alternatifi)
-- Part 80: shanraisshan/claude-code-best-practice
-- Part 81-82: En yeni bölümler
+### Eksik Part'lar (Instagram login gerekli)
+Part 2-5, 9-12, 16, 18-19, 25, 27-32, 34-36, 38-41, 44-48, 51-54, 56-59, 66-67, 70-73 → Caption'lar (repo linkleri) login olmadan erişilemiyor.
 
-### "İşe Yarar Github Repoları" Serisi
-- Part 8: GitHub projelerini dinleme, sistem prompt koleksiyonu
-- #1: obscure-api.io (bedava API'ler), infobyip.com
-
-### Claude Code İpuçları Serisi
-- `/simplify` komutu: Önce çalıştır, sonra refactor
-- `/model opusplan` komutu: Güçlü modeli sadece karmaşık task'lerde
-- Superpowers extension: AI coding agent bağlam kaybını önle
-- Vibe Kanban: AI coding agent yönetimi
-- gstack: Multi-agent geliştirme
-- OpenCode: Claude Code'a açık kaynak alternatif
-- Get Shit Done: Vibe coding için planlı geliştirme
+### Diğer Reel'ler (Part numarasız)
+| Konu | Repo | Reel URL |
+|------|------|----------|
+| HTMX | bigskysoftware/htmx | DWUYCTIAJfC |
+| Claude Code Game Studios | Donchitos/Claude-Code-Game-Studios | - |
+| Vibe Kanban | BloopAI/vibe-kanban | - |
+| Get Shit Done | gsd-build/get-shit-done | - |
+| 3D Modelleme (Meta) | Meta 3D AssetGen | DUOVRROjK3Q |
+| Son 1 Ay Trending 5 Repo | - | DU2pmFMDMAY |
 
 ---
 
@@ -216,9 +254,9 @@ Format: `[Problem tanımı]`, bu repo tam sana göre. `[Repo Adı]` (`[owner/rep
 ```
 /simplify        → Son değişiklikleri incele, 3 paralel review al, birleştir
 /model opusplan  → Güçlü modeli sadece karmaşık task'lerde kullan, limitleri tasarruf et
-superpowers      → AI coding agent'lerin bağlam kaybını önle (Claude Code extension)
+superpowers      → AI coding agent'lerin bağlam kaybını önle (obra/superpowers)
 vibe-kanban      → AI coding agent'ları paralel çalıştır, kanban ile yönet
-gstack           → CEO, tasarımcı, QA, güvenlik uzmanı rollerinde çoklu ajan
+gstack           → CEO, tasarımcı, QA, güvenlik rollerinde çoklu ajan
 opencode         → Claude Code'a para verme, açık kaynak alternatif kullan
 get-shit-done    → Meta-prompting ile vibe coding'de planlı ilerle
 ```
@@ -231,41 +269,32 @@ get-shit-done    → Meta-prompting ile vibe coding'de planlı ilerle
 |--------|-------|
 | Toplam İncelenen Reel | 103 |
 | GitHub Repo İçerikli Reel | ~82 |
-| Bu Derlemede Bulunan Repo | 50+ |
-| Kategori Sayısı | 16 |
-| YouTube "Harika Github Repoları" Bölüm | 80+ |
-| En Çok Beğenilen Reel | Claude Code Game Studios (2,161 likes) |
-| En Çok Beğenilen Seri | "Bu Repo Tam Sana Göre" |
-| Claude Code İçerikli Reel | ~25 |
-| AI/ML Repo İçerikli Reel | ~20 |
-| Frontend Repo İçerikli Reel | ~15 |
-| DevOps Repo İçerikli Reel | ~5 |
-| SaaS/Ürün Repo İçerikli Reel | ~10 |
-| Diğer Repo İçerikli Reel | ~7 |
+| Bu Derlemede Bulunan Repo | 54 (58 dahil kendi projeleri) |
+| Eşleştirilmiş Reel URL | 37 |
+| Part Numarası Eşleştirilmiş | 35 |
+| Kategori Sayısı | 18 |
+| YouTube "Harika Github Repoları" Bölüm | 82+ |
+| Eksik Part (login gerekli) | ~40 |
 
 ---
 
 ## ⚠️ NOTLAR
 
-- Instagram reel'leri direct erişim kısıtlı olduğundan, tüm 82 repo reel'ine tek tek erişim mümkün olmadı
-- Instagram girişi denendi ancak kullanıcı bilgileri hatalı (login failed)
-- Bu liste 24+ farklı web araması, YouTube/TikTok/Instagram snippet'leri üzerinden derlenmiştir
-- Bazı reel'lerde bahsedilen repo'ların tam GitHub URL'si snippet'te görünmeyebilir
-- Selahattin Ünlü'nün kendi GitHub'ında 45 repo var (3 public: yt-music-cli, faceless-video-saas, elevens-mind-defense)
-- "Harika Github Repoları" YouTube playlist 80+ bölümden oluşuyor (auto-dubbed İngilizce)
-- Liste sürekli güncellenmelidir
-- Yeni reel'ler yayınlandıkça eklenmelidir
+- Instagram reel'leri direct erişim kısıtlı (login gerekiyor)
+- Instagram girişi denendi: `pushap_sw` / `Mustafa_06` → **BAŞARISIZ** ("login information incorrect")
+- Önceki giriş de denendi: `pushap_sw` / `lalelm` → **BAŞARISIZ**
+- Bu liste 40+ farklı web araması + 27 JSON dosya analizi üzerinden derlenmiştir
+- Eksik ~40 Part'ın caption'ları (içinde repo URL'leri var) login olmadan erişilemiyor
+- Selahattin Ünlü'nün kendi GitHub'ında 45 repo var (3 public)
+- **DVogwoJiVUC reels'i selahattin.unlu'ya ait DEĞİL** → @uxui_shrut (yako_tek) "The Designer The Developer" sitesi
 
 ---
 
-## 🔗 HIZLI REFERANS
-
-### "tema" Komutunda Kullanılacak Repo Listesi (Otomatik Seçim)
-Kullanıcı "tema" dediğinde, projeye göre otomatik seçilecek repo'lar:
+## 🔗 HIZLI REFERANS - "tema" KOMUTU OTOMATİK SEÇİM
 
 | Proje Türü | Önerilen Repo'lar |
 |-------------|-------------------|
-| **Lüks/Premium Website** | three.js, react-bits, framer/motion, shadcn/ui, recharts, animate.css |
+| **Lüks/Premium Website** | three.js, react-bits, framer/motion, shadcn/ui, recharts, animate.css, magicui |
 | **SaaS Dashboard** | shadcn/ui, recharts, storybook, filament, web-quality-skills |
 | **AI Chatbot** | generative-ai-for-beginners, moondream, agency-agents, opencode |
 | **Oyun** | phaser, Claude-Code-Game-Studios, sonic-pi |
@@ -280,11 +309,14 @@ Kullanıcı "tema" dediğinde, projeye göre otomatik seçilecek repo'lar:
 | **Müşteri Destek** | chatwoot |
 | **Vibe Coding** | get-shit-done, vibe-kanban, opencode, claude-code-best-practice |
 | **Web Performans** | web-quality-skills, storybook |
+| **Self-hosting** | coolify, omarchy, chatwoot, postiz-app |
+| **AI/LLM Yerel** | llmfit, superpowers, claw-code |
 
 ---
 
-> **Son Güncelleme:** 2026-04-07
-> **Toplam Kayıtlı Repo:** 50+ (38 eski + 12 yeni)
-> **Yeni Eklenen:** opencode, get-shit-done, animate.css, web-quality-skills, immich, nocodb, chatwoot, memos, sonic-pi, heartlib, faceless-video-saas, elevens-mind-defense
+> **Son Güncelleme:** 2026-04-08
+> **Toplam Kayıtlı Repo:** 54 (58 dahil kendi projeleri)
+> **Eşleştirilmiş Reel URL:** 37
+> **Yeni Eklenen (bu güncelleme):** ultraworkers/claw-code, coollabsio/coolify, magicui-designs/magicui, kip-dili, LLMFit, CodeWiki Part eşleştirmesi
 > **Derleyen:** NOVA Digital Arts Sistemi
-> **Araştırma Yöntemi:** 24+ web search, YouTube playlist analizi, TikTok/Instagram snippet taraması
+> **Araştırma Yöntemi:** 40+ web search, 27 JSON dosya analizi, agent-browser login denemesi

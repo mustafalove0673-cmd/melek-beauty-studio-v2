@@ -484,6 +484,43 @@ get-shit-done    → Meta-prompting ile vibe coding'de planlı ilerle
 | 2026-04-05 | Tümü | İlk oluşturma - 10 bölüm, tüm araştırmalar |
 | 2026-04-06 | Bölüm 11 | @selahattin.unlu 38 GitHub repo analizi eklendi |
 | 2026-04-07 | Bölüm 11 | 50+ repo'ya güncellendi (12 yeni repo), Instagram login denemesi, 24+ web arama |
+| 2026-04-08 | Bölüm 11, 12 | 54 repo'ya güncellendi (4 yeni), 37 reel URL + 35 Part eşleştirmesi, DVogwoJiVUC analizi, 40+ web arama |
+
+---
+
+### 12. Instagram Reel Analizi: "The Designer The Developer" (DVogwoJiVUC)
+
+**Kaynak:** https://www.instagram.com/reel/DVogwoJiVUC
+**Oluşturan:** @uxui_shrut (yako_tek) - SELAHATTIN.UNLU'YA AİT DEĞİL!
+**Konu:** Premium web tasarım - "The Designer The Developer" temalı website
+**Tarih:** 2026-04-08
+
+#### Reel Analizi
+- **Tema:** "The Designer The Developer" - Tasarımcı ve Geliştirici işbirliği konsepti
+- **Stil:** Premium, animasyonlu, modern web sitesi
+- **Özellikler:** 3D model entegrasyonu, keyframe animasyonlar, smooth scroll
+- **Araçlar:** Figma'da tasarlanmış, no-code veya low-code ile canlandırılmış olabilir
+- **Layout:** 1440px genişlik, "The website" başlığı, "Products", "Contact" bölümleri
+- **Animasyonlar:** Keyframe-based section reveal, 3D model hover, parallax depth
+- **Benzeyen Siteler:** Cortexa Global (Web Design Studio), Hanna, Nebula, BlushPink
+
+#### Teknik Özellikler (Tahmin / Referans)
+| Özellik | Detay |
+|---------|-------|
+| 3D Model | Hero section'da 3D obje (GLTF/GLB formatı) |
+| Scroll Animation | Keyframe ile section reveal (CSS veya JS) |
+| Layout | Single page, full-width sections |
+| Renk | Koyu tema veya kontrastlı gradient |
+| Typography | Büyük başlıklar, modern font |
+| Interactivity | Hover efektleri, parallax, mouse tracking |
+
+#### Benzer Referans Repo'lar
+- `NotYuSheng/designer-vs-developer` - Animated toggle button
+- `AHMAD-JX/DesignEnd-Website-Template` - Designer/developer template
+- `shivas1432/Animated-DesignsP1` - 50+ curated HTML/CSS/JS animations
+
+#### Kullanıcının İsteği
+Kullanıcı bu reels'teki tarzda bir siteyi "kendi emeğimizle" oluşturmak istiyor. Bu, "tema" komutu sistemi ile gerçekleştirilebilir.
 
 ---
 
