@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { Space_Grotesk, DM_Sans } from "next/font/google";
+import { Josefin_Sans, DM_Sans } from "next/font/google";
 import "./globals.css";
 
-const spaceGrotesk = Space_Grotesk({
+const josefinSans = Josefin_Sans({
   variable: "--font-heading",
   subsets: ["latin"],
   display: "swap",
-  weight: ["400", "500", "600", "700"],
+  weight: ["400", "600", "700"],
 });
 
 const dmSans = DM_Sans({
@@ -17,8 +17,9 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "3D Web Sistem | Premium Web Development",
-  description: "Premium web development with 3D capabilities",
+  title: "NOVA Yapı | Premium İnşaat & Mimari",
+  description: "Hayallerinizi gerçeğe dönüştüren premium inşaat ve mimari çözümler. 20+ yıllık deneyim, modern tasarım, dayanıklı yapılar.",
+  keywords: "inşaat, mimari, villa, yapı, premium, modern",
 };
 
 export default function RootLayout({
@@ -27,10 +28,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="tr" suppressHydrationWarning>
       <body
-        className={`${spaceGrotesk.variable} ${dmSans.variable} font-body antialiased`}
+        className={`${josefinSans.variable} ${dmSans.variable} font-body antialiased`}
       >
+        <div className="noise-overlay" />
         {children}
       </body>
     </html>
