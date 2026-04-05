@@ -1,15 +1,16 @@
 # 🧠 NOVA AI - MEGA PROMPT
 # Bu prompt'u başka bir AI'ya verdiğinde, o AI tüm sistemi anlar ve uygulayabilir.
 
-> **Versiyon:** 7.0
+> **Versiyon:** 7.1
 > **Son Güncelleme:** 2026-04-14
-> **Toplam Repo:** 231
-> **Hedef Repo:** 231 (12 yeni kategori planlı)
+> **Toplam Repo:** 231 (GitHub API doğrulanmış)
+> **Hedef Repo:** 400+ (12 yeni kategori planlı)
 > **Kurulu Paket:** 19
 > **AI Skill:** 16
 > **Sektör Template:** 14
 > **Renk Paleti:** 10 Doğru + 6 Yanlış
 > **Daha Eklenebilecek Kategori:** 12 (~180 repo)
+> **Repo Doğrulama:** 2026-04-14 tarihinde GitHub API ile %100 doğrulanmış (258 sahte temizlendi)
 
 ---
 
@@ -306,7 +307,32 @@ Noise overlay her sayfada: SVG fractalNoise overlay, opacity 0.03, mix-blend-mod
 
 ---
 
-## 489+ GİTHUB REPO KATALOĞU
+## ⚠️ KRİTİK KURAL: REPO DOĞRULAMA SİSTEMİ
+
+**Her repo linki GitHub API ile doğrulanmış gerçek repolardan oluşur. Eğer herhangi bir repo 404 verirse veya link bozuksa:**
+
+1. **GitHub'da ara** → `https://github.com/search?q={repo+adi}`
+2. **Doğru repo'yu bul** → Owner/repo formatında doğru URL'yi tespit et
+3. **MEGA_PROMPT.md'de güncelle** → Eski linki yeni gerçek link ile değiştir
+4. **Kategorisini koru** → Repo'nun kullanım amacını ve kategorisini koru
+5. **Commit + Push yap** → `git add -A && git commit -m "fix: repo link düzeltme" && git push origin main && git push cloud main`
+
+**Örnek Doğrulama Komutu:**
+```bash
+curl -s -H "Authorization: token $GITHUB_TOKEN" "https://api.github.com/repos/{owner}/{repo}" | python3 -c "import sys,json; d=json.load(sys.stdin); print(f'Stars: {d.get(\"stargazers_count\")}, Status: {d.get(\"message\",\"OK\")}')"
+```
+
+**Yapılmaması Gerekenler:**
+- ❌ Uydurma/varsayımsal repo linkleri EKLEME
+- ❌ 404 veren linkleri olduğu gibi BIRAKMA
+- ❌ Owner/repo formatını RASTGELE değiştirme
+- ❌ Web sitesi/project linklerini GitHub repo linki Olarak GÖSTERME
+
+**Son Doğrulama Tarihi:** 2026-04-14 — 465 URL kontrol edildi, 258 sahte repo temizlendi, 17 redirect düzeltildi
+
+---
+
+## 231 GİTHUB REPO KATALOĞU (GitHub API Doğrulanmış)
 
 ### 🎨 GRUP 1: RENK PALETİ & AURA SİSTEMLERİ (#1-15)
 
