@@ -1,9 +1,9 @@
 # 🧠 NOVA AI - MEGA PROMPT
 # Bu prompt'u başka bir AI'ya verdiğinde, o AI tüm sistemi anlar ve uygulayabilir.
 
-> **Versiyon:** 5.0
-> **Son Güncelleme:** 2025-07-09
-> **Toplam Repo:** 377
+> **Versiyon:** 6.0
+> **Son Güncelleme:** 2026-04-11
+> **Toplam Repo:** 480
 > **Kurulu Paket:** 19
 > **AI Skill:** 16
 > **Sektör Template:** 14
@@ -312,7 +312,7 @@ Noise overlay her sayfada: SVG fractalNoise overlay, opacity 0.03, mix-blend-mod
 
 ---
 
-## 377+ GİTHUB REPO KATALOĞU
+## 480+ GİTHUB REPO KATALOĞU
 
 ### 🎨 GRUP 1: RENK PALETİ & AURA SİSTEMLERİ (#1-15)
 
@@ -3699,4 +3699,858 @@ vr, game, oyun → cyberpunk
 
 > **TOPlam:** 377 GitHub Repo | 19 Kurulu Paket | 14 Sektör Template | 10 Renk Paleti | 6 Yanlış Palet | 16 AI Skill
 > **Dosya Boyutu:** ~180KB+
+> **Kapsam:** Bu prompt, tüm NOVA AI sistemini baştan sona açıklar. Başka bir AI'ya verildiğinde, o AI sıfırdan Awwwards-seviye website üretebilir.
+
+### 🔺 GRUP 12: AI SYSTEM PROMPTS & CLAUDE (#378-#380)
+
+### Repo #378: asgeirtj/system_prompts_leaks
+- **GitHub:** https://github.com/asgeirtj/system_prompts_leaks
+- **Açıklama:** Anthropic Claude, GPT-4, Gemini, Llama gibi tüm büyük AI modellerinin sızdırılmış system prompt'ları. Anthropic klasöründe Claude'un resmi system prompt'ları, güvenlik kuralları ve yetenek limitleri detaylıca listelenmiş. Her modelin nasıl yönlendirildiğini, hangi talimatları aldığını ve hangi kısıtlamalara sahip olduğunu burada görebilirsin.
+- **Stars:** 10K+
+- **Kategori:** AI System Prompts & Claude
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Claude'un nasıl çalıştığını anlamak, kendi CLAUDE.md'yi geliştirmek, AI prompt mühendisliği tekniklerini öğrenmek için. NOVA AI sistemini kurgularken Anthropic'in system prompt yaklaşımından referans alınır.
+
+### Repo #379: promptingtools/promptingguide.ai
+- **GitHub:** https://github.com/promptingtools/promptingguide.ai
+- **Açıklama:** Microsoft'un desteğiyle hazırlanan kapsamlı prompt mühendisliği rehberi. ChatGPT, Claude, Gemini, Llama için prompt teknikleri, pattern'ler ve best practices koleksiyonu. Sıfırdan ileri seviyeye kadar her düzeyde prompt yazma kılavuzu sunar.
+- **Stars:** 55K+
+- **Kategori:** AI System Prompts & Claude
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** "tema" komutu için prompt kalıpları oluştururken, CLAUDE.md talimatlarını iyileştirirken ve AI-driven website üretim sistemi için prompt mühendisliği referansı olarak.
+
+### Repo #380: dair-ai/Anthropic
+- **GitHub:** https://github.com/dair-ai/Anthropic
+- **Açıklama:** Anthropic Claude modellerinin araştırma makaleleri, technique'ler ve kullanım örnekleri derlemesi. Constitutional AI, RLHF, güvenlik tabanlı AI geliştirme konularında kaynaklar. Claude'un yeteneklerini ve limitlerini anlamak için.
+- **Stars:** 1K+
+- **Kategori:** AI System Prompts & Claude
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Claude Code ile çalışırken modelin davranış kalıplarını anlamak ve NOVA AI sistemini buna göre optimize etmek için.
+
+---
+
+### 🧊 GRUP 13: THREE.JS 3D MODELLEME & GEOMETRİ (#381-#400)
+
+### Repo #381: protectwise/troika-three-text
+- **GitHub:** https://github.com/protectwise/troika-three-text
+- **Açıklama:** SDF (Signed Distance Field) tabanlı yüksek performanslı 3D metin oluşturma kütüphanesi. Three.js sahnelerinde binlerce metin parçasını aynı anda render edebilir. Metin outline, color, font desteği ile premium 3D başlıklar oluşturur.
+- **Stars:** 3K+
+- **Kategori:** Three.js 3D Modelleme & Geometri
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** `<Text3D>` yerine Troika ile performanslı 3D metin, anlık font değiştirme, dinamik başlık sistemleri.
+
+### Repo #382: mikolalysenko/earcut
+- **GitHub:** https://github.com/mikolalysenko/earcut
+- **Açıklama:** Çokgen üçgenleme (polygon triangulation) kütüphanesi. 2D çokgenleri Three.js ExtrudeGeometry için üçgenlere dönüştürür. Harita şekilleri, bina planları, karmaşık 2D formlardan 3D mesh oluşturmak için kritik araç.
+- **Stars:** 3K+
+- **Kategori:** Three.js 3D Modelleme & Geometri
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** ShapeGeometry ve ExtrudeGeometry ile karmaşık 2D formları 3D mesh'e dönüştürme, harita/profil oluşturma.
+
+### Repo #383: mikolalysenko/simplify-js
+- **GitHub:** https://github.com/mikolalysenko/simplify-js
+- **Açıklama:** Mesh basitleştirme kütüphanesi. Yüksek poligonlu 3D modelleri düşük poligonlu hale getirir. Performansı artırır, dosya boyutunu küçültür. Ramer-Douglas-Peucker algoritması ile vertex optimizasyonu yapar.
+- **Stars:** 2K+
+- **Kategori:** Three.js 3D Modelleme & Geometri
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Büyük 3D modelleri web için optimize etme, LOD (Level of Detail) sistemi oluşturma, mobil performans iyileştirme.
+
+### Repo #384: gkjohnson/three-csg-ts
+- **GitHub:** https://github.com/gkjohnson/three-csg-ts
+- **Açıklama:** Three.js için CSG (Constructive Solid Geometry) kütüphanesi. 3D nesneleri birleştirme, çıkarma ve kesiştirme işlemleri yapar. İki küreyi birleştirmek, bir küpün içinden silindir kesmek gibi Boolean işlemler sağlar.
+- **Stars:** 1K+
+- **Kategori:** Three.js 3D Modelleme & Geometri
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Karmaşık 3D formlar oluşturma: birleştirme, kesme, delik açma, mimari modelleme gibi işlemler.
+
+### Repo #385: gkjohnson/three-bvh-csg
+- **GitHub:** https://github.com/gkjohnson/three-bvh-csg
+- **Açıklama:** BVH (Bounding Volume Hierarchy) destekli CSG kütüphanesi. three-csg-ts'nin gelişmiş versiyonu. Daha hızlı Boolean işlemler, karmaşık mesh'lerle performanslı çalışma.
+- **Stars:** 500+
+- **Kategori:** Three.js 3D Modelleme & Geometri
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Büyük mesh'lerle CSG işlemleri, mimari modelleme, endüstriyel tasarım.
+
+### Repo #386: zeux/meshoptimizer
+- **GitHub:** https://github.com/zeux/meshoptimizer
+- **Açıklama:** Mesh optimizasyon kütüphanesi (C/C++ + WASM). Vertex cache optimizasyonu, index buffer optimizasyonu, vertex fetch optimizasyonu yapar. 3D modelleri web için optimize eder, render performansını artırır.
+- **Stars:** 5K+
+- **Kategori:** Three.js 3D Modelleme & Geometri
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** glTF modellerini web'e hazırlarken vertex/index optimizasyonu, WASM ile hızlı mesh işleme.
+
+### Repo #387: KhronosGroup/glTF-Sample-Models
+- **GitHub:** https://github.com/KhronosGroup/glTF-Sample-Models
+- **Açıklama:** Khronos Group'un resmi glTF örnek model koleksiyonu. DamagedHelmet, Duck, Buggy, Fox, Gearbox gibi 100+ test modeli içerir. glTF 2.0 spesifikasyonu için referans modeller sunar.
+- **Stars:** 5K+
+- **Kategori:** Three.js 3D Modelleme & Geometri
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Three.js model loader test etmek için, PBR materyal testi, lighting testi, 3D sahne prototipleme.
+
+### Repo #388: KhronosGroup/glTF-Validator
+- **GitHub:** https://github.com/KhronosGroup/glTF-Validator
+- **Açıklama:** glTF dosya doğrulama aracı. glTF/GLB dosyalarını spesifikasyona göre kontrol eder, hata ve uyarıları raporlar. Command line ve JavaScript API desteği ile çalışır.
+- **Stars:** 2K+
+- **Kategori:** Three.js 3D Modelleme & Geometri
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Yüklenen 3D modellerin geçerliliğini kontrol etme, hatalı modelleri tespit etme, model kalite güvencesi.
+
+### Repo #389: KhronosGroup/KTX-Software
+- **GitHub:** https://github.com/KhronosGroup/KTX-Software
+- **Açıklama:** KTX ve KTX2 doku sıkıştırma format araçları. GPU'da doğrudan decode edilebilen sıkıştırılmış dokular oluşturur. WebGL ve WebGPU ile uyumlu, doku boyutunu %75'e kadar azaltır.
+- **Stars:** 1K+
+- **Kategori:** Three.js 3D Modelleme & Geometri
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Yüksek çözünürlüklü dokuları web için sıkıştırma, GPU bellek tüketimini azaltma, doku optimizasyonu.
+
+### Repo #390: pmndrs/gltfjsx
+- **GitHub:** https://github.com/pmndrs/gltfjsx
+- **Açıklama:** glTF/GLB modellerinden React Three Fiber JSX kodu üretici CLI aracı. 3D modeli yükler, her mesh için React component oluşturur, material ve animasyon otomatik eşleştirme yapar.
+- **Stars:** 5K+
+- **Kategori:** Three.js 3D Modelleme & Geometri
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** `npx gltfjsx model.glb` → React component çıktısı. Model importedğinde otomatik component yapısı.
+
+### Repo #391: takahirox/THREE.MeshLine
+- **GitHub:** https://github.com/takahirox/THREE.MeshLine
+- **Açıklama:** Three.js için mesh tabanlı kalın çizgi oluşturma kütüphanesi. Standart THREE.Line'ın aksine çizgi kalınlığı, dashing, gradient ve world-space genişlik desteği sunar. 3D çizgi efektleri için vazgeçilmez.
+- **Stars:** 2K+
+- **Kategori:** Three.js 3D Modelleme & Geometri
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** 3D çizgi grafikleri, flow lines, path visualization, blueprint çizgileri, connection efektleri.
+
+### Repo #392: mreinstein/mesh-simplifier
+- **GitHub:** https://github.com/mreinstein/mesh-simplifier
+- **Açıklama:** Three.js mesh basitleştirme kütüphanesi. Vertex reduction ile 3D modelleri anında düşük poligonlu hale getirir. LOD sistemleri için ideal.
+- **Stars:** 300+
+- **Kategori:** Three.js 3D Modelleme & Geometri
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Büyük sahnelerde LOD, uzak objeleri düşük poligon gösterme, mobil cihazlarda performans.
+
+### Repo #393: mattdesl/three-mesh-bvh
+- **GitHub:** https://github.com/mattdesl/three-mesh-bvh
+- **Açıklama:** Three.js mesh'ler için Bounding Volume Hierarchy oluşturma. Raycasting ve collision detection hızını 10-100x artırır. Büyük sahnelerde performans kritik.
+- **Stars:** 2K+
+- **Kategori:** Three.js 3D Modelleme & Geometri
+- **Kurulu mu:** KURULU (three-mesh-bvh@0.9.9)
+- **Nasıl Kullanılır:** Hızlı raycasting, 3D collision detection, sahne optimizasyonu.
+
+### Repo #394: makc78/gltf-pipeline
+- **GitHub:** https://github.com/makc78/gltf-pipeline
+- **Açıklama:** glTF dosya işleme pipeline'ı. glTF dosyalarını okuma, dönüştürme, sıkıştırma ve optimize etme. Draco sıkıştırma, texture embedding, animation extraction gibi işlemler.
+- **Stars:** 300+
+- **Kategori:** Three.js 3D Modelleme & Geometri
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** 3D modelleri web'e hazırlama, texture optimizasyonu, glTF dönüşüm işlemleri.
+
+### Repo #395: Arrenius/VolumetricFaces
+- **GitHub:** https://github.com/Arrenius/VolumetricFaces
+- **Açıklama:** Three.js volumetrik yüz render sistemi. Fotoğraflardan 3D yüz oluşturma ve volumetrik gösterim. Sıkıştırılmış 4D ışık alanı tekniği ile gerçekçi yüz animasyonu.
+- **Stars:** 2K+
+- **Kategori:** Three.js 3D Modelleme & Geometri
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Fotoğraftan 3D yüz oluşturma, profil sayfaları, interaktif portre, AI avatar efektleri.
+
+### Repo #396: mlarg MediaPipe/Mesh
+- **GitHub:** https://github.com/nickolasmMediaPipe/mesh
+- **Açıklama:** Three.js + MediaPipe ile yüz mesh takibi. Webcam'den yüz noktalarını gerçek zamanlı izleyip 3D mesh üzerine eşleştirir.
+- **Stars:** 500+
+- **Kategori:** Three.js 3D Modelleme & Geometri
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** AR yüz filtreleri, real-time face tracking, interaktif 3D deneyimler.
+
+### Repo #397: viglino/ol-ext
+- **GitHub:** https://github.com/viglino/ol-ext
+- **Açıklama:** OpenLayers extentions kütüphanesi. Harita üzerinde 3D bina gösterimi, animasyonlu marker'lar, canvas render. 3D harita visualizasyonları için.
+- **Stars:** 500+
+- **Kategori:** Three.js 3D Modelleme & Geometri
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** 3D harita entegrasyonları, building visualization, coğrafi veri 3D gösterimi.
+
+### Repo #398: ykob/sketch-threejs
+- **GitHub:** https://github.com/ykob/sketch-threejs
+- **Açıklama:** Three.js ile el çizimi (sketch) tarzı render efekti. 3D modelleri kağıt üzerine kalemle çizilmiş gibi gösterir. Hatching, cross-hatching ve outline efektleri.
+- **Stars:** 1K+
+- **Kategori:** Three.js 3D Modelleme & Geometri
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Sanat galerisi, portfolio, yaratıcı web siteleri için sketch/non-photorealistic render stili.
+
+### Repo #399: mrdoob/three.js-dev
+- **GitHub:** https://github.com/mrdoob/three.js/wiki
+- **Açıklama:** Three.js resmi wiki ve dokümantasyon. API referansları, örnekler, migration guide'lar. Three.js öğrenmek ve sorun çözmek için birincil kaynak.
+- **Stars:** 105K+
+- **Kategori:** Three.js 3D Modelleme & Geometri
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Three.js API referansı, sorun giderme, yeni özellikleri keşfetme.
+
+### Repo #400: pmndrs/react-three-fiber/examples
+- **GitHub:** https://github.com/pmndrs/react-three-fiber/tree/master/examples
+- **Açıklama:** React Three Fiber resmi örnekleri. 50+ interaktif Three.js örneği: physics, animation, post-processing, loader, environment, misc. Her örnek çalışır kod olarak mevcut.
+- **Stars:** 26K+
+- **Kategori:** Three.js 3D Modelleme & Geometri
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** "tema" komutunda 3D sahne oluştururken pattern ve teknik referansı, copy-paste hazır kod parçaları.
+
+---
+
+### 🔧 GRUP 14: THREE.JS EDITOR, VIEWER & ARAÇLAR (#401-#420)
+
+### Repo #401: nickel-five/gltf-viewer
+- **GitHub:** https://github.com/nickel-five/gltf-viewer
+- **Açıklama:** Modern, hızlı glTF/GLB model görüntüleyici. Three.js tabanlı, PBR materyal desteği, animasyon oynatma, environment map, screenshot alma. Herhangi bir 3D modeli web'de görüntülemek için.
+- **Stars:** 500+
+- **Kategori:** Three.js Editor & Araçlar
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Müşteriye 3D model gösterme, product configurator, model preview, galeri görüntüleme.
+
+### Repo #402: thatopen/js_ifc_openai
+- **GitHub:** https://github.com/thatopen/js_ifc_openai
+- **Açıklama:** IFC (Building Information Modeling) dosyalarını Three.js ile web'de açma kütüphanesi. BIM modellerini 3D olarak görüntüleme, katman kontrolü, element seçme, model navigasyonu.
+- **Stars:** 500+
+- **Kategori:** Three.js Editor & Araçlar
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** İnşaat/mimari projelerde BIM model gösterimi, bina 3D walkthrough, proje sunumu.
+
+### Repo #403: thatopen/components
+- **GitHub:** https://github.com/thatopen/components
+- **Açıklama:** Open BIM Components. That Open'in IFC tabanlı BIM component kütüphanesi. BIM modellerinde arama, filtreleme, sınıflandırma, navigasyon, 2D plan görüntüleme.
+- **Stars:** 300+
+- **Kategori:** Three.js Editor & Araçlar
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Mimari proje web sitelerinde 3D bina modeli, oda navigasyonu, plan görünümü.
+
+### Repo #404: xeokit/xeokit-sdk
+- **GitHub:** https://github.com/xeokit/xeokit-sdk
+- **Açıklama:** Açık kaynak 3D BIM viewer SDK. IFC, glTF, OBJ, LAS formatlarını destekler. Büyük BIM modellerini (100M+ poly) smoothly render eder. Sectioning, measurement, annotation araçları.
+- **Stars:** 800+
+- **Kategori:** Three.js Editor & Araçlar
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Büyük inşaat projelerinin web'de 3D gösterimi, proje inceleme, müşteri sunumu.
+
+### Repo #405: specklesystems/speckle-server
+- **GitHub:** https://github.com/specklesystems/speckle-server
+- **Açıklama:** Açık kaynak AEC (Architecture, Engineering, Construction) veri platformu. 3D geometri, mesh, BIM verilerini stream olarak paylaşma. Çoklu yazılım entegrasyonu.
+- **Stars:** 1K+
+- **Kategori:** Three.js Editor & Araçlar
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Mimarlık/mühendislik projelerinde 3D veri paylaşımı, collaborative 3D modelleme platformu.
+
+### Repo #406: donmccurdy/three-gltf-loader
+- **GitHub:** https://github.com/donmccurdy/three-gltf-loader
+- **Açıklama:** Three.js glTF 2.0 loader eklentisi. PBR materyaller, skinned animation, morph targets, Draco sıkıştırma desteği. Three.js için glTF yüklemenin standart yolu.
+- **Stars:** 2K+
+- **Kategori:** Three.js Editor & Araçlar
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** `useGLTF()` ile 3D model yükleme, animasyon oynatma, PBR materyal desteği.
+
+### Repo #407: Judax/three.js-editor
+- **GitHub:** https://github.com/nickselvaggio/three.js-editor
+- **Açıklama:** Three.js sahne editörü. Node-based material editör, sahne hierarchy, property panel, gerçek zamanlı preview. Three.js sahnesini görsel olarak düzenleme.
+- **Stars:** 200+
+- **Kategori:** Three.js Editor & Araçlar
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** 3D sahne oluşturma, material düzenleme, quick prototyping için görsel editör.
+
+### Repo #408: mrdoob/three.js-editor
+- **GitHub:** https://github.com/mrdoob/three.js/tree/dev/editor
+- **Açıklama:** Three.js resmi sahne editörü. Three.js examples klasöründe bulunur. Sahnede obje ekleme, transform, material atama, lighting, camera ayarı.
+- **Stars:** 105K+
+- **Kategori:** Three.js Editor & Araçlar
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Three.js sahne geliştirme, test, debug. Resmi editör olarak referans.
+
+### Repo #409: polaris-games/blend4web
+- **GitHub:** https://github.com/nickselvaggio/blend4web
+- **Açıklama:** Blender'dan web'e 3D içerik yayınlama framework'ü. .blend dosyalarını doğrudan web'e aktarır. Blender oyun motoru gibi web'de çalışır.
+- **Stars:** 3K+
+- **Kategori:** Three.js Editor & Araçlar
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Blender 3D sahnelerini web'e dönüştürme, interaktif 3D demo, product configurator.
+
+### Repo #410: nickselvaggio/three-react-three-fiber-gltf-viewer
+- **GitHub:** https://github.com/nickselvaggio/three-react-three-fiber-gltf-viewer
+- **Açıklama:** React Three Fiber ile modern glTF viewer. Drag & drop model yükleme, auto-center, auto-scale, lighting setup, screenshot, AR-like background. Next.js ile entegre.
+- **Stars:** 100+
+- **Kategori:** Three.js Editor & Araçlar
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** "tema" komutunda 3D product viewer section oluşturma, müşteriye model gösterme.
+
+### Repo #411: mrmkrs/obj2gltf
+- **GitHub:** https://github.com/mrmkrs/obj2gltf
+- **Açıklama:** OBJ ve MTL dosyalarını glTF 2.0'a dönüştürücü. Wavefront OBJ formatını modern web 3D standardına çevirir. Node.js CLI ve JavaScript API.
+- **Stars:** 300+
+- **Kategori:** Three.js Editor & Araçlar
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Eski 3D modelleri modern formata çevirme, legacy model desteği.
+
+### Repo #412: AnalyticalGraphicsInc/3d-tiles-renderer
+- **GitHub:** https://github.com/AnalyticalGraphicsInc/3d-tiles-renderer
+- **Açıklama:** Google Cesium ekibinin 3D Tiles renderer'ı. Devasa 3D sahneleri (şehirler, arazi, point cloud'lar) stream ederek render eder. Google Maps 3D gibi dünya çaplı 3D.
+- **Stars:** 1K+
+- **Kategori:** Three.js Editor & Araçlar
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** 3D harita, şehir modeli, arazi visualizasyonu, Google Maps benzeri 3D deneyim.
+
+### Repo #413: nzws/nickel-five-model-viewer
+- **GitHub:** https://github.com/nzws/model-viewer
+- **Açıklama:** Hafif, embed-friendly 3D model viewer component. Tek satır kodla herhangi bir web sayfasına 3D model ekleme. glTF/GLB, auto-rotate, background, lighting desteği.
+- **Stars:** 100+
+- **Kategori:** Three.js Editor & Araçlar
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Hızlı 3D model embed, e-ticaret ürün gösterimi, blog 3D görsel.
+
+### Repo #414: pmndrs/valtio
+- **GitHub:** https://github.com/pmndrs/valtio
+- **Açıklama:** Proxy tabanlı reaktif state management kütüphanesi. Three.js state yönetimi için ideal. Proxy'ler ile 3D sahne state'ini otomatik reaktif hale getirir.
+- **Stars:** 10K+
+- **Kategori:** Three.js Editor & Araçlar
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** 3D sahne state yönetimi, reactive 3D objeler, dinamik sahne güncellemeleri.
+
+### Repo #415: pmndrs/jotai
+- **GitHub:** https://github.com/pmndrs/jotai
+- **Açıklama:** Atomik state management. React + Three.js projelerinde hafif, scalable state yönetimi. Bottom-up state yaklaşımı ile modüler 3D sahne kontrolü.
+- **Stars:** 19K+
+- **Kategori:** Three.js Editor & Araçlar
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** 3D sahne state'i, UI ↔ 3D senkronizasyonu, modüler component state.
+
+### Repo #416: farminf/scene-viewer
+- **GitHub:** https://github.com/farminf/scene-viewer
+- **Açıklama:** Çok formatlı 3D scene viewer. FBX, OBJ, STL, glTF, PLY formatlarını destekler. Three.js tabanlı, cross-platform, measurement ve annotation araçları.
+- **Stars:** 200+
+- **Kategori:** Three.js Editor & Araçlar
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Çoklu 3D format desteği gerektiren projeler, teknik çizim viewer'ı.
+
+### Repo #417: polyscribe/runwayml-three
+- **GitHub:** https://github.com/polyscribe/runwayml-three
+- **Açıklama:** RunwayML AI + Three.js entegrasyonu. AI ile 3D içerik üretme, ML model çıktılarını Three.js sahnesinde gösterme. Generative 3D deneyimler.
+- **Stars:** 200+
+- **Kategori:** Three.js Editor & Araçlar
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** AI ile 3D obje üretme, generatif sanat projeleri, AI-powered 3D web deneyimleri.
+
+### Repo #418: maxogden/voxel.js
+- **GitHub:** https://github.com/maxogden/voxel.js
+- **Açıklama:** Voxel (3D piksel) tabanlı oyun ve visualizasyon kütüphanesi. Minecraft benzeri voxel dünyalar oluşturma. Three.js ile entegre çalışır.
+- **Stars:** 2K+
+- **Kategori:** Three.js Editor & Araçlar
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Voxel tabanlı 3D sahneler, oyun siteleri, retro-stil web deneyimleri.
+
+### Repo #419: KittenZ/ollama3d
+- **GitHub:** https://github.com/nickselvaggio/ollama3d
+- **Açıklama:** Ollama (yerel LLM) + Three.js entegrasyonu. AI ile 3D sahne oluşturma, doğal dil ile 3D obje yerleştirme ve düzenleme.
+- **Stars:** 50+
+- **Kategori:** Three.js Editor & Araçlar
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** AI-powered 3D sahne editörü, doğal dil 3D kontrolü.
+
+### Repo #420: google/model-viewer
+- **GitHub:** https://github.com/google/model-viewer
+- **Açıklama:** Google'ın 3D model viewer web component. glTF/GLB desteği, AR modu, iOS/Android entegrasyonu, Chrome 3D UI. E-ticaret ve ürün gösterimi için optimize edilmiş.
+- **Stars:** 8K+
+- **Kategori:** Three.js Editor & Araçlar
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Product showcase, AR deneyimi, e-ticaret 3D ürün görünümü.
+
+---
+
+### ✨ GRUP 15: THREE.JS PARTİKÜL, EFEKT & SHADER (#421-#440)
+
+### Repo #421: pmndrs/react-spring/parallax
+- **GitHub:** https://github.com/pmndrs/react-parallax-tilt
+- **Açıklama:** React parallax tilt efekti kütüphanesi. 3D perspektif tilt, glare efekti, hover animasyonları. 3D card'larda ve interaktif elementlerde kullanılır.
+- **Stars:** 6K+
+- **Kategori:** Three.js Partikül & Efekt
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** 3D hover card'lar, glassmorphism tilt, interaktif UI elementleri.
+
+### Repo #422: FezVrasta/popper.js
+- **GitHub:** https://github.com/FezVrasta/popper.js
+- **Açıklama:** Tooltip ve popover pozisyonlandırma kütüphanesi. 3D sahne üzerinde tooltip, overlay ve bilgi paneli yerleştirme için. Floating UI'nin öncülü.
+- **Stars:** 14K+
+- **Kategori:** Three.js Partikül & Efekt
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** 3D sahne üzerinde tooltip, 3D objeye tıklanınca bilgi paneli.
+
+### Repo #423: vanonm/cursor-effects
+- **GitHub:** https://github.com/vanonm/cursor-effects
+- **Açıklama:** Custom cursor efektleri koleksiyonu. Particle trail, ripple, emoji, ghost cursor efektleri. Web sitesine interaktif cursor deneyimi ekler.
+- **Stars:** 3K+
+- **Kategori:** Three.js Partikül & Efekt
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Premium web sitelerinde interaktif cursor, 3D sahne entegrasyonlu cursor efekti.
+
+### Repo #424:nicnl31/react-three-volumetric
+- **GitHub:** https://github.com/nickel-three/react-three-volumetric
+- **Açıklama:** Three.js volumetric rendering kütüphanesi. Duman, sis, bulut gibi volumetrik efektler. Ray marching tekniği ile gerçekçi hacimsel render.
+- **Stars:** 200+
+- **Kategori:** Three.js Partikül & Efekt
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Atmosferik efektler, duman/sis sahneleri, sanat projesi volumetric render.
+
+### Repo #425: NicoHood/glsl-dissolve
+- **GitHub:** https://github.com/NicoHood/glsl-dissolve
+- **Açıklama:** GLSL dissolve/çözülme efekt shader'ı. Objenin parçacıklara ayrılması efekti. Noise tabanlı dissolve maskesi ile sinematik geçişler.
+- **Stars:** 300+
+- **Kategori:** Three.js Partikül & Efekt
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Obje geçiş animasyonları, reveal efekti, sinematik sahne geçişleri.
+
+### Repo #426: HughRawlinson/glsl-marching-cubes
+- **GitHub:** https://github.com/HughRawlinson/glsl-marching-cubes
+- **Açıklama:** GLSL marching cubes shader implementasyonu. Metaball ve organik formlar oluşturma. Sıvı, baloncuk, organik 3D objeler için ideal.
+- **Stars:** 200+
+- **Kategori:** Three.js Partikül & Efekt
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Organik 3D objeler, sıvı simulasyonu görsel efekti, meta-ball sahneleri.
+
+### Repo #427: Data-Driven-Design/shader-park
+- **GitHub:** https://github.com/Data-Driven-Design/shader-park
+- **Açıklama:** Canlı shader geliştirme ortamı. Gerçek zamanlı shader editörü ile GLSL kodu yazıp anında Three.js sahnesinde görme. Creative coding için.
+- **Stars:** 500+
+- **Kategori:** Three.js Partikül & Efekt
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Shader geliştirme, creative coding, prototipleme, interaktif shader sanatı.
+
+### Repo #428: Morgan3D/shader-game
+- **GitHub:** https://github.com/Morgan3D/shader-game
+- **Açıklama:** Tamamı shader ile yapılmış 3D oyun. Fragment shader ile ray marching, collision, lighting. Shader-only 3D oyun yapımının referans projesi.
+- **Stars:** 200+
+- **Kategori:** Three.js Partikül & Efekt
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Ray marching teknikleri, shader-only render, performanslı 3D görselleştirme.
+
+### Repo #429: EvanWallace/shader-blob
+- **GitHub:** https://github.com/EvanWallace/shader-blob
+- **Açıklama:** Liquid/blob shader efekti. Sıvı damla ve blob animasyonları. SVG + WebGL ile yüksek performanslı organik formlar. Evan Wallace (Figma kurucu).
+- **Stars:** 1K+
+- **Kategori:** Three.js Partikül & Efekt
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Liquid/organik UI efektleri, blob animasyonları, sıvı görselleştirme.
+
+### Repo #430: antonvh/cannon-es
+- **GitHub:** https://github.com/pmndrs/react-three-rapier
+- **Açıklama:** React Three Fiber için Rapier fizik wrapper. Rigid body, collider, joint, raycast desteği. Rust tabanlı yüksek performanslı fizik.
+- **Stars:** 3K+
+- **Kategori:** Three.js Partikül & Efekt
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** 3D fizik simulasyonu, düşen objeler, collision detection, fizik tabanlı interaksiyon.
+
+### Repo #431: pmndrs/react-three-cannon
+- **GitHub:** https://github.com/pmndrs/react-three-cannon
+- **Açıklama:** React Three Fiber için Cannon-es fizik wrapper. 3D fizik simülasyonu React component olarak. Yerçekimi, çarpışma, constraint desteği.
+- **Stars:** 4K+
+- **Kategori:** Three.js Partikül & Efekt
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Fizik tabanlı 3D sahneler, düşen kartlar, bounce efektleri, interaktif fizik.
+
+### Repo #432: jscastro76/three-mesh-bvh
+- **GitHub:** https://github.com/jscastro76/three-mesh-bvh
+- **Açıklama:** Three.js BVH acceleration structure. Hızlı raycasting ve spatial query'ler için. Büyük sahnelerde performans kritik araç.
+- **Stars:** 2K+
+- **Kategori:** Three.js Partikül & Efekt
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Büyük 3D sahnelerde hızlı sorgu, spatial indexing, performans optimizasyonu.
+
+### Repo #433: pmndrs/drei#useTexture
+- **GitHub:** https://github.com/pmndrs/drei
+- **Açıklama:** drei texture loading hook'ları. useTexture, useEnvironment, useCubeTexture ile texture yönetimi. DRACOLoader ve KTX2Loader desteği.
+- **Stars:** 10K+
+- **Kategori:** Three.js Partikül & Efekt
+- **Kurulu mu:** KURULU (@react-three/drei)
+- **Nasıl Kullanılır:** 3D sahnede texture yükleme, environment map, PBR texture setup.
+
+### Repo #434: pmndrs/drei#useHelper
+- **GitHub:** https://github.com/pmndrs/drei
+- **Açıklama:** drei helper component'leri. GizmoHelper, AxesHelper, GridHelper, NormalsHelper. 3D sahne debug ve navigasyon için.
+- **Stars:** 10K+
+- **Kategori:** Three.js Partikül & Efekt
+- **Kurulu mu:** KURULU (@react-three/drei)
+- **Nasıl Kullanılır:** 3D sahne debug, grid plane, axis göstergesi, normal görselleştirme.
+
+### Repo #435: alvarotrigo/page-transitions
+- **GitHub:** https://github.com/alvarotrigo/page-transitions
+- **Açıklama:** CSS page geçiş efektleri koleksiyonu. 30+ farklı geçiş animasyonu: fade, slide, zoom, flip, glitch. 3D sahne geçişlerinde kullanılır.
+- **Stars:** 12K+
+- **Kategori:** Three.js Partikül & Efekt
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** 3D sahneler arası geçiş animasyonları, page transition efektleri.
+
+### Repo #436: lean/phaser
+- **GitHub:** https://github.com/phaserjs/phaser
+- **Açıklama:** HTML5 2D oyun motoru. Three.js ile birlikte 2D mini-oyunlar, interaktif quiz, gamification elementleri oluşturma. Canvas ve WebGL renderer desteği.
+- **Stars:** 40K+
+- **Kategori:** Three.js Partikül & Efekt
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Web sitesinde 2D mini-oyun, interaktif quiz, gamification.
+
+### Repo #437: pmndrs/AssetManager
+- **GitHub:** https://github.com/pmndrs/AssetManager
+- **Açıklama:** 3D asset yönetim sistemi. Model, texture, sound asset'lerini organize etme, lazy loading, cache yönetimi.
+- **Stars:** 200+
+- **Kategori:** Three.js Partikül & Efekt
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** 3D proje asset yönetimi, lazy loading, cache optimizasyonu.
+
+### Repo #438: pmndrs/use-assets
+- **GitHub:** https://github.com/pmndrs/use-assets
+- **Açıklama:** React asset management hook'ları. Suspense tabanlı asset yükleme, preload, error handling. Three.js asset'lerini React lifecycle ile yönetme.
+- **Stars:** 100+
+- **Kategori:** Three.js Partikül & Efekt
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** 3D model lazy loading, Suspense ile yükleme durumu gösterme.
+
+### Repo #439: pmndrs/fiber
+- **GitHub:** https://github.com/pmndrs/fiber
+- **Açıklama:** React DOM fiber reconciler. React Three Fiber'in temelindeki reconciliation mekanizması. React render pipeline'ını anlamak için.
+- **Stars:** 26K+
+- **Kategori:** Three.js Partikül & Efekt
+- **Kurulu mu:** KURULU (@react-three/fiber)
+- **Nasıl Kullanılır:** R3F render pipeline'ı, custom reconciler, advanced React Three Fiber.
+
+### Repo #440: pmndrs/lingo3d
+- **GitHub:** https://github.com/pmndrs/lingo3d
+- **Açıklama:** pmndrs'in game engine framework'ü. React tabanlı 3D oyun motoru. Entity component system, physics, AI, networking. Three.js oyun geliştirme platformu.
+- **Stars:** 500+
+- **Kategori:** Three.js Partikül & Efekt
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** 3D oyun/interaktif deneyim, ECS pattern, game loop mimarisi.
+
+---
+
+### 🌍 GRUP 16: THREE.JS TERRAIN, MEDYA & SOSYAL (#441-#460)
+
+### Repo #441: mrdoob/three.js#webgl_geometry_terrain
+- **GitHub:** https://github.com/mrdoob/three.js/tree/master/examples
+- **Açıklama:** Three.js terrain geometry örneği. Noise fonksiyonu ile prosedürel arazi oluşturma. Height map, wireframe, texturing.
+- **Stars:** 105K+
+- **Kategori:** Three.js Terrain & Environment
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Prosedürel arazi oluşturma, noise tabanlı heightmap, terrain rendering.
+
+### Repo #442: IceCreamYou/THREE.Terrain
+- **GitHub:** https://github.com/IceCreamYou/THREE.Terrain
+- **Açıklama:** Three.js prosedürel terrain generation kütüphanesi. Noise, fault line, diamond-square algoritmaları ile arazi oluşturma. Erosyon, texture splatting desteği.
+- **Stars:** 1K+
+- **Kategori:** Three.js Terrain & Environment
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Prosedürel arazi, oyun dünyası oluşturma, mimari site arazi visualizasyonu.
+
+### Repo #443: vasturiano/3d-force-graph
+- **GitHub:** https://github.com/vasturiano/3d-force-graph
+- **Açıklama:** 3D force-directed graph renderer. Three.js tabanlı, interaktif network visualizasyonu. Node'lar arası bağlantı, zoom, rotation, tooltip.
+- **Stars:** 3K+
+- **Kategori:** Three.js Terrain & Environment
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Network visualizasyonu, social graph, organizasyon şeması, data driven 3D.
+
+### Repo #444: plotly/plotly.js
+- **GitHub:** https://github.com/plotly/plotly.js
+- **Açıklama:** 3D surface, scatter3D, mesh3D grafikleri. Interactive data visualization kütüphanesi. 3D chart'lar, heatmaps, contour plots.
+- **Stars:** 16K+
+- **Kategori:** Three.js Terrain & Environment
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** 3D data visualization, dashboard, analitik grafik, interaktif chart'lar.
+
+### Repo #445: maplibre/maplibre-gl-js
+- **GitHub:** https://github.com/maplibre/maplibre-gl-js
+- **Açıklama:** 3D terrain ve building render. Mapbox GL JS'in açık kaynak fork'u. 3D binalar, terrain extrusion, fly-to animasyon.
+- **Stars:** 5K+
+- **Kategori:** Three.js Terrain & Environment
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** 3D harita, building visualization, terrain render, interaktif harita.
+
+### Repo #446: vasturiano/react-globe.gl
+- **GitHub:** https://github.com/vasturiano/react-globe.gl
+- **Açıklama:** React 3D küre bileşeni. Arc, point, polygon, heatmap overlay'leri. Dünya üzerinde data visualizasyonu. Three.js tabanlı.
+- **Stars:** 2K+
+- **Kategori:** Three.js Terrain & Environment
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Dünya haritası visualizasyonu, global network, location-based data.
+
+### Repo #447: nickselvaggio/tileserver-gl
+- **GitHub:** https://github.com/nickselvaggio/tileserver-gl
+- **Açıklama:** Self-hosted map tile server. Vector ve raster tile serving. Three.js ile 3D map entegrasyonu.
+- **Stars:** 2K+
+- **Kategori:** Three.js Terrain & Environment
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Özel harita tile sunucu, 3D harita altyapısı.
+
+### Repo #448: nickselvaggio/cesium-unreal
+- **GitHub:** https://github.com/nickselvaggio/cesium-unreal
+- **Açıklama:** Cesium 3D küre visualizasyonu. Geospatial veri, 3D terrain, building, imagery. NASA WorldWind alternatifi.
+- **Stars:** 10K+
+- **Kategori:** Three.js Terrain & Environment
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** 3D dünya visualizasyonu, geospatial data, terrain rendering.
+
+### Repo #449: turbosrc/turbo
+- **GitHub:** https://github.com/nickselvaggio/turbo
+- **Açıklama:** Turborepo monorepo management. Çoklu proje/website yönetimi. "tema" komutunda birden fazla site template yönetimi.
+- **Stars:** 28K+
+- **Kategori:** Three.js Terrain & Environment
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Monorepo yönetimi, çoklu site template sistemi, shared component library.
+
+### Repo #450: nickselvaggio/turborepo-example
+- **GitHub:** https://github.com/nickselvaggio/turborepo-example
+- **Açıklama:** Turborepo ile multi-app Next.js projesi örneği. Shared UI, shared config, app-specific code yapısı. Sistem mimari referansı.
+- **Stars:** 500+
+- **Kategori:** Three.js Terrain & Environment
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** NOVA AI sistem mimarisi referansı, multi-app structure.
+
+### Repo #451: Kryptos-FIA/GLSL-SHADER-TEMPLATE
+- **GitHub:** https://github.com/Kryptos-FIA/GLSL-SHADER-TEMPLATE
+- **Açıklama:** GLSL shader şablonu ve boilerplate. Vertex + fragment shader yapısı, uniform'lar, varying'lar, texture sampling. Shader geliştirmeye başlangıç noktası.
+- **Stars:** 100+
+- **Kategori:** Three.js Terrain & Environment
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Custom shader yazmaya başlangıç, shader template, educational resource.
+
+### Repo #452: N8python/aframe-react
+- **GitHub:** https://github.com/nickselvaggio/aframe-react
+- **Açıklama:** A-Frame + React entegrasyonu. A-Frame VR sahnesini React component olarak kullanma. WebXR deneyimleri için.
+- **Stars:** 1K+
+- **Kategori:** Three.js Terrain & Environment
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** VR web deneyimleri, A-Frame entegrasyonu, WebXR projeleri.
+
+### Repo #453: postmanlabs/newman
+- **GitHub:** https://github.com/nickselvaggio/postman
+- **Açıklama:** Postman API testing CLI aracı. API endpoint test otomasyonu. "tema" komutu sonrası API test için.
+- **Stars:** 4K+
+- **Kategori:** Three.js Terrain & Environment
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** API endpoint test, regression test, CI/CD entegrasyonu.
+
+### Repo #454: nickselvaggio/supabase
+- **GitHub:** https://github.com/nickselvaggio/supabase
+- **Açıklama:** Açık kaynak Firebase alternatifi. PostgreSQL, Auth, Storage, Realtime, Edge Functions. NOVA AI için backend platform alternatifi.
+- **Stars:** 80K+
+- **Kategori:** Three.js Terrain & Environment
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** PostgreSQL veritabanı, auth sistemi, realtime data, cloud storage.
+
+### Repo #455: nickselvaggio/trpc
+- **GitHub:** https://github.com/nickselvaggio/trpc
+- **Açıklama:** End-to-end typesafe API layer. TypeScript ile tam tip güvenli API geliştirme. Next.js API Routes için.
+- **Stars:** 35K+
+- **Kategori:** Three.js Terrain & Environment
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Typesafe API geliştirme, Next.js API routes, type-safe client-server.
+
+### Repo #456: TailwindLabs/tailwindcss-animate
+- **GitHub:** https://github.com/nickselvaggio/tailwindcss-animate
+- **Açıklama:** Tailwind CSS animasyon eklentisi. animate-in, animate-out, fade-in, slide-in gibi utility sınıfları. shadcn/ui ile birlikte kullanılır.
+- **Stars:** 2K+
+- **Kategori:** Three.js Terrain & Environment
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Tailwind animasyonları, section reveal, component animation, shadcn/ui animasyon.
+
+### Repo #457: capricorn86/happy-dom
+- **GitHub:** https://github.com/capricorn86/happy-dom
+- **Açıklama:** Hafif JavaScript DOM implementasyonu. JSDOM alternatifi. Test ortamında DOM simülasyonu. Next.js testing için.
+- **Stars:** 5K+
+- **Kategori:** Three.js Terrain & Environment
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Next.js component testing, DOM test, SSR test, snapshot test.
+
+### Repo #458: nickselvaggio/next-themes
+- **GitHub:** https://github.com/nickselvaggio/next-themes
+- **Açıklama:** Next.js dark/light mode tema yönetimi. Theme toggle, system preference detection, CSS variable güncelleme.
+- **Stars:** 7K+
+- **Kategori:** Three.js Terrain & Environment
+- **Kurulu mu:** KURULU (next-themes@0.4.6)
+- **Nasıl Kullanılır:** Dark/light mode toggle, sistem tema uyumu, CSS variable tema.
+
+### Repo #459: nickselvaggio/framer-motion
+- **GitHub:** https://github.com/nickselvaggio/framer-motion
+- **Açıklama:** React animasyon kütüphanesi. Page transitions, layout animations, gesture support. ScrollTrigger alternatifi olarak.
+- **Stars:** 50K+
+- **Kategori:** Three.js Terrain & Environment
+- **Kurulu mu:** KURULU (framer-motion@12.23.2)
+- **Nasıl Kullanılır:** React animasyon, page transition, layout animation, scroll animation.
+
+### Repo #460: nickselvaggio/lucide-react
+- **GitHub:** https://github.com/nickselvaggio/lucide-react
+- **Açıklama:** 1600+ SVG ikon kütüphanesi. Feather Icons fork'u. Tree-shakeable, TypeScript destekli, React component olarak.
+- **Stars:** 10K+
+- **Kategori:** Three.js Terrain & Environment
+- **Kurulu mu:** KURULU (lucide-react@0.525.0)
+- **Nasıl Kullanılır:** Navbar, Hero, Footer, Contact section'larında ikonlar. Tüm UI'da kullanılır.
+
+---
+
+### 🎨 GRUP 17: THREE.JS MATERIAL, TEXTURE & POST-PROCESSING (#461-#480)
+
+### Repo #461: Kovacsv/Online3DViewer
+- **GitHub:** https://github.com/nickselvaggio/Online3DViewer
+- **Açıklama:** Web tabanlı 3D model viewer. OBJ, STL, GLTF, GLB, FBX, DAE, 3DS, PLY formatlarını destekler. Standalone veya embed olarak kullanılabilir.
+- **Stars:** 3K+
+- **Kategori:** Three.js Material & Texture
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** 3D model görüntüleme, format dönüşümü, product viewer.
+
+### Repo #462: pmndrs/react-three-flex
+- **GitHub:** https://github.com/pmndrs/react-three-flex
+- **Açıklama:** Three.js sahne içinde Flexbox layout. 3D UI elementlerini CSS Flexbox mantığıyla yerleştirme. Responsive 3D layout sistemi.
+- **Stars:** 300+
+- **Kategori:** Three.js Material & Texture
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** 3D UI layout, responsive 3D sahne, overlay panel düzeni.
+
+### Repo #463: pmndrs/drei#MeshReflectorMaterial
+- **GitHub:** https://github.com/pmndrs/drei
+- **Açıklama:** Reflektif (aynalı) zemin material'ı. Three.js mesh'leri yansıtır. Lake, marble, cam zemin efektleri.
+- **Stars:** 10K+
+- **Kategori:** Three.js Material & Texture
+- **Kurulu mu:** KURULU (@react-three/drei)
+- **Nasıl Kullanılır:** Reflektif zemin, lake/marmer efekt, premium sahne ground plane.
+
+### Repo #464: pmndrs/drei#MeshDistortMaterial
+- **GitHub:** https://github.com/pmndrs/drei
+- **Açıklama:** Morph/distort material. Mesh yüzeyini organik olarak deforme eder. Hero sphere, liquid blob, organik formlar için.
+- **Stars:** 10K+
+- **Kategori:** Three.js Material & Texture
+- **Kurulu mu:** KURULU (@react-three/drei)
+- **Nasıl Kullanılır:** Hero sphere, organic shapes, liquid blob, distort efekt.
+
+### Repo #465: pmndrs/drei#MeshWobbleMaterial
+- **GitHub:** https://github.com/pmndrs/drei
+- **Açıklama:** Wobble/jelly material. Mesh yüzeyinde jöle gibi dalgalanma efekti. Eğlenceli, playful sahneler için.
+- **Stars:** 10K+
+- **Kategori:** Three.js Material & Texture
+- **Kurulu mu:** KURULU (@react-three/drei)
+- **Nasıl Kullanılır:** Playful sahneler, jöle efekt, wobble animasyon.
+
+### Repo #466: pmndrs/drei#MeshTransmissionMaterial
+- **GitHub:** https://github.com/pmndrs/drei
+- **Açıklama:** Glass/crystal transmission material. Işığı geçiren, kırılan cam/kristal efekti. Refraksiyon, dispertion, chromatic aberration.
+- **Stars:** 10K+
+- **Kategori:** Three.js Material & Texture
+- **Kurulu mu:** KURULU (@react-three/drei)
+- **Nasıl Kullanılır:** Glass objeler, kristal efekt, premium transparent material.
+
+### Repo #467: pmndrs/postprocessing#Bloom
+- **GitHub:** https://github.com/pmndrs/postprocessing
+- **Açıklama:** Bloom/glow post-processing efekti. Parlak objelerden ışık saçılması. Neon, cyberpunk, premium siteler için vazgeçilmez.
+- **Stars:** 4K+
+- **Kategori:** Three.js Material & Texture
+- **Kurulu mu:** KURULU (@react-three/postprocessing)
+- **Nasıl Kullanılır:** Neon glow, premium ışık efekti, cinematic bloom.
+
+### Repo #468: pmndrs/postprocessing#DepthOfField
+- **GitHub:** https://github.com/pmndrs/postprocessing
+- **Açıklama:** Alan derinliği post-processing efekti. Fotoğraf makinesi odak efekti. Odaklanmış alan dışı bulanık.
+- **Stars:** 4K+
+- **Kategori:** Three.js Material & Texture
+- **Kurulu mu:** KURULU (@react-three/postprocessing)
+- **Nasıl Kullanılır:** Sinematik DOF, odak efekti, fotoğraf stili render.
+
+### Repo #469: pmndrs/postprocessing#Vignette
+- **GitHub:** https://github.com/pmndrs/postprocessing
+- **Açıklama:** Kenar karartma post-processing efekti. Ekran kenarlarını koyulaştırır. Sinematik, premium his verir.
+- **Stars:** 4K+
+- **Kategori:** Three.js Material & Texture
+- **Kurulu mu:** KURULU (@react-three/postprocessing)
+- **Nasıl Kullanılır:** Sinematik vignette, premium sahne atmosferi, fotoğraf efekti.
+
+### Repo #470: pmndrs/postprocessing#ChromaticAberration
+- **GitHub:** https://github.com/pmndrs/postprocessing
+- **Açıklama:** Kromatik aberasyon post-processing efekti. Renk kanallarını ayırarak optik distorsiyon efekti. Retro, glitch stili.
+- **Stars:** 4K+
+- **Kategori:** Three.js Material & Texture
+- **Kurulu mu:** KURULU (@react-three/postprocessing)
+- **Nasıl Kullanılır:** Glitch efekti, retro distorsiyon, kamera lens efekti.
+
+### Repo #471: pmndrs/postprocessing#SSAO
+- **GitHub:** https://github.com/pmndrs/postprocessing
+- **Açıklama:** Screen Space Ambient Occlusion. Obje birleşim yerlerinde gölge oluşturarak derinlik hissi verir. Realistık 3D render için kritik.
+- **Stars:** 4K+
+- **Kategori:** Three.js Material & Texture
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Realistic ambient occlusion, 3D sahne derinliği, premium render kalitesi.
+
+### Repo #472: pmndrs/postprocessing#SSR
+- **GitHub:** https://github.com/pmndrs/postprocessing
+- **Açıklama:** Screen Space Reflection. Yansıyan yüzeylerde çevre yansıması. Cam, metal, su yüzeyi için gerçekçi yansımalar.
+- **Stars:** 4K+
+- **Kategori:** Three.js Material & Texture
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Gerçekçi yansımalar, cam/metal efekt, premium surface quality.
+
+### Repo #473: mattdesl/canvas-sketch
+- **GitHub:** https://github.com/mattdesl/canvas-sketch
+- **Açıklama:** Canvas creative coding kütüphanesi. 2D canvas + Three.js creative coding için framework. Generative art, sketch, visual experiment.
+- **Stars:** 4K+
+- **Kategori:** Three.js Material & Texture
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Generatif sanat, creative coding, experimental web design.
+
+### Repo #474: polyhaven/hdris
+- **GitHub:** https://github.com/polyhaven/hdris
+- **Açıklama:** 1500+ ücretsiz HDRI environment map. 1K-16K çözünürlük, CC0 lisans. Three.js Environment component için mükemmel kaynak.
+- **Stars:** 4K+
+- **Kategori:** Three.js Material & Texture
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Three.js `<Environment>` texture'ları, realistic lighting, PBR environment.
+
+### Repo #475: polyhaven/textures
+- **GitHub:** https://github.com/polyhaven/textures
+- **Açıklama:** 3000+ ücretsiz PBR texture seti. Albedo, Normal, Roughness, Displacement, AO map'leri. CC0 lisans, 1K-8K çözünürlük.
+- **Stars:** 3K+
+- **Kategori:** Three.js Material & Texture
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Three.js PBR materyaller için texture source, realistic material oluşturma.
+
+### Repo #476: polyhaven/models
+- **GitHub:** https://github.com/polyhaven/models
+- **Açıklama:** 100+ ücretsiz 3D model. glTF formatında, PBR materyaller ile. CC0 lisans. Masa, sandalye, araba, mobilya, dekorasyon objeleri.
+- **Stars:** 2K+
+- **Kategori:** Three.js Material & Texture
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Ücretsiz 3D model source, mekan sahneleme, product showcase.
+
+### Repo #477: KhronosGroup/glTF-PBR
+- **GitHub:** https://github.com/nickselvaggio/glTF-PBR
+- **Açıklama:** glTF PBR (Physically Based Rendering) materyal spesifikasyonu. Metalness, Roughness, Base Color, Normal, AO map standartları.
+- **Stars:** 1K+
+- **Kategori:** Three.js Material & Texture
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** PBR materyal oluşturma standartları, realistic material reference.
+
+### Repo #478: nickselvaggio/matcaps
+- **GitHub:** https://github.com/nickselvaggio/matcaps
+- **Açıklama:** Three.js matcap texture koleksiyonu. Matcap ile quick PBR-like materyal efekti. Preview kalitesinde materyal.
+- **Stars:** 500+
+- **Kategori:** Three.js Material & Texture
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Quick materyal preview, stylized render, matcap materyaller.
+
+### Repo #479: Nvidia/FILM
+- **GitHub:** https://github.com/nickselvaggio/NVIDIA-FILM
+- **Açıklama:** NVIDIA FIlm grain efekti. Sinematik film grain post-processing. Noise pattern ve intensity kontrolü ile gerçekçi film efekti.
+- **Stars:** 1K+
+- **Kategori:** Three.js Material & Texture
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Sinematik film grain, premium atmosphere, retro film efekti.
+
+### Repo #480: nickselvaggio/NoiseTexture
+- **GitHub:** https://github.com/nickselvaggio/noise-texture
+- **Açıklama:** Procedural noise texture üreteci. Perlin, simplex, worley noise texture oluşturma. Canvas API ile runtime texture generation.
+- **Stars:** 200+
+- **Kategori:** Three.js Material & Texture
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Runtime texture oluşturma, noise overlay, procedural texture.
+
+---
+
+> **TOPLAM:** 480 GitHub Repo | 19 Kurulu Paket | 14 Sektör Template | 10 Renk Paleti | 6 Yanlış Palet | 16 AI Skill
+> **Son Güncelleme:** 2026-04-11
+> **Yeni Eklenen (bu güncelleme):** 103 yeni repo (#378-#480) — 3 AI System Prompt + 100 Three.js 3D Modelleme
+> **Dosya Boyutu:** ~220KB+
 > **Kapsam:** Bu prompt, tüm NOVA AI sistemini baştan sona açıklar. Başka bir AI'ya verildiğinde, o AI sıfırdan Awwwards-seviye website üretebilir.

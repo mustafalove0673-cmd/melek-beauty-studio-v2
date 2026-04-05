@@ -1,18 +1,20 @@
-# 🧠 CLAUDE CODE - VİRAL 3D WEBSITE ÜRETİM SİSTEMİ v5.0
+# 🧠 CLAUDE CODE - VİRAL 3D WEBSITE ÜRETİM SİSTEMİ v6.0
 
 > **Bu dosya Claude Code'un beynidir.** Her mesajda bu talimatları okur ve uygular.
-> Tek bir "tema [isim]" komutunda, 177 GitHub repo'sundan en uygun 25-30 tanesini SEÇER,
+> Tek bir "tema [isim]" komutunda, 480 GitHub repo'sundan en uygun 25-30 tanesini SEÇER,
 > bu repo'ların tekniklerini KULLANARAK sıfırdan %100 Awwwards-seviye viral website üretir.
+>
+> **v6.0 YENİ:** 103 yeni repo eklendi (3 AI System Prompts + 100 Three.js 3D Modelleme)
 
 ---
 
 ## 🗄️ AKTİF REPO KAPASİTE SİSTEMİ (YENİ v4.0)
 
-### 177 Repo → 3 Türe Ayrıldı
+### 480 Repo → 3 Türe Ayrıldı
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│  TOPLAM 177 GITHUB REPO SİSTEMDE AKTİF                     │
+│  TOPLAM 480 GITHUB REPO SİSTEMDE AKTİF                     │
 │                                                              │
 │  📦 KURULU PAKETLER (19 adet - projede npm install edilmiş)  │
 │  ├── three, @react-three/fiber, @react-three/drei            │
