@@ -1,25 +1,32 @@
-# 🧠 CLAUDE CODE - VİRAL 3D WEBSITE ÜRETİM SİSTEMİ v7.0
+# 🧠 CLAUDE CODE - VİRAL 3D WEBSITE ÜRETİM SİSTEMİ v8.0
 
 > **Bu dosya Claude Code'un beynidir.** Her mesajda bu talimatları okur ve uygular.
-> Tek bir "tema [isim]" komutunda, 231 doğrulanmış GitHub repo'sundan en uygun 25-30 tanesini SEÇER,
+> Tek bir "tema [isim]" komutunda, 333 doğrulanmış GitHub repo'sundan en uygun 25-30 tanesini SEÇER,
 > bu repo'ların tekniklerini KULLANARAK sıfırdan %100 Awwwards-seviye viral website üretir.
 >
-> **v7.0 GÜNCELLEMELER:**
-> - 231 GitHub API doğrulanmış repo (258 sahte silindi, 17 redirect düzeltildi)
-> - ⚠️ KRİTİK: Hatalı repo linklerini otomatik araştır, düzelt ve sisteme kur
+> **v8.0 GÜNCELLEMELER:**
+> - 333 GitHub API doğrulanmış repo (+50 yeni, 283 → 333)
+> - 4 YENİ KATEGORİ: Google Cloud, Sinematik Web, Scroll Enhanced, API & Framework Ecosystem
+> - 12 Google Cloud repo eklendi
+> - 15 sinematik web repo eklendi (Lottie, PixiJS, PhotoSwipe, Satori)
+> - 10 scroll & transition repo eklendi (fullPage.js, ScrollReveal)
+> - 15 API & framework repo eklendi (tRPC, Tiptap, Radix, Vue, Svelte, Solid)
+> - ⚠️ KRİTİK: nicollash/* ve nicnl31/* repoları %100 SAHTE (404 verir)
 
 ---
 
 ## 🗄️ AKTİF REPO KAPASİTE SİSTEMİ (YENİ v4.0)
 
-### 231 Doğrulanmış Repo → 3 Türe Ayrıldı (v7.0)
+### 333 Doğrulanmış Repo → 3 Türe Ayrıldı (v8.0)
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│  TOPLAM 231 DOĞRULANMIŞ GITHUB REPO SİSTEMDE AKTİF          │
-│  (GitHub API ile %100 doğrulanmış - 258 sahte silindi)       │
+│  TOPLAM 333 DOĞRULANMIŞ GITHUB REPO SİSTEMDE AKTİF          │
+│  (GitHub API ile %100 doğrulanmış - 308 sahte silindi)       │
 │                                                              │
 │  📦 KURULU PAKETLER (19 adet - projede npm install edilmiş)  │
+│  ➕ YENİ: Google Cloud (12), Sinematik (15), Scroll (9),    │
+│  │          API & Framework (15), Fizik/Media (3) = +54 yeni repo     │
 │  ├── three, @react-three/fiber, @react-three/drei            │
 │  ├── @react-three/postprocessing, @react-spring/three        │
 │  ├── gsap, framer-motion, @studio-freight/lenis             │

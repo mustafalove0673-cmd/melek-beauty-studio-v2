@@ -17,17 +17,8 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "MELAKON | Premium Villa Construction & Architectural Excellence",
-  description:
-    "Luxury villa construction and architectural design. Where vision meets craftsmanship. Building dreams into reality with 25+ years of excellence.",
-  keywords: [
-    "villa construction",
-    "luxury homes",
-    "architecture",
-    "interior design",
-    "premium construction",
-    "MELAKON",
-  ],
+  title: "3D Web Sistem | Premium Web Development",
+  description: "Premium web development with 3D capabilities",
 };
 
 export default function RootLayout({

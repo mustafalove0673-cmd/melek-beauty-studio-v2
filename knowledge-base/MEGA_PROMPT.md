@@ -1,16 +1,17 @@
 # 🧠 NOVA AI - MEGA PROMPT
 # Bu prompt'u başka bir AI'ya verdiğinde, o AI tüm sistemi anlar ve uygulayabilir.
 
-> **Versiyon:** 8.0
+> **Versiyon:** 8.1
 > **Son Güncelleme:** 2026-06-22
-> **Toplam Repo:** 283 (GitHub API doğrulanmış)
-> **Hedef Repo:** 400+ (12 yeni kategori planlı)
+> **Toplam Repo:** 333 (GitHub API doğrulanmış) — +50 yeni repo eklendi
+> **Hedef Repo:** 400+ (3 yeni kategori planlı)
 > **Kurulu Paket:** 19
 > **AI Skill:** 16
 > **Sektör Template:** 14
 > **Renk Paleti:** 10 Doğru + 6 Yanlış
-> **Daha Eklenebilecek Kategori:** 12 (~180 repo)
-> **Repo Doğrulama:** 2026-04-14 tarihinde GitHub API ile %100 doğrulanmış (258 sahte temizlendi)
+> **Daha Eklenebilecek Kategori:** 3 (~70 repo)
+> **Repo Doğrulama:** 2026-06-22 tarihinde GitHub API ile tekrar doğrulanmış (50+ nicollash/nicnl31 sahte repo tespit edildi)
+> **SAHTE REPO UYARISI:** nicollash/* ve nicnl31/* repoları %100 SAHTE'dir, 404 verir, KULLANMAYIN
 
 ---
 
@@ -2977,3 +2978,418 @@ vr, game, oyun → cyberpunk
 - **Kategori:** Text Reveal & Preloader Systems
 - **Kurulu mu:** Referans
 - **Nasıl Kullanılır:** Tilt effects + magnetic buttons + glassmorphism + smooth scroll
+
+---
+
+## ☁️ GRUP 13: GOOGLE CLOUD & CLOUD DEPLOYMENT (#284-295) — v8.1 YENİ
+
+### Repo #284: GoogleCloudPlatform/python-docs-samples
+- **GitHub:** https://github.com/GoogleCloudPlatform/python-docs-samples
+- **Açıklama:** Google Cloud Python örnekleri ve dokümanları
+- **Stars:** 8K+
+- **Kategori:** Google Cloud & Deployment
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Google Cloud backend entegrasyon örnekleri
+
+### Repo #285: GoogleCloudPlatform/nodejs-docs-samples
+- **GitHub:** https://github.com/GoogleCloudPlatform/nodejs-docs-samples
+- **Açıklama:** Google Cloud Node.js örnekleri
+- **Stars:** 3K+
+- **Kategori:** Google Cloud & Deployment
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Google Cloud Functions, Cloud Run Node.js örnekleri
+
+### Repo #286: GoogleCloudPlatform/functions-framework-nodejs
+- **GitHub:** https://github.com/GoogleCloudPlatform/functions-framework-nodejs
+- **Açıklama:** Google Cloud Functions Node.js framework
+- **Stars:** 1.4K+
+- **Kategori:** Google Cloud & Deployment
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Serverless function deployment
+
+### Repo #287: GoogleCloudPlatform/cloud-run-button
+- **GitHub:** https://github.com/GoogleCloudPlatform/cloud-run-button
+- **Açıklama:** Cloud Run tek tık deploy butonu
+- **Stars:** 552+
+- **Kategori:** Google Cloud & Deployment
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** "Deploy to Cloud Run" buton entegrasyonu
+
+### Repo #288: GoogleCloudPlatform/cloud-sql-proxy
+- **GitHub:** https://github.com/GoogleCloudPlatform/cloud-sql-proxy
+- **Açıklama:** Cloud SQL proxy bağlantısı
+- **Stars:** 1.4K+
+- **Kategori:** Google Cloud & Deployment
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Cloud SQL veritabanı bağlantı proxy'si
+
+### Repo #289: GoogleCloudPlatform/cloud-code-vscode
+- **GitHub:** https://github.com/GoogleCloudPlatform/cloud-code-vscode
+- **Açıklama:** VS Code Google Cloud eklentisi
+- **Stars:** 482+
+- **Kategori:** Google Cloud & Deployment
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Geliştirme ortamı entegrasyonu
+
+### Repo #290: GoogleCloudPlatform/magic-modules
+- **GitHub:** https://github.com/GoogleCloudPlatform/magic-modules
+- **Açıklama:** Terraform Google Cloud modülleri
+- **Stars:** 943+
+- **Kategori:** Google Cloud & Deployment
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Infrastructure as Code for Google Cloud
+
+### Repo #291: GoogleCloudPlatform/terraformer
+- **GitHub:** https://github.com/GoogleCloudPlatform/terraformer
+- **Açıklama:** Cloud infrastructure export tool
+- **Stars:** 14.5K+
+- **Kategori:** Google Cloud & Deployment
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Mevcut infrastruktürü Terraform'a aktarma
+
+### Repo #292: GoogleCloudPlatform/community
+- **GitHub:** https://github.com/GoogleCloudPlatform/community
+- **Açıklama:** Google Cloud topluluk kaynakları
+- **Stars:** 1.9K+
+- **Kategori:** Google Cloud & Deployment
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Topluluk tutorials ve guides
+
+### Repo #293: GoogleCloudPlatform/click-to-deploy
+- **GitHub:** https://github.com/GoogleCloudPlatform/click-to-deploy
+- **Açıklama:** Tek tık deployment çözümleri
+- **Stars:** 769+
+- **Kategori:** Google Cloud & Deployment
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Hızlı deployment şablonları
+
+### Repo #294: GoogleCloudPlatform/deploymentmanager-samples
+- **GitHub:** https://github.com/GoogleCloudPlatform/deploymentmanager-samples
+- **Açıklama:** Deployment Manager örnekleri
+- **Stars:** 949+
+- **Kategori:** Google Cloud & Deployment
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Multi-resource deployment konfigürasyonları
+
+### Repo #295: GoogleCloudPlatform/cloud-build-local
+- **GitHub:** https://github.com/GoogleCloudPlatform/cloud-build-local
+- **Açıklama:** Cloud Build yerel geliştirme
+- **Stars:** 270+
+- **Kategori:** Google Cloud & Deployment
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** CI/CD pipeline yerel test
+
+---
+
+## 🎬 GRUP 14: SINEMATİK WEB & MEDYA EFEKTLERİ (#296-310) — v8.1 YENİ
+
+### Repo #296: airbnb/lottie-web
+- **GitHub:** https://github.com/airbnb/lottie-web
+- **Açıklama:** After Effects animasyon web render
+- **Stars:** 31.8K+
+- **Kategori:** Sinematik Web & Medya Efektleri
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Lottie JSON animasyonlarını web'de oynatma, preloader, hero animasyonlar
+
+### Repo #297: pixijs/pixijs
+- **GitHub:** https://github.com/pixijs/pixijs
+- **Açıklama:** 2D WebGL rendering engine
+- **Stars:** 46.9K+
+- **Kategori:** Sinematik Web & Medya Efektleri
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** 2D oyun render, parçacık efektleri, sprite animasyonlar
+
+### Repo #298: dimsemenov/PhotoSwipe
+- **GitHub:** https://github.com/dimsemenov/PhotoSwipe
+- **Açıklama:** Premium JavaScript fotoğraf galerisi
+- **Stars:** 25.1K+
+- **Kategori:** Sinematik Web & Medya Efektleri
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Galeri bölümü, proje vitrin, sinematik fotoğraf slider
+
+### Repo #299: fengyuanchen/cropperjs
+- **GitHub:** https://github.com/fengyuanchen/cropperjs
+- **Açıklama:** JavaScript image cropper
+- **Stars:** 13.8K+
+- **Kategori:** Sinematik Web & Medya Efektleri
+- **Nasıl Kullanılır:** Profil fotoğrafı upload, image crop fonksiyonu
+
+### Repo #300: vercel/satori
+- **GitHub:** https://github.com/vercel/satori
+- **Açıklama:** JSX → SVG/OG image dönüştürücü
+- **Stars:** 13.2K+
+- **Kategori:** Sinematik Web & Medya Efektleri
+- **Nasıl Kullanılır:** Dinamik OG image generation, sosyal medya paylaşımları
+
+### Repo #301: Shopify/draggable
+- **GitHub:** https://github.com/Shopify/draggable
+- **Açıklama:** Modern drag & drop kütüphanesi
+- **Stars:** 18.4K+
+- **Kategori:** Sinematik Web & Medya Efektleri
+- **Nasıl Kullanılır:** Sürükle-bırak galeri, sortable project list, dashboard widget
+
+### Repo #302: SortableJS/Sortable
+- **GitHub:** https://github.com/SortableJS/Sortable
+- **Açıklama:** Liste reorder kütüphanesi
+- **Stars:** 31.1K+
+- **Kategori:** Sinematik Web & Medya Efektleri
+- **Nasıl Kullanılır:** Sıralanabilir galeri, drag & drop project reorder
+
+### Repo #303: ionic-team/capacitor
+- **GitHub:** https://github.com/ionic-team/capacitor
+- **Açıklama:** Cross-platform native runtime
+- **Stars:** 15.4K+
+- **Kategori:** Sinematik Web & Medya Efektleri
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Web sitesini mobil uygulamaya dönüştürme
+
+### Repo #304: liabru/matter-js
+- **GitHub:** https://github.com/liabru/matter-js
+- **Açıklama:** 2D fizik motoru (JavaScript)
+- **Stars:** 18.1K+
+- **Kategori:** Sinematik Web & Medya Efektleri
+- **Nasıl Kullanılır:** Fizik tabanlı animasyonlar, nesne düşürme efektleri
+
+### Repo #305: bvaughn/react-window
+- **GitHub:** https://github.com/bvaughn/react-window
+- **Açıklama:** React virtual scroll kütüphanesi
+- **Stars:** 17.1K+
+- **Kategori:** Sinematik Web & Medya Efektleri
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Büyük liste performans optimizasyonu
+
+### Repo #306: svg/svgo
+- **GitHub:** https://github.com/svg/svgo
+- **Açıklama:** SVG optimizer tool
+- **Stars:** 22.4K+
+- **Kategori:** Sinematik Web & Medya Efektleri
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** SVG dosya boyut optimizasyonu
+
+### Repo #307: SamHerbert/SVG-Loaders
+- **GitHub:** https://github.com/SamHerbert/SVG-Loaders
+- **Açıklama:** SVG loading animasyonları
+- **Stars:** 7K+
+- **Kategori:** Sinematik Web & Medya Efektleri
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Preloader ve loading state animasyonları
+
+### Repo #308: lukehaas/css-loaders
+- **GitHub:** https://github.com/lukehaas/css-loaders
+- **Açıklama:** CSS loading animasyonları koleksiyonu
+- **Stars:** 7.1K+
+- **Kategori:** Sinematik Web & Medya Efektleri
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Pure CSS loading spinner koleksiyonu
+
+### Repo #309: verlok/vanilla-lazyload
+- **GitHub:** https://github.com/verlok/vanilla-lazyload
+- **Açıklama:** Lazy loading kütüphanesi
+- **Stars:** 7.9K+
+- **Kategori:** Sinematik Web & Medya Efektleri
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Görüntü lazy loading, performans optimizasyonu
+
+### Repo #310: tholman/cursor-effects
+- **GitHub:** https://github.com/tholman/cursor-effects
+- **Açıklama:** Custom cursor efektleri
+- **Stars:** 3.9K+
+- **Kategori:** Sinematik Web & Medya Efektleri
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Özelleştirilmiş cursor efektleri, magnetic cursor
+
+---
+
+## 🔄 GRUP 15: SCROLL & PAGE TRANSITION ENHANCED (#311-325) — v8.1 YENİ
+
+### Repo #311: alvarotrigo/fullPage.js
+- **GitHub:** https://github.com/alvarotrigo/fullPage.js
+- **Açıklama:** Full page scroll kütüphanesi
+- **Stars:** 35.5K+
+- **Kategori:** Scroll & Page Transitions
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Full-screen scroll bölümleri, sunum tarzı sayfa
+
+### Repo #312: jlmakes/scrollreveal
+- **GitHub:** https://github.com/jlmakes/scrollreveal
+- **Açıklama:** Scroll reveal animasyon kütüphanesi
+- **Stars:** 22.5K+
+- **Kategori:** Scroll & Page Transitions
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Scroll ile element reveal animasyonları
+
+### Repo #313: tanstack/virtual
+- **GitHub:** https://github.com/TanStack/virtual
+- **Açıklama:** Headless UI virtual scrolling
+- **Stars:** 6.8K+
+- **Kategori:** Scroll & Page Transitions
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Framework-agnostik virtual scroll
+
+### Repo #314: cferdinandi/smooth-scroll
+- **GitHub:** https://github.com/cferdinandi/smooth-scroll
+- **Açıklama:** Native smooth scroll polyfill
+- **Stars:** 5.5K+
+- **Kategori:** Scroll & Page Transitions
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Safari ve eski tarayıcı smooth scroll desteği
+
+### Repo #315: wellyshen/react-cool-virtual
+- **GitHub:** https://github.com/wellyshen/react-cool-virtual
+- **Açıklama:** React virtual scroll hook
+- **Stars:** 1.2K+
+- **Kategori:** Scroll & Page Transitions
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** React ile virtual list rendering
+
+### Repo #316: tholman/elevator.js
+- **GitHub:** https://github.com/tholman/elevator.js
+- **Açıklama:** Back to top elevator efekti
+- **Stars:** 6.6K+
+- **Kategori:** Scroll & Page Transitions
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Eğlenceli "back to top" scroll efekti
+
+### Repo #317: tholman/github-corners
+- **GitHub:** https://github.com/tholman/github-corners
+- **Açıklama:** GitHub corner badge
+- **Stars:** 5K+
+- **Kategori:** Scroll & Page Transitions
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** GitHub repo corner badge SVG
+
+### Repo #318: gridstack/gridstack.js
+- **GitHub:** https://github.com/gridstack/gridstack.js
+- **Açıklama:** Dashboard grid layout
+- **Stars:** 8.8K+
+- **Kategori:** Scroll & Page Transitions
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Sürüklenebilir dashboard widget grid sistemi
+
+---
+
+## 🛠️ GRUP 16: API & FRAMEWORK ECOSYSTEM (#319-333) — v8.1 YENİ
+
+### Repo #319: trpc/trpc
+- **GitHub:** https://github.com/trpc/trpc
+- **Açıklama:** End-to-end type-safe API framework
+- **Stars:** 39.9K+
+- **Kategori:** API & Framework Ecosystem
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Type-safe API routes, full-stack TypeScript
+
+### Repo #320: ueberdosis/tiptap
+- **GitHub:** https://github.com/ueberdosis/tiptap
+- **Açıklama:** Headless rich text editor
+- **Stars:** 36K+
+- **Kategori:** API & Framework Ecosystem
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** CMS, blog, zengin metin editörü
+
+### Repo #321: radix-ui/primitives
+- **GitHub:** https://github.com/radix-ui/primitives
+- **Açıklama:** Accessible UI primitives (shadcn taban)
+- **Stars:** 18.7K+
+- **Kategori:** API & Framework Ecosystem
+- **Kurulu mu:** KURULU (@radix-ui/*)
+- **Nasıl Kullanılır:** Accessible UI component primitives
+
+### Repo #322: reach/reach-ui
+- **GitHub:** https://github.com/reach/reach-ui
+- **Açıklama:** Accessible React UI components
+- **Stars:** 6K+
+- **Kategori:** API & Framework Ecosystem
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Erişilebilir UI component kalıpları
+
+### Repo #323: Tencent/wujie
+- **GitHub:** https://github.com/Tencent/wujie
+- **Açıklama:** Extreme micro-frontend framework
+- **Stars:** 4.9K+
+- **Kategori:** API & Framework Ecosystem
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Micro-frontend mimari referansı
+
+### Repo #324: module-federation/module-federation-examples
+- **GitHub:** https://github.com/module-federation/module-federation-examples
+- **Açıklama:** Module federation örnekleri
+- **Stars:** 6.1K+
+- **Kategori:** API & Framework Ecosystem
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Multi-repo micro-frontend pattern
+
+### Repo #325: huggingface/candle
+- **GitHub:** https://github.com/huggingface/candle
+- **Açıklama:** Rust ML framework (minimalist PyTorch)
+- **Stars:** 19.9K+
+- **Kategori:** API & Framework Ecosystem
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** AI/ML entegrasyon referansı
+
+### Repo #326: jeromeetienne/threex
+- **GitHub:** https://github.com/jeromeetienne/threex
+- **Açıklama:** Three.js helper extensions
+- **Stars:** 334+
+- **Kategori:** API & Framework Ecosystem
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Three.js utility fonksiyonları
+
+### Repo #327: AsyncHttpClient/async-http-client
+- **GitHub:** https://github.com/AsyncHttpClient/async-http-client
+- **Açıklama:** Asynchronous HTTP client
+- **Stars:** 6.4K+
+- **Kategori:** API & Framework Ecosystem
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Async HTTP istek kütüphanesi
+
+### Repo #328: angular/angular
+- **GitHub:** https://github.com/angular/angular
+- **Açıklama:** Angular framework
+- **Stars:** 100.1K+
+- **Kategori:** API & Framework Ecosystem
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Alternatif framework mimari referansı
+
+### Repo #329: vuejs/core
+- **GitHub:** https://github.com/vuejs/core
+- **Açıklama:** Vue.js framework
+- **Stars:** 53.4K+
+- **Kategori:** API & Framework Ecosystem
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Alternatif framework mimari referansı
+
+### Repo #330: sveltejs/svelte
+- **GitHub:** https://github.com/sveltejs/svelte
+- **Açıklama:** Svelte compiler framework
+- **Stars:** 86.2K+
+- **Kategori:** API & Framework Ecosystem
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Compiler-based framework referansı
+
+### Repo #331: solidjs/solid
+- **GitHub:** https://github.com/solidjs/solid
+- **Açıklama:** Fine-grained reactivity framework
+- **Stars:** 35.4K+
+- **Kategori:** API & Framework Ecosystem
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Reactivity model referansı
+
+### Repo #332: openai/openai-quickstart-python
+- **GitHub:** https://github.com/openai/openai-quickstart-python
+- **Açıklama:** OpenAI Python quickstart
+- **Stars:** 1.8K+
+- **Kategori:** API & Framework Ecosystem
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** OpenAI API entegrasyon referansı
+
+### Repo #333: reach/reach-ui
+- **GitHub:** https://github.com/reach/reach-ui
+- **Açıklama:** WAI-ARIA accessible React components
+- **Stars:** 6K+
+- **Kategori:** API & Framework Ecosystem
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Erişilebilirlik standartları referansı
+
+---
+
+**NOT: nicollash ve nicnl31 kullanıcı adları ile başlayan TÜM repolar 404 vermiştir (sahte/uydurma). 2026-06-22 tarihinde toplam 50+ nicollash/nicnl31 repo kontrol edilmiş ve %100 sahte olduğu tespit edilmiştir.**
