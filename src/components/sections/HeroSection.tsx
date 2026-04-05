@@ -1,9 +1,31 @@
 'use client';
 
-import { useEffect, useRef, useState, useCallback } from 'react';
+import { Suspense, useEffect, useRef, useState, useCallback } from 'react';
 import { motion, useScroll, useTransform, useSpring, useMotionValue } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
 import { useLanguageStore, translations } from '@/lib/language-store';
+import Scene3D from '@/components/three/Scene3D';
+
+function ThreeJSCanvas() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const check = () => setIsMobile(window.innerWidth < 768);
+    check();
+    window.addEventListener('resize', check);
+    return () => window.removeEventListener('resize', check);
+  }, []);
+
+  return (
+    <Suspense fallback={
+      <div className="absolute inset-0 z-[5] flex items-center justify-center">
+        <div className="w-8 h-8 border-2 border-rose/30 border-t-rose rounded-full animate-spin" />
+      </div>
+    }>
+      {!isMobile && <Scene3D />}
+    </Suspense>
+  );
+}
 
 export default function HeroSection() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -38,8 +60,6 @@ export default function HeroSection() {
   const layer1Y = useTransform(springY, [-0.5, 0.5], isMobile ? [-5, 5] : [-10, 10]);
   const layer2X = useTransform(springX, [-0.5, 0.5], isMobile ? [-15, 15] : [-30, 30]);
   const layer2Y = useTransform(springY, [-0.5, 0.5], isMobile ? [-10, 10] : [-20, 20]);
-  const layer3X = useTransform(springX, [-0.5, 0.5], isMobile ? [-20, 20] : [-50, 50]);
-  const layer3Y = useTransform(springY, [-0.5, 0.5], isMobile ? [-15, 15] : [-35, 35]);
 
   const handleMouseMove = useCallback((e: React.MouseEvent) => {
     const rect = sectionRef.current?.getBoundingClientRect();
@@ -110,37 +130,21 @@ export default function HeroSection() {
         className="absolute inset-0 z-[3] pointer-events-none"
         style={{ x: layer2X, y: layer2Y }}
       >
-        {/* Geometric ring */}
         <div className="absolute top-[15%] right-[15%] w-32 h-32 md:w-48 md:h-48 border border-rose/15 rounded-full animate-rotate-slow" />
         <div className="absolute top-[15%] right-[15%] w-24 h-24 md:w-36 md:h-36 border border-gold/10 rounded-full animate-rotate-reverse-slow" />
-        {/* Small diamond */}
         <div className="absolute top-[25%] left-[20%] w-3 h-3 bg-rose/30 rotate-45 animate-float-slow" />
-        {/* Dots */}
         <div className="absolute bottom-[30%] left-[10%] w-2 h-2 bg-gold/40 rounded-full animate-float" />
         <div className="absolute top-[20%] left-[60%] w-1.5 h-1.5 bg-rose/40 rounded-full animate-float-reverse" />
         <div className="absolute bottom-[20%] right-[30%] w-2.5 h-2.5 bg-gold/25 rounded-full animate-float-slow" />
-        {/* Vertical line decoration */}
-        <div className="absolute top-0 bottom-0 right-[25%] w-px bg-gradient-to-b from-transparent via-rose/10 to-transparent" />
-        {/* Horizontal line decoration */}
-        <div className="absolute left-0 right-0 top-[35%] h-px bg-gradient-to-r from-transparent via-gold/8 to-transparent" />
       </motion.div>
 
-      {/* Decorative shapes - Layer 3 (fast parallax) */}
-      {!isMobile && (
-        <motion.div
-          className="absolute inset-0 z-[4] pointer-events-none"
-          style={{ x: layer3X, y: layer3Y }}
-        >
-          <div className="absolute top-[60%] left-[5%] w-20 h-20 border border-gold/10 rounded-lg rotate-12 animate-float" />
-          <div className="absolute top-[10%] right-[40%] w-4 h-4 bg-rose/15 rounded-full animate-float-reverse" />
-          <div className="absolute bottom-[15%] left-[40%] w-6 h-6 border border-rose/10 rotate-45 animate-float-slow" />
-        </motion.div>
-      )}
+      {/* THREE.JS 3D SCENE */}
+      <ThreeJSCanvas />
 
       {/* Main Content */}
       <motion.div
         ref={containerRef}
-        className="relative z-10 h-full flex flex-col items-center justify-center px-6 text-center"
+        className="relative z-[10] h-full flex flex-col items-center justify-center px-6 text-center"
         style={{ opacity: heroOpacity }}
       >
         <motion.div
@@ -217,18 +221,16 @@ export default function HeroSection() {
         <span className="text-[10px] tracking-[0.3em] uppercase text-cream/30 font-body">
           {language === 'tr' ? 'Keşfet' : 'Explore'}
         </span>
-        <motion.div
-          className="animate-scroll-indicator"
-        >
+        <motion.div className="animate-scroll-indicator">
           <ChevronDown size={20} className="text-cream/30" />
         </motion.div>
       </motion.div>
 
       {/* Bottom gradient fade */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-dark to-transparent z-[5]" />
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-dark to-transparent z-[15]" />
 
       {/* Noise overlay */}
-      <div className="absolute inset-0 z-[6] noise-overlay pointer-events-none" />
+      <div className="absolute inset-0 z-[16] noise-overlay pointer-events-none" />
     </motion.section>
   );
 }
