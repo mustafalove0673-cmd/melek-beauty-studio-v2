@@ -1,4 +1,4 @@
-# 🧠 CLAUDE CODE - VİRAL 3D WEBSITE ÜRETİM SİSTEMİ v4.0
+# 🧠 CLAUDE CODE - VİRAL 3D WEBSITE ÜRETİM SİSTEMİ v5.0
 
 > **Bu dosya Claude Code'un beynidir.** Her mesajda bu talimatları okur ve uygular.
 > Tek bir "tema [isim]" komutunda, 177 GitHub repo'sundan en uygun 25-30 tanesini SEÇER,
@@ -712,12 +712,104 @@ SERVİS: "[hizmet], close-up macro, premium quality, spotlight, 8K"
 
 ---
 
+## 🎬 VIDEO ANALİZ SİSTEMİ (YENİ v5.0)
+
+### 17 AI Skill - Video Çoklu Analiz Pipeline
+
+```
+┌──────────────────────────────────────────────────────────────┐
+│  VIDEO ANALİZ PİPELİNE (Metin + Görsel + Ses + Web)         │
+│                                                               │
+│  Video Girdisi (URL veya dosya yükleme)                      │
+│  ├── 🎬 Video Understand (VLM) → Görsel sahne analizi        │
+│  ├── 🎤 ASR (Speech-to-Text) → Ses → metin transkripsiyon   │
+│  ├── 📝 Metin Çıkarma → Ekrandaki tüm yazılar               │
+│  ├── 🔍 Web Search → İlgili teknolojileri ara               │
+│  ├── 📄 Web Reader → Dokümanları detaylı oku                │
+│  ├── 🤖 LLM → Özetle, yapılandır, sistem oluştur           │
+│  └── 🖼️ Image Gen → Çıkarılan frameleri geliştir             │
+│                                                               │
+│  Çıktı:                                                       │
+│  ├── Tam analiz raporu (Türkçe)                              │
+│  ├── Teknoloji listesi                                        │
+│  ├── Adım adım rehber                                        │
+│  └── Uygulanabilir kod/prompt                                 │
+└──────────────────────────────────────────────────────────────┘
+```
+
+### Video Analiz Türleri
+
+| Tür | Komut | Açıklama |
+|-----|-------|----------|
+| **Full Analysis** | `analysisType: "full"` | Tüm metin + görsel + ses + teknoloji analizi |
+| **Text Extraction** | `analysisType: "text"` | Ekrandaki tüm yazıları çıkar |
+| **Motion Analysis** | `analysisType: "motion"` | Animasyon tekniklerini analiz et |
+| **Technology Scan** | `analysisType: "technology"` | Kullanılan araçları listele |
+| **Quick Summary** | `analysisType: "summary"` | Hızlı özet |
+
+### API Endpoint
+
+```
+POST /api/video-analyze
+Body: {
+  "videoUrl": "https://example.com/video.mp4",
+  "analysisType": "full"  // full|text|motion|technology|summary
+}
+
+GET /api/video-analyze?file=video.mp4
+→ /upload dizinindeki videoyu analiz eder
+```
+
+### CLI Kullanımı
+
+```bash
+# Videoyu doğrudan analiz et
+z-ai vision -p "Videoyu detaylı analiz et, tüm metinleri yaz" -i video.mp4 --thinking
+
+# Video sesini transkribe et
+ffmpeg -i video.mp4 -vn -acodec copy audio.aac -y
+ffmpeg -i audio.aac audio.wav -y
+z-ai asr -f audio.wav -o transcript.json
+
+# Frame'leri çıkar ve analiz et
+ffmpeg -i video.mp4 -vf "fps=1/5,scale=640:-1" frames/frame_%03d.jpg
+z-ai vision -p "Bu görüntüyü analiz et" -i frames/frame_01.jpg
+
+# Web'den ilgili bilgileri ara
+z-ai function -n web_search -a '{"query":"[video konusu]", "num":5}'
+z-ai function -n page_reader -a '{"url":"[bulunan url]"}'
+```
+
+### "tema [konu]" Akışında Video Analizi
+
+```
+AŞAMA 0.5: VIDEO REFERANS ANALİZİ (YENİ)
+├── Kullanıcı video yükleirse → /upload dizinine kaydet
+├── Frame çıkar (ffmpeg) → VLM ile her frame'i analiz et
+├── Ses çıkar → ASR ile transkribe et
+├── Web'den ilgili teknolojileri ara
+├── Tüm bilgileri birleştir → Analiz raporu oluştur
+└── Çıktı: knowledge-base/VIDEO_ANALYSIS_SYSTEM.md
+
+AŞAMA 1-7: Mevcut akışa devam (video bilgileri dahil)
+```
+
+### Video'dan Öğrenilen Sistemler
+
+| Video | Öğrenilen Teknik | Projeye Uygulama |
+|-------|-------------------|-------------------|
+| Motion Design Studio | Remot sistemi, kinetik tipografi, motion graphics | GSAP + Framer Motion ile motion design |
+| Active Theory | Web-based interaktif deneyimler | Three.js + WebGL interaktif sahneler |
+
+---
+
 ## 📋 KOMUT SİSTEMİ
 
 | Komut | Ne Yapar |
 |-------|----------|
-| `tema [isim]` | TAM OTOMATİK site üretimi (araştır → kod → test → %100) |
+| `tema [isim]` | TAM OTOMATİK site üretimi (araştır → video → kod → test → %100) |
 | `başla [isim]` | Aynı şey, kısa komut |
+| `video analiz` | Video'yu analiz et (VLM + ASR + Web) |
 | `codex [prompt]` | Mevcut siteye özellik ekle |
 | `3d` | Three.js sahne ekle |
 | `gez [url]` | Web'de site gez, referans al |
