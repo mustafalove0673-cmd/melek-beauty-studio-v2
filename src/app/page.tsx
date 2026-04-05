@@ -1,25 +1,30 @@
-import Navbar from '@/components/sections/Navbar';
-import HeroSection from '@/components/sections/HeroSection';
-import AboutSection from '@/components/sections/AboutSection';
-import ServicesSection from '@/components/sections/ServicesSection';
-import GallerySection from '@/components/sections/GallerySection';
-import ContactSection from '@/components/sections/ContactSection';
-import Footer from '@/components/sections/Footer';
-import FloatingButtons from '@/components/sections/FloatingButtons';
+import Navbar from '@/components/villa/Navbar';
+import HeroSection from '@/components/villa/HeroSection';
+import FeaturesSection from '@/components/villa/FeaturesSection';
+import ShowcaseSection from '@/components/villa/ShowcaseSection';
+import StatsSection from '@/components/villa/StatsSection';
+import TestimonialsSection from '@/components/villa/TestimonialsSection';
+import ContactSection from '@/components/villa/ContactSection';
+import Footer from '@/components/villa/Footer';
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col bg-dark noise-overlay relative">
+    <div className="min-h-screen flex flex-col bg-dark text-foreground relative">
+      {/* Noise texture overlay for depth */}
+      <div className="noise-overlay fixed inset-0 pointer-events-none z-[100]" />
+
       <Navbar />
+
       <main className="flex-1">
         <HeroSection />
-        <AboutSection />
-        <ServicesSection />
-        <GallerySection />
+        <FeaturesSection />
+        <ShowcaseSection />
+        <StatsSection />
+        <TestimonialsSection />
         <ContactSection />
       </main>
+
       <Footer />
-      <FloatingButtons />
     </div>
   );
 }

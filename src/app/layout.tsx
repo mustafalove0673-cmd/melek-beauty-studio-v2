@@ -17,25 +17,25 @@ const sourceSans = Source_Sans_3({
 });
 
 export const metadata: Metadata = {
-  title: "NOVA Construction | Premium Villa & Construction",
+  title: "NOVA Construction | Premium Villa Construction",
   description:
-    "NOVA Construction - Premium villa inşaatı, iç mimarlık ve peyzaj tasarımı. 25 yılı aşkın deneyim ile hayalinizdeki yaşam alanını gerçeğe dönüştürüyoruz.",
+    "NOVA Construction - Premium villa construction with 25+ years of experience. Smart home integration, pool & spa design, interior design, landscape architecture and more.",
   keywords: [
     "NOVA Construction",
-    "Villa İnşaatı",
+    "Villa Construction",
     "Premium Villa",
-    "İç Mimarlık",
-    "Peyzaj Tasarımı",
-    "İstanbul",
-    "Lüks Villa",
-    "Akıllı Ev",
-    "Havuz İnşaatı",
+    "Interior Design",
+    "Landscape Architecture",
+    "Smart Home",
+    "Pool Design",
+    "Luxury Villa",
+    "Istanbul Construction",
   ],
   authors: [{ name: "NOVA Construction" }],
   openGraph: {
-    title: "NOVA Construction | Premium Villa & Construction",
+    title: "NOVA Construction | Premium Villa Construction",
     description:
-      "25 yılı aşkın deneyim ile premium villa inşaatı, iç mimarlık ve peyzaj tasarımı.",
+      "25+ years of excellence in premium villa construction. Smart homes, luxury interiors, and world-class craftsmanship.",
     type: "website",
   },
 };
@@ -46,7 +46,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="tr" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${josefin.variable} ${sourceSans.variable} font-body antialiased bg-dark text-foreground`}
       >
