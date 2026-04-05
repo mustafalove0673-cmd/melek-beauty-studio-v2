@@ -590,3 +590,21 @@ Stage Summary:
 - Color system: src/lib/color-system.ts
 - Repo database: knowledge-base/MEGA_REPOS.md
 - Universal prompt: MEGA_PROMPT.md
+---
+Task ID: 1
+Agent: Main Agent
+Task: Web site kodlarını repo'dan sil, sistemi kaydet
+
+Work Log:
+- Mevcut repo yapısını analiz ettim: sistem vs site kodları
+- Silinen dosyalar: src/app/api/tema/route.ts, src/app/api/video-analyze/route.ts
+- Temizlenen klasörler: src/components/sections/, src/components/three/, public/images/ (zaten boş)
+- page.tsx → minimal NOVA.ai sistem placeholder olarak değiştirildi
+- Sistem dosyaları korundu: CLAUDE.md, knowledge-base/ (7 dosya), src/lib/ (5 dosya), src/hooks/ (5 dosya), src/components/ui/ (48 component), prisma/
+- Her iki remote'a push: origin (melek-beauty-studio-v2), cloud (melek-beauty-cloud)
+
+Stage Summary:
+- Repo artık sadece SİSTEM dosyalarını içeriyor (web site kodu yok)
+- Commit: 64d79fb "chore: web site kodlarını sil, sistemi kaydet"
+- 878 satır silindi, 15 satır eklendi (sadece placeholder)
+- Sistem 'tema [konu]' komutu için hazır bekliyor
