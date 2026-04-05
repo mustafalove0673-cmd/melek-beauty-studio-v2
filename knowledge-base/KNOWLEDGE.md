@@ -412,36 +412,57 @@ Reel thumbnail'inde görülen premium web sitesi tasarım özellikleri:
 
 ---
 
-### 11. @selahattin.unlu Instagram Reels - GitHub Repo Analizi (2026-04-06)
+### 11. @selahattin.unlu Instagram Reels - GitHub Repo Analizi (2026-04-06, Güncelleme: 2026-04-07)
 
 **Kaynak:** https://www.instagram.com/selahattin.unlu
+**YouTube:** Selahattin Ünlü ("Harika Github Repoları" 80+ bölüm)
+**TikTok:** @selahattin_unlu
 **Toplam Reel:** 103 (103 posts, 342 following)
-**GitHub Repo Reels:** ~85 adet
-**Derlenen Repo:** 38 adet (detaylı liste: `knowledge-base/GITHUB_REPOS.md`)
-**GitHub:** github.com/selahattinunlu (45 repos)
+**GitHub Repo Reels:** ~82 adet
+**Derlenen Repo:** 50+ adet (detaylı liste: `knowledge-base/GITHUB_REPOS.md`)
+**GitHub:** github.com/selahattinunlu (45 repos, 3 public)
+**Araştırma:** 24+ web search, YouTube playlist analizi, TikTok/Instagram snippet taraması
 
 #### Selahattin Ünlü Profil
 - Full Stack Developer (2013'ten beri)
 - React, Next.js, TypeScript uzmanı
-- YouTube, TikTok, Instagram aktif içerik üreticisi
+- YouTube (auto-dubbed İngilizce), TikTok, Instagram aktif içerik üreticisi
 - Website: selahattinunlu.com
+- Kendi Projeleri: yt-music-cli, faceless-video-saas, elevens-mind-defense, cloud-code-repo
 
 #### Ana Reel Serileri
 1. **"Bu Repo Tam Sana Göre"** - Format: [Problem] → [Repo] → [3 Özellik]
-2. **"Harika GitHub Repoları"** - Part 1'den Part 86+'ya kadar
+2. **"Harika GitHub Repoları"** - Part 1'den Part 82+'ya kadar (YouTube auto-dubbed)
 3. **"Trending GitHub Repos"** - Haftalık trending repos
-4. **Claude Code İpuçları** - /simplify, /model opusplan, superpowers
-5. **İşe Yarar Repolar** - Genel geliştirici araçları
+4. **Claude Code İpuçları** - /simplify, /model opusplan, superpowers, opencode
+5. **İşe Yarar Repolar** - Genel geliştirici araçları (8+ bölüm)
 
 #### Öne Çıkan Repo'lar (En Çok Beğenilen)
 
 | Repo | Reel | Beğeni | Konu |
 |------|------|--------|------|
 | `Donchitos/Claude-Code-Game-Studios` | Oyun geliştirme | 2,161 | Claude Code ile oyun stüdyosu |
+| `msitarzewski/agency-agents` | AI agent takımı | 1,776 | 80+ uzman AI ajanı |
 | `Comfy-Org/ComfyUI` | AI içerik üretimi | 1,4K+ | Görsel, video, müzik, 3D üret |
 | `shadcn-ui/ui` | UI component | 9.2K+ | Button, modal, dropdown |
-| `BloopAI/vibe-kanban` | AI agent yönetimi | 82K+ views | Claude Code 10x verimli |
 | `microsoft/generative-ai-for-beginners` | AI öğrenme | 105K+ stars | 21 ders, Türkçe |
+| `chatwoot/chatwoot` | Müşteri destek | 475 | Self-hosted Intercom alternatifi |
+| `pascalorg/editor` | 3D mimari | 883 | Açık kaynak 3D editör |
+| `nocodb/nocodb` | Veritabanı arayüzü | 418 | Airtable'a açık kaynak alternatif |
+
+#### Yeni Eklenen Repo'lar (2026-04-07 güncellemesi)
+| Repo | Konu | Kaynak |
+|------|------|--------|
+| `anomalyco/opencode` | Claude Code'a açık kaynak alternatif | Reel |
+| `HeartMuLa/heartlib` | Suno'ya açık kaynak AI müzik alternatifi | Part 37 |
+| `addyosmani/web-quality-skills` | Lighthouse skorlarını yeşile dönmek için | Part 60 |
+| `immich-app/immich` | Self-hosted Google Photos alternatifi | Part 79 |
+| `sonic-pi-net/sonic-pi` | Kod yazarak enstrüman çal | Reel |
+| `chatwoot/chatwoot` | Self-hosted müşteri destek platformu | Reel |
+| `usememos/memos` | Self-hosted not alma | Reel |
+| `nocodb/nocodb` | Airtable'a açık kaynak alternatif | YT İnceleme #1 |
+| `gsd-build/get-shit-done` | Vibe coding için meta-prompting | YT İnceleme #2 |
+| `animate-css/animate.css` | 80+ hazır CSS animasyonu | Part 33 |
 
 #### Claude Code İpuçları (Önemli!)
 ```
@@ -450,6 +471,8 @@ Reel thumbnail'inde görülen premium web sitesi tasarım özellikleri:
 superpowers      → AI coding agent'lerin bağlam kaybını önle
 vibe-kanban      → AI coding agent'ları paralel çalıştır, kanban ile yönet
 gstack           → CEO, tasarımcı, QA, güvenlik uzmanı rollerinde çoklu ajan
+opencode         → Claude Code'a para verme, açık kaynak alternatif kullan
+get-shit-done    → Meta-prompting ile vibe coding'de planlı ilerle
 ```
 
 ---
@@ -460,6 +483,7 @@ gstack           → CEO, tasarımcı, QA, güvenlik uzmanı rollerinde çoklu a
 |-------|-------|-----------|
 | 2026-04-05 | Tümü | İlk oluşturma - 10 bölüm, tüm araştırmalar |
 | 2026-04-06 | Bölüm 11 | @selahattin.unlu 38 GitHub repo analizi eklendi |
+| 2026-04-07 | Bölüm 11 | 50+ repo'ya güncellendi (12 yeni repo), Instagram login denemesi, 24+ web arama |
 
 ---
 

@@ -222,3 +222,42 @@ Stage Summary:
 - GITHUB_REPOS.md kapsamlı katalog oluşturuldu
 - Detaylar: knowledge-base/GITHUB_REPOS.md
 ---
+
+---
+Task ID: 2
+Agent: main-agent
+Task: Selahattin.unlu Instagram reels GitHub repo kapsamlı güncellemesi (38→50+ repo)
+
+Work Log:
+- Instagram'a agent-browser ile giriş denemesi (pushap_sw / lalelm) - BAŞARISIZ (kullanıcı bilgileri hatalı)
+- 24+ farklı web search araması yapıldı
+- YouTube "Harika Github Repoları" playlist (80+ bölüm) bulundu
+- TikTok @selahattin_unlu snippet'leri analiz edildi
+- Instagram reel snippet'leri analiz edildi
+- Selahattin Ünlü'nün GitHub profili (3 public repo) okundu
+- 12 yeni GitHub repo tespit edildi ve sisteme eklendi
+
+Yeni Eklenen Repo'lar:
+1. anomalyco/opencode - Claude Code açık kaynak alternatif
+2. HeartMuLa/heartlib - Suno'ya AI müzik alternatifi (Part 37)
+3. addyosmani/web-quality-skills - Lighthouse skorları (Part 60)
+4. immich-app/immich - Self-hosted Google Photos (Part 79)
+5. sonic-pi-net/sonic-pi - Kod yazarak enstrüman çal
+6. chatwoot/chatwoot - Self-hosted müşteri destek
+7. usememos/memos - Self-hosted not alma
+8. nocodb/nocodb - Airtable açık kaynak alternatif
+9. gsd-build/get-shit-done - Vibe coding meta-prompting
+10. animate-css/animate.css - 80+ hazır CSS animasyonu (Part 33)
+11. selahattinunlu/faceless-video-saas - Faceless video SaaS
+12. selahattinunlu/elevens-mind-defense - Selahattin Ünlü'nün projesi
+
+Güncellenen Dosyalar:
+- knowledge-base/GITHUB_REPOS.md: 38→50+ repo, 16 kategori, detaylı Part bilgileri
+- knowledge-base/KNOWLEDGE.md: Bölüm 11 güncellendi, yeni repo'lar eklendi
+
+Stage Summary:
+- Toplam repo sayısı: 38→50+ (%32 artış)
+- Kategori sayısı: 12→16
+- Instagram login başarısız (kullanıcı bilgileri yanlış)
+- Web search ile 24+ farklı arama yapıldı
+- YouTube playlist analizi: 80+ bölüm
