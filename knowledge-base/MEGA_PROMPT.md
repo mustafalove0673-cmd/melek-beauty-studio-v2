@@ -1,9 +1,9 @@
 # 🧠 NOVA AI - MEGA PROMPT
 # Bu prompt'u başka bir AI'ya verdiğinde, o AI tüm sistemi anlar ve uygulayabilir.
 
-> **Versiyon:** 6.0
-> **Son Güncelleme:** 2026-04-11
-> **Toplam Repo:** 480
+> **Versiyon:** 6.1
+> **Son Güncelleme:** 2026-04-12
+> **Toplam Repo:** 489
 > **Kurulu Paket:** 19
 > **AI Skill:** 16
 > **Sektör Template:** 14
@@ -312,7 +312,7 @@ Noise overlay her sayfada: SVG fractalNoise overlay, opacity 0.03, mix-blend-mod
 
 ---
 
-## 480+ GİTHUB REPO KATALOĞU
+## 489+ GİTHUB REPO KATALOĞU
 
 ### 🎨 GRUP 1: RENK PALETİ & AURA SİSTEMLERİ (#1-15)
 
@@ -4549,8 +4549,85 @@ vr, game, oyun → cyberpunk
 
 ---
 
-> **TOPLAM:** 480 GitHub Repo | 19 Kurulu Paket | 14 Sektör Template | 10 Renk Paleti | 6 Yanlış Palet | 16 AI Skill
-> **Son Güncelleme:** 2026-04-11
-> **Yeni Eklenen (bu güncelleme):** 103 yeni repo (#378-#480) — 3 AI System Prompt + 100 Three.js 3D Modelleme
-> **Dosya Boyutu:** ~220KB+
+### 🤖 GRUP 17: AI AGENT SKILLS & CLAUDE CODE PLUGINS (#481-#489)
+
+### Repo #481: haris-musa/excel-mcp-server
+- **GitHub:** https://github.com/haris-musa/excel-mcp-server
+- **Açıklama:** Excel dosyaları için MCP (Model Context Protocol) server. AI coding agent'larının Excel dosyalarını okuyup yazmasını sağlar. Spreadsheet verileri üzerinde analiz, filtreleme, formül işlemleri yapabilir.
+- **Stars:** 500+
+- **Kategori:** AI Agent Skills & Claude Code Plugins
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Claude Code ile Excel dosyalarını işleme, veri analizi, tablo okuma/yazma.
+
+### Repo #482: coreyhaines31/marketingskills
+- **GitHub:** https://github.com/coreyhaines31/marketingskills
+- **Açıklama:** AI coding agent'ları için marketing becerileri seti. CRO (Conversion Rate Optimization), copywriting, SEO, analytics konularında uzmanlık kazandırır. Ürün geliştirirken marketing tarafını güçlendirir.
+- **Stars:** 1K+
+- **Kategori:** AI Agent Skills & Claude Code Plugins
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** AI agent'lara marketing odaklı görevler verirken, CLAUDE.md'ye marketing skills ekleme.
+
+### Repo #483: PleasePrompto/notebooklm-skill
+- **GitHub:** https://github.com/PleasePrompto/notebooklm-skill
+- **Açıklama:** Google NotebookLM tarzı AI skill plugin'i. AI agent'ların not alma, doküman analizi ve bilgi organizasyonu yeteneklerini geliştirir. Authentication ve API entegrasyonu ile çalışır.
+- **Stars:** 200+
+- **Kategori:** AI Agent Skills & Claude Code Plugins
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Claude Code ile doküman analizi, not organizasyonu, bilgi sentezi.
+
+### Repo #484: obra/superpowers
+- **GitHub:** https://github.com/obra/superpowers
+- **Açıklama:** AI coding agent'ların bağlam kaybını önleyen skill tabanlı framework. Claude Code, Codex, OpenCode gibi araçlara yetenekler kazandırır. 37 branch, 69 issue, 99 pull request ile aktif topluluk. Claude Plugin, Cursor Plugin, GitHub Agent desteği.
+- **Stars:** 3K+
+- **Kategori:** AI Agent Skills & Claude Code Plugins
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** AI agent'lara bağlam yönetimi, context preservation, uzun görevlerde bellek koruması.
+
+### Repo #485: anthropics/skills
+- **GitHub:** https://github.com/anthropics/skills
+- **Açıklama:** Anthropic'in resmi AI skills deposu. Claude Code için resmi skill şablonları ve örnekleri. Algorithmic art, canvas design, canvas fonts, claude-api, doc-coauthoring, docx, frontend-design, internal-comms, mcp-builder, pdf, slack-gif-creator, theme-factory, web-artifacts-builder gibi 20+ skill. 163 issue, 404 pull request.
+- **Stars:** 5K+
+- **Kategori:** AI Agent Skills & Claude Code Plugins
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Claude Code resmi skill kalıpları, Anthropic'in önerdiği yetenek mimarisi, skill geliştirme best practices.
+
+### Repo #486: muratcankoylan/Agent-Skills-for-Content-Creator
+- **GitHub:** https://github.com/muratcankoylan/Agent-Skills-for-Content-Creator
+- **Açıklama:** İçerik üreticileri için AI agent skills koleksiyonu. 30 branch ile aktif geliştirme. Claude Plugin desteği ile içerik üretimi, blog yazma, sosyal medya yönetimi, SEO optimizasyonu gibi yetenekler kazandırır.
+- **Stars:** 500+
+- **Kategori:** AI Agent Skills & Claude Code Plugins
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Claude Code ile içerik üretimi, blog/SMM otomasyonu, SEO odaklı yazı yazma.
+
+### Repo #487: AgriciDaniel/claude-seo
+- **GitHub:** https://github.com/AgriciDaniel/claude-seo
+- **Açıklama:** Claude Code için SEO yetenekleri. AI agent'ın web sitelerini SEO açısından analiz etmesini sağlar. Meta tag'ler, keyword analizi, site performansı, erişilebilirlik skorları. Visibility artırma odaklı. 3 branch, 2 issue.
+- **Stars:** 200+
+- **Kategori:** AI Agent Skills & Claude Code Plugins
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Claude Code ile otomatik SEO analizi, meta tag optimizasyonu, erişilebilirlik kontrolü.
+
+### Repo #488: massgen/MassGen
+- **GitHub:** https://github.com/massgen/MassGen
+- **Açıklama:** Toplu içerik üretim aracı. 402 branch ile büyük aktif topluluk. Devcontainer, GitHub Actions entegrasyonu ile CI/CD pipeline. Spec dosyaları, script'ler ve asset'ler ile kapsamlı içerik üretim sistemi.
+- **Stars:** 2K+
+- **Kategori:** AI Agent Skills & Claude Code Plugins
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Toplu görsel/metin üretimi, batch processing, otomatik içerik pipeline'ı.
+
+### Repo #489: anthropic/claude-code-best-practice (Bonus)
+- **GitHub:** https://github.com/anthropic/claude-code-best-practice
+- **Açıklama:** Anthropic'in resmi Claude Code en iyi uygulamalar deposu. Limit yönetimi, model seçimi (/model opusplan), bağlam optimizasyonu, multi-agent çalışma, CLAUDE.md yapılandırma. NOVA AI sistemini kurarken birincil referans.
+- **Stars:** 5K+
+- **Kategori:** AI Agent Skills & Claude Code Plugins
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Claude Code yapılandırması, prompt mühendisliği, bağlam yönetimi, NOVA AI CLAUDE.md geliştirme.
+
+---
+
+> **TOPLAM:** 489 GitHub Repo | 19 Kurulu Paket | 14 Sektör Template | 10 Renk Paleti | 6 Yanlış Palet | 16 AI Skill
+> **Son Güncelleme:** 2026-04-12
+> **Yeni Eklenen (bu güncelleme):** 9 AI Agent Skills reposu (#481-#489) — PDF analizinden çıkarılan Anthropic/skills, obra/superpowers, massgen/MassGen vb.
+> **Önceki Güncelleme:** 103 repo (#378-#480) — 3 AI System Prompt + 100 Three.js 3D Modelleme
+> **Dosya Boyutu:** ~230KB+
 > **Kapsam:** Bu prompt, tüm NOVA AI sistemini baştan sona açıklar. Başka bir AI'ya verildiğinde, o AI sıfırdan Awwwards-seviye website üretebilir.
