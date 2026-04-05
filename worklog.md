@@ -608,3 +608,25 @@ Stage Summary:
 - Commit: 64d79fb "chore: web site kodlarını sil, sistemi kaydet"
 - 878 satır silindi, 15 satır eklendi (sadece placeholder)
 - Sistem 'tema [konu]' komutu için hazır bekliyor
+
+---
+Task ID: 2
+Agent: Main Agent
+Task: 103 yeni repo ekle — AI System Prompts + Three.js 3D Modelleme
+
+Work Log:
+- asgeirtj/system_prompts_leaks reposunu analiz et (Anthropic Claude system prompts)
+- 100 Three.js 3D modelleme repo'su seçip detaylı Türkçe açıklamalar yazdı
+- MEGA_PROMPT.md'ye 103 yeni repo append etti (#378-#480)
+- Her repo için: ad, GitHub linki (tıklanabilir URL), detaylı özet, stars, kategori
+- 17 yeni kategori grubu oluşturdu
+- CLAUDE.md'yi v6.0'a güncelledi (480 repo referansı)
+- GITHUB_REPOS.md dosyası root sahipli olduğu için güncelleme yapılamadı
+- THREEJS_3D_MODELING_100.md oluşturuldu
+- Her iki remote'a push: origin + cloud
+
+Stage Summary:
+- Commit: 89ab01b "feat: 103 yeni repo eklendi — v6.0"
+- MEGA_PROMPT.md: 377 → 480 repo, v5.0 → v6.0
+- CLAUDE.md: v5.0 → v6.0, 177 → 480 repo
+- 1067 satır yeni içerik eklendi
