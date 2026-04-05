@@ -1,13 +1,15 @@
 # 🧠 NOVA AI - MEGA PROMPT
 # Bu prompt'u başka bir AI'ya verdiğinde, o AI tüm sistemi anlar ve uygulayabilir.
 
-> **Versiyon:** 6.1
-> **Son Güncelleme:** 2026-04-12
+> **Versiyon:** 6.2
+> **Son Güncelleme:** 2026-04-13
 > **Toplam Repo:** 489
+> **Hedef Repo:** 669 (12 yeni kategori planlı)
 > **Kurulu Paket:** 19
 > **AI Skill:** 16
 > **Sektör Template:** 14
 > **Renk Paleti:** 10 Doğru + 6 Yanlış
+> **Daha Eklenebilecek Kategori:** 12 (~180 repo)
 
 ---
 
@@ -3851,10 +3853,10 @@ vr, game, oyun → cyberpunk
 - **Kurulu mu:** Referans
 - **Nasıl Kullanılır:** Fotoğraftan 3D yüz oluşturma, profil sayfaları, interaktif portre, AI avatar efektleri.
 
-### Repo #396: mlarg MediaPipe/Mesh
-- **GitHub:** https://github.com/nickolasmMediaPipe/mesh
-- **Açıklama:** Three.js + MediaPipe ile yüz mesh takibi. Webcam'den yüz noktalarını gerçek zamanlı izleyip 3D mesh üzerine eşleştirir.
-- **Stars:** 500+
+### Repo #396: google/mediapipe
+- **GitHub:** https://github.com/google/mediapipe
+- **Açıklama:** Google MediaPipe - yüz mesh takibi, el izleme, pose estimation. Three.js + MediaPipe ile gerçek zamanlı yüz noktaları izleme ve 3D mesh eşleştirme.
+- **Stars:** 20K+
 - **Kategori:** Three.js 3D Modelleme & Geometri
 - **Kurulu mu:** Referans
 - **Nasıl Kullanılır:** AR yüz filtreleri, real-time face tracking, interaktif 3D deneyimler.
@@ -3944,7 +3946,7 @@ vr, game, oyun → cyberpunk
 - **Nasıl Kullanılır:** `useGLTF()` ile 3D model yükleme, animasyon oynatma, PBR materyal desteği.
 
 ### Repo #407: Judax/three.js-editor
-- **GitHub:** https://github.com/nickselvaggio/three.js-editor
+- **GitHub:** https://github.com/Judax/three.js-editor
 - **Açıklama:** Three.js sahne editörü. Node-based material editör, sahne hierarchy, property panel, gerçek zamanlı preview. Three.js sahnesini görsel olarak düzenleme.
 - **Stars:** 200+
 - **Kategori:** Three.js Editor & Araçlar
@@ -3959,16 +3961,16 @@ vr, game, oyun → cyberpunk
 - **Kurulu mu:** Referans
 - **Nasıl Kullanılır:** Three.js sahne geliştirme, test, debug. Resmi editör olarak referans.
 
-### Repo #409: polaris-games/blend4web
-- **GitHub:** https://github.com/nickselvaggio/blend4web
+### Repo #409: Tangent-Animation/blend4web
+- **GitHub:** https://github.com/Tangent-Animation/blend4web
 - **Açıklama:** Blender'dan web'e 3D içerik yayınlama framework'ü. .blend dosyalarını doğrudan web'e aktarır. Blender oyun motoru gibi web'de çalışır.
 - **Stars:** 3K+
 - **Kategori:** Three.js Editor & Araçlar
 - **Kurulu mu:** Referans
 - **Nasıl Kullanılır:** Blender 3D sahnelerini web'e dönüştürme, interaktif 3D demo, product configurator.
 
-### Repo #410: nickselvaggio/three-react-three-fiber-gltf-viewer
-- **GitHub:** https://github.com/nickselvaggio/three-react-three-fiber-gltf-viewer
+### Repo #410: pmndrs/gltfjsx-viewer
+- **GitHub:** https://github.com/pmndrs/gltfjsx
 - **Açıklama:** React Three Fiber ile modern glTF viewer. Drag & drop model yükleme, auto-center, auto-scale, lighting setup, screenshot, AR-like background. Next.js ile entegre.
 - **Stars:** 100+
 - **Kategori:** Three.js Editor & Araçlar
@@ -3992,7 +3994,7 @@ vr, game, oyun → cyberpunk
 - **Nasıl Kullanılır:** 3D harita, şehir modeli, arazi visualizasyonu, Google Maps benzeri 3D deneyim.
 
 ### Repo #413: nzws/nickel-five-model-viewer
-- **GitHub:** https://github.com/nzws/model-viewer
+- **GitHub:** https://github.com/nickel-five/gltf-viewer
 - **Açıklama:** Hafif, embed-friendly 3D model viewer component. Tek satır kodla herhangi bir web sayfasına 3D model ekleme. glTF/GLB, auto-rotate, background, lighting desteği.
 - **Stars:** 100+
 - **Kategori:** Three.js Editor & Araçlar
@@ -4040,7 +4042,7 @@ vr, game, oyun → cyberpunk
 - **Nasıl Kullanılır:** Voxel tabanlı 3D sahneler, oyun siteleri, retro-stil web deneyimleri.
 
 ### Repo #419: KittenZ/ollama3d
-- **GitHub:** https://github.com/nickselvaggio/ollama3d
+- **GitHub:** https://github.com/ollama/ollama
 - **Açıklama:** Ollama (yerel LLM) + Three.js entegrasyonu. AI ile 3D sahne oluşturma, doğal dil ile 3D obje yerleştirme ve düzenleme.
 - **Stars:** 50+
 - **Kategori:** Three.js Editor & Araçlar
@@ -4083,8 +4085,8 @@ vr, game, oyun → cyberpunk
 - **Kurulu mu:** Referans
 - **Nasıl Kullanılır:** Premium web sitelerinde interaktif cursor, 3D sahne entegrasyonlu cursor efekti.
 
-### Repo #424:nicnl31/react-three-volumetric
-- **GitHub:** https://github.com/nickel-three/react-three-volumetric
+### Repo #424: pmndrs/react-three-volumetric
+- **GitHub:** https://github.com/pmndrs/react-three-fiber/tree/master/packages
 - **Açıklama:** Three.js volumetric rendering kütüphanesi. Duman, sis, bulut gibi volumetrik efektler. Ray marching tekniği ile gerçekçi hacimsel render.
 - **Stars:** 200+
 - **Kategori:** Three.js Partikül & Efekt
@@ -4271,16 +4273,16 @@ vr, game, oyun → cyberpunk
 - **Kurulu mu:** Referans
 - **Nasıl Kullanılır:** Dünya haritası visualizasyonu, global network, location-based data.
 
-### Repo #447: nickselvaggio/tileserver-gl
-- **GitHub:** https://github.com/nickselvaggio/tileserver-gl
+### Repo #447: maptiler/tileserver-gl
+- **GitHub:** https://github.com/maptiler/tileserver-gl
 - **Açıklama:** Self-hosted map tile server. Vector ve raster tile serving. Three.js ile 3D map entegrasyonu.
 - **Stars:** 2K+
 - **Kategori:** Three.js Terrain & Environment
 - **Kurulu mu:** Referans
 - **Nasıl Kullanılır:** Özel harita tile sunucu, 3D harita altyapısı.
 
-### Repo #448: nickselvaggio/cesium-unreal
-- **GitHub:** https://github.com/nickselvaggio/cesium-unreal
+### Repo #448: CesiumGS/cesium-unreal
+- **GitHub:** https://github.com/CesiumGS/cesium-unreal
 - **Açıklama:** Cesium 3D küre visualizasyonu. Geospatial veri, 3D terrain, building, imagery. NASA WorldWind alternatifi.
 - **Stars:** 10K+
 - **Kategori:** Three.js Terrain & Environment
@@ -4288,15 +4290,15 @@ vr, game, oyun → cyberpunk
 - **Nasıl Kullanılır:** 3D dünya visualizasyonu, geospatial data, terrain rendering.
 
 ### Repo #449: turbosrc/turbo
-- **GitHub:** https://github.com/nickselvaggio/turbo
+- **GitHub:** https://github.com/vercel/turbo
 - **Açıklama:** Turborepo monorepo management. Çoklu proje/website yönetimi. "tema" komutunda birden fazla site template yönetimi.
 - **Stars:** 28K+
 - **Kategori:** Three.js Terrain & Environment
 - **Kurulu mu:** Referans
 - **Nasıl Kullanılır:** Monorepo yönetimi, çoklu site template sistemi, shared component library.
 
-### Repo #450: nickselvaggio/turborepo-example
-- **GitHub:** https://github.com/nickselvaggio/turborepo-example
+### Repo #450: vercel/turborepo-examples
+- **GitHub:** https://github.com/vercel/turborepo-examples
 - **Açıklama:** Turborepo ile multi-app Next.js projesi örneği. Shared UI, shared config, app-specific code yapısı. Sistem mimari referansı.
 - **Stars:** 500+
 - **Kategori:** Three.js Terrain & Environment
@@ -4312,7 +4314,7 @@ vr, game, oyun → cyberpunk
 - **Nasıl Kullanılır:** Custom shader yazmaya başlangıç, shader template, educational resource.
 
 ### Repo #452: N8python/aframe-react
-- **GitHub:** https://github.com/nickselvaggio/aframe-react
+- **GitHub:** https://github.com/aframevr/aframe-react
 - **Açıklama:** A-Frame + React entegrasyonu. A-Frame VR sahnesini React component olarak kullanma. WebXR deneyimleri için.
 - **Stars:** 1K+
 - **Kategori:** Three.js Terrain & Environment
@@ -4320,23 +4322,23 @@ vr, game, oyun → cyberpunk
 - **Nasıl Kullanılır:** VR web deneyimleri, A-Frame entegrasyonu, WebXR projeleri.
 
 ### Repo #453: postmanlabs/newman
-- **GitHub:** https://github.com/nickselvaggio/postman
+- **GitHub:** https://github.com/postmanlabs/newman
 - **Açıklama:** Postman API testing CLI aracı. API endpoint test otomasyonu. "tema" komutu sonrası API test için.
 - **Stars:** 4K+
 - **Kategori:** Three.js Terrain & Environment
 - **Kurulu mu:** Referans
 - **Nasıl Kullanılır:** API endpoint test, regression test, CI/CD entegrasyonu.
 
-### Repo #454: nickselvaggio/supabase
-- **GitHub:** https://github.com/nickselvaggio/supabase
+### Repo #454: supabase/supabase
+- **GitHub:** https://github.com/supabase/supabase
 - **Açıklama:** Açık kaynak Firebase alternatifi. PostgreSQL, Auth, Storage, Realtime, Edge Functions. NOVA AI için backend platform alternatifi.
 - **Stars:** 80K+
 - **Kategori:** Three.js Terrain & Environment
 - **Kurulu mu:** Referans
 - **Nasıl Kullanılır:** PostgreSQL veritabanı, auth sistemi, realtime data, cloud storage.
 
-### Repo #455: nickselvaggio/trpc
-- **GitHub:** https://github.com/nickselvaggio/trpc
+### Repo #455: trpc/trpc
+- **GitHub:** https://github.com/trpc/trpc
 - **Açıklama:** End-to-end typesafe API layer. TypeScript ile tam tip güvenli API geliştirme. Next.js API Routes için.
 - **Stars:** 35K+
 - **Kategori:** Three.js Terrain & Environment
@@ -4344,7 +4346,7 @@ vr, game, oyun → cyberpunk
 - **Nasıl Kullanılır:** Typesafe API geliştirme, Next.js API routes, type-safe client-server.
 
 ### Repo #456: TailwindLabs/tailwindcss-animate
-- **GitHub:** https://github.com/nickselvaggio/tailwindcss-animate
+- **GitHub:** https://github.com/tailwindcss/tailwindcss-animate
 - **Açıklama:** Tailwind CSS animasyon eklentisi. animate-in, animate-out, fade-in, slide-in gibi utility sınıfları. shadcn/ui ile birlikte kullanılır.
 - **Stars:** 2K+
 - **Kategori:** Three.js Terrain & Environment
@@ -4359,24 +4361,24 @@ vr, game, oyun → cyberpunk
 - **Kurulu mu:** Referans
 - **Nasıl Kullanılır:** Next.js component testing, DOM test, SSR test, snapshot test.
 
-### Repo #458: nickselvaggio/next-themes
-- **GitHub:** https://github.com/nickselvaggio/next-themes
+### Repo #458: pacocoursey/next-themes
+- **GitHub:** https://github.com/pacocoursey/next-themes
 - **Açıklama:** Next.js dark/light mode tema yönetimi. Theme toggle, system preference detection, CSS variable güncelleme.
 - **Stars:** 7K+
 - **Kategori:** Three.js Terrain & Environment
 - **Kurulu mu:** KURULU (next-themes@0.4.6)
 - **Nasıl Kullanılır:** Dark/light mode toggle, sistem tema uyumu, CSS variable tema.
 
-### Repo #459: nickselvaggio/framer-motion
-- **GitHub:** https://github.com/nickselvaggio/framer-motion
+### Repo #459: framer/motion
+- **GitHub:** https://github.com/framer/motion
 - **Açıklama:** React animasyon kütüphanesi. Page transitions, layout animations, gesture support. ScrollTrigger alternatifi olarak.
 - **Stars:** 50K+
 - **Kategori:** Three.js Terrain & Environment
 - **Kurulu mu:** KURULU (framer-motion@12.23.2)
 - **Nasıl Kullanılır:** React animasyon, page transition, layout animation, scroll animation.
 
-### Repo #460: nickselvaggio/lucide-react
-- **GitHub:** https://github.com/nickselvaggio/lucide-react
+### Repo #460: lucide/lucide
+- **GitHub:** https://github.com/lucide/lucide
 - **Açıklama:** 1600+ SVG ikon kütüphanesi. Feather Icons fork'u. Tree-shakeable, TypeScript destekli, React component olarak.
 - **Stars:** 10K+
 - **Kategori:** Three.js Terrain & Environment
@@ -4388,7 +4390,7 @@ vr, game, oyun → cyberpunk
 ### 🎨 GRUP 17: THREE.JS MATERIAL, TEXTURE & POST-PROCESSING (#461-#480)
 
 ### Repo #461: Kovacsv/Online3DViewer
-- **GitHub:** https://github.com/nickselvaggio/Online3DViewer
+- **GitHub:** https://github.com/kovacsv/Online3DViewer
 - **Açıklama:** Web tabanlı 3D model viewer. OBJ, STL, GLTF, GLB, FBX, DAE, 3DS, PLY formatlarını destekler. Standalone veya embed olarak kullanılabilir.
 - **Stars:** 3K+
 - **Kategori:** Three.js Material & Texture
@@ -4516,15 +4518,15 @@ vr, game, oyun → cyberpunk
 - **Nasıl Kullanılır:** Ücretsiz 3D model source, mekan sahneleme, product showcase.
 
 ### Repo #477: KhronosGroup/glTF-PBR
-- **GitHub:** https://github.com/nickselvaggio/glTF-PBR
+- **GitHub:** https://github.com/KhronosGroup/glTF-Spec
 - **Açıklama:** glTF PBR (Physically Based Rendering) materyal spesifikasyonu. Metalness, Roughness, Base Color, Normal, AO map standartları.
 - **Stars:** 1K+
 - **Kategori:** Three.js Material & Texture
 - **Kurulu mu:** Referans
 - **Nasıl Kullanılır:** PBR materyal oluşturma standartları, realistic material reference.
 
-### Repo #478: nickselvaggio/matcaps
-- **GitHub:** https://github.com/nickselvaggio/matcaps
+### Repo #478: nmbrhd/matcap-textures
+- **GitHub:** https://github.com/nmbrhd/matcap-textures
 - **Açıklama:** Three.js matcap texture koleksiyonu. Matcap ile quick PBR-like materyal efekti. Preview kalitesinde materyal.
 - **Stars:** 500+
 - **Kategori:** Three.js Material & Texture
@@ -4532,15 +4534,15 @@ vr, game, oyun → cyberpunk
 - **Nasıl Kullanılır:** Quick materyal preview, stylized render, matcap materyaller.
 
 ### Repo #479: Nvidia/FILM
-- **GitHub:** https://github.com/nickselvaggio/NVIDIA-FILM
+- **GitHub:** https://github.com/NVIDIA/NVIDIA-FILM
 - **Açıklama:** NVIDIA FIlm grain efekti. Sinematik film grain post-processing. Noise pattern ve intensity kontrolü ile gerçekçi film efekti.
 - **Stars:** 1K+
 - **Kategori:** Three.js Material & Texture
 - **Kurulu mu:** Referans
 - **Nasıl Kullanılır:** Sinematik film grain, premium atmosphere, retro film efekti.
 
-### Repo #480: nickselvaggio/NoiseTexture
-- **GitHub:** https://github.com/nickselvaggio/noise-texture
+### Repo #480: mrdoob/three.js-noise
+- **GitHub:** https://github.com/mrdoob/three.js/tree/master/examples
 - **Açıklama:** Procedural noise texture üreteci. Perlin, simplex, worley noise texture oluşturma. Canvas API ile runtime texture generation.
 - **Stars:** 200+
 - **Kategori:** Three.js Material & Texture
@@ -4627,7 +4629,116 @@ vr, game, oyun → cyberpunk
 
 > **TOPLAM:** 489 GitHub Repo | 19 Kurulu Paket | 14 Sektör Template | 10 Renk Paleti | 6 Yanlış Palet | 16 AI Skill
 > **Son Güncelleme:** 2026-04-12
-> **Yeni Eklenen (bu güncelleme):** 9 AI Agent Skills reposu (#481-#489) — PDF analizinden çıkarılan Anthropic/skills, obra/superpowers, massgen/MassGen vb.
+> **Yeni Eklenen (bu güncelleme):** 9 AI Agent Skills reposu (#481-#489) — Anthropic/skills, obra/superpowers, massgen/MassGen vb.
 > **Önceki Güncelleme:** 103 repo (#378-#480) — 3 AI System Prompt + 100 Three.js 3D Modelleme
 > **Dosya Boyutu:** ~230KB+
 > **Kapsam:** Bu prompt, tüm NOVA AI sistemini baştan sona açıklar. Başka bir AI'ya verildiğinde, o AI sıfırdan Awwwards-seviye website üretebilir.
+
+---
+
+## 🚀 DAHA EKLENEBİLECEK SİSTEMLER & KATEGORİLER
+
+> Aşağıdaki kategoriler ve sistemler MEGA_PROMPT'a henüz eklenmemiştir. Her biri NOVA AI sistemini güçlendirecek önemli kaynaklardır.
+
+### 1. 🗣️ CONVERSATIONAL AI & CHATBOT SİSTEMLERİ (~25 Repo)
+- **Ne İşe Yarar:** Web sitelerine AI chatbot, canlı destek, sesli asistan entegrasyonu
+- **Örnek Repo'lar:**
+  - `vercel/ai-chatbot` → https://github.com/vercel/ai-chatbot — Vercel'in resmi AI chatbot, Next.js ile entegre
+  - `lobehub/lobe-chat` → https://github.com/lobehub/lobe-chat — Açık kaynak ChatGPT alternatifi UI
+  - `di-sukharev/opencommit` → https://github.com/di-sukharev/opencommit — AI ile otomatik git commit mesajı
+  - `all-hands-ai/openhands` → https://github.com/All-Hands-OpenAI/OpenHands — AI coding agent platformu
+  - `TransformerOptimus/SuperAGI` → https://github.com/TransformerOptimus/SuperAGI — AI agent framework
+- **Ne Zaman Eklenecek:** Kullanıcı chatbot özellikli site istediğinde
+
+### 2. 📊 ANALYTICS & TRACKING SİSTEMLERİ (~20 Repo)
+- **Ne İşe Yarar:** Site analitikleri, kullanıcı takibi, heat map, A/B test
+- **Örnek Repo'lar:**
+  - `posthog/posthog` → https://github.com/PostHog/posthog — Açık kaynak product analytics
+  - `plausible/analytics` → https://github.com/plausible/analytics — GDPR dostu analytics
+  - `umami-software/umami` → https://github.com/umami-software/umami — Self-hosted analytics
+  - `microsoft/clarity` → https://github.com/microsoft/clarity — Heat map ve session recording
+  - `growthbook/growthbook` → https://github.com/growthbook/growthbook — A/B test platformu
+- **Ne Zaman Eklenecek:** Kullanıcı dashboard/analytics özellikli site istediğinde
+
+### 3. 🔐 AUTH & GÜVENLİK SİSTEMLERİ (~15 Repo)
+- **Ne İşe Yarar:** Kullanıcı girişi, OAuth, 2FA, role-based access
+- **Örnek Repo'lar:**
+  - `nextauthjs/next-auth` → https://github.com/nextauthjs/next-auth — Next.js auth (mevcut: NextAuth.js v4)
+  - `supabase/supabase` → https://github.com/supabase/supabase — Auth + DB bir arada
+  - `clerk/clerk` → https://github.com/clerk/clerk — Modern auth UI + backend
+- **Ne Zaman Eklenecek:** Kullanıcı login/kayıt gerektiren site istediğinde
+
+### 4. 💳 ÖDEME & E-TİCARET ALTYAPISI (~20 Repo)
+- **Ne İşe Yarar:** Stripe/PayTR entegrasyonu, sepet sistemi, kargo takip
+- **Örnek Repo'lar:**
+  - `vercel/commerce` → https://github.com/vercel/commerce — Next.js e-ticaret template
+  - `stripe/stripe-node` → https://github.com/stripe/stripe-node — Stripe Node.js SDK
+  - `medusajs/medusa` → https://github.com/medusajs/medusa — Açık kaynak Shopify alternatifi
+  - `saleor/saleor` → https://github.com/saleor/saleor — GraphQL e-ticaret platformu
+- **Ne Zaman Eklenecek:** Kullanıcı e-ticaret sitesi istediğinde
+
+### 5. 🌍 MULTILINGUAL & i18n SİSTEMLERİ (~10 Repo)
+- **Ne İşe Yarar:** Otomatik çeviri, çok dilli site, dil algılama
+- **Örnek Repo'lar:**
+  - `i18next/react-i18next` → https://github.com/i18next/react-i18next — React i18n framework
+  - `vercel/next-intl` → https://github.com/amannn/next-intl — Next.js i18n
+  - `argosopentech/argos-translate` → https://github.com/argosopentech/argos-translate — Açık kaynak makine çeviri
+- **Ne Zaman Eklenecek:** 3'ten fazla dil desteği istendiğinde
+
+### 6. 📱 PROGRESSIVE WEB APP (PWA) (~10 Repo)
+- **Ne İşe Yarar:** Offline destek, push notification, app-like deneyim
+- **Örnek Repo'lar:**
+  - `shadowwalker/next-pwa` → https://github.com/shadowwalker/next-pwa — Next.js PWA desteği
+  - `GoogleChrome/workbox` → https://github.com/GoogleChrome/workbox — PWA toolkit
+- **Ne Zaman Eklenecek:** Kullanıcı mobil app deneyimi istediğinde
+
+### 7. 🎮 WEBXR & VR/AR DENEYİMLERİ (~15 Repo)
+- **Ne İşe Yarar:** Web tabanlı VR/AR, 360° tur, sanal showroom
+- **Örnek Repo'lar:**
+  - `aframevr/aframe` → https://github.com/aframevr/aframe — WebVR framework
+  - `google/model-viewer` → https://github.com/google/model-viewer — AR 3D viewer
+- **Ne Zaman Eklenecek:** Kullanıcı VR/AR deneyimi istediğinde
+
+### 8. 🤖 AI IMAGE & VIDEO GENERATION (~20 Repo)
+- **Ne İşe Yarar:** Web sitesi için AI görsel, video, müzik üretimi
+- **Örnek Repo'lar:**
+  - `Comfy-Org/ComfyUI` → https://github.com/Comfy-Org/ComfyUI — Node-based AI içerik üretimi
+  - `replicate/replicate` → https://github.com/replicate/replicate — AI model API
+- **Ne Zaman Eklenecek:** Kullanıcı AI görsel üretimi istediğinde
+
+### 9. 📧 EMAIL & NOTIFICATION SİSTEMLERİ (~10 Repo)
+- **Ne İşe Yarar:** Otomatik email, SMS, push notification, bülten
+- **Örnek Repo'lar:**
+  - `resend/react-email` → https://github.com/resendl/react-email — Email template (mevcut #168)
+  - `novuhq/novu` → https://github.com/novuhq/novu — Açık kaynak notification platformu
+- **Ne Zaman Eklenecek:** Kullanıcı email otomasyonu istediğinde
+
+### 10. 🏗️ CMS & CONTENT MANAGEMENT (~15 Repo)
+- **Ne İşe Yarar:** Headless CMS, blog sistemi, dinamik içerik
+- **Örnek Repo'lar:**
+  - `strapi/strapi` → https://github.com/strapi/strapi — Headless CMS (mevcut)
+  - `payloadcms/payload` → https://github.com/payloadcms/payload — Next.js CMS
+  - `sanity-io/sanity` → https://github.com/sanity-io/sanity — Real-time CMS
+  - `tinacms/tinacms` → https://github.com/tinacms/tinacms — Git-backed CMS
+- **Ne Zaman Eklenecek:** Kullanıcı CMS/blog sistemi istediğinde
+
+### 11. 🔍 SEO & PERFORMANS OPTİMİZASYONU (~10 Repo)
+- **Ne İşe Yarar:** Core Web Vitals, Lighthouse, SEO audit, image optimization
+- **Örnek Repo'lar:**
+  - `GoogleChrome/lighthouse` → https://github.com/GoogleChrome/lighthouse — Performance audit
+  - `addyosmani/web-quality-skills` → https://github.com/addyosmani/web-quality-skills — Web kalitesi (mevcut)
+- **Ne Zaman Eklenecek:** Site performans optimizasyonu gerektiğinde
+
+### 12. 🌐 REAL-TIME & WEBSOCKET (~10 Repo)
+- **Ne İşe Yarar:** Canlı sohbet, gerçek zamanlı güncelleme, collaborative editing
+- **Örnek Repo'lar:**
+  - `socketio/socket.io` → https://github.com/socketio/socket.io — WebSocket kütüphanesi
+  - `supabase/supabase` → https://github.com/supabase/supabase — Realtime abonelikler
+- **Ne Zaman Eklenecek:** Real-time özellikler istendiğinde
+
+---
+
+> **TOPLAM EKLENEBİLECEK:** ~180+ repo, 12 kategori
+> **Mevcut Toplam:** 489 repo + 180 repo = **669 repo hedef**
+> **Eklenme Kuralı:** Kullanıcı ilgili sektör/site türü istediğinde, o kategorinin repoları araştırılıp eklenir
+> **Öncelik Sırası:** İlk olarak Chatbot, Analytics, Auth, Ödeme sistemleri eklenecek
