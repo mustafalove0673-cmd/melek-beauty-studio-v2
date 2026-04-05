@@ -529,6 +529,8 @@ z-ai function -n web_search -a '{"query":"next.js performance optimization 2025 
 ```
 
 ### GitHub Repo Referansları
+
+#### 3D & Web Framework
 | Repo | Teknik | Link |
 |------|--------|------|
 | `pmndrs/react-three-fiber` | R3F ana kütüphane | github.com/pmndrs/react-three-fiber |
@@ -536,6 +538,32 @@ z-ai function -n web_search -a '{"query":"next.js performance optimization 2025 
 | `brave98git/react-3js-wolf` | Three.js + GSAP | github.com/brave98git/react-3js-wolf |
 | `akhil-k-se/AppleWebsite` | Apple tarzı | github.com/akhil-k-se/AppleWebsite |
 | `8KCool/next.js-react-three.js-website` | Next.js + R3F örnek | github.com/8KCool/next.js-react-three.js-website |
+
+#### Claude Code & AI Araçları (@selahattin.unlu referansları)
+| Repo | Açıklama | Stars |
+|------|----------|-------|
+| `shanraisshan/claude-code-best-practice` | Claude Code best practices | Yeni |
+| `microsoft/generative-ai-for-beginners` | AI öğrenme - 21 ders, Türkçe var | 105K+ |
+| `forem/forem` | dev.to arkasındaki topluluk platformu | 23K+ |
+| `storybookjs/storybook` | Component izole test + dokümantasyon | 85K+ |
+| `webstudio-is/webstudio` | Açık kaynak website builder | 8K+ |
+| `remotion-dev/remotion` | React ile MP4 video üret | 21K+ |
+| `siddharthvaddem/openscreen` | SaaS ürün tanıtım videosu | Yeni |
+
+#### Claude Code İpuçları (@selahattin.unlu)
+```
+/simplify        → Son değişiklikleri incele, 3 paralel review al, birleştir
+/model opusplan  → Güçlü modeli sadece karmaşık task'lerde kullan, limitleri tasarruf et
+superpowers      → AI coding agent'lerin bağlam kaybını önle (Claude Code extension)
+```
+
+#### Performans & Test Araçları (@selahattin.unlu)
+```
+Storybook       → Component'leri izole geliştir/test et, visual testing, snapshot, accessibility
+Lighthouse      → Performance, accessibility, best practices, SEO skorları
+Code Splitting  → Bundle boyutunu küçült, lazy loading ile yüklenme hızını artır
+Lazy Loading    → Görseller ve heavy component'ları gecikmeli yükle
+```
 
 ---
 

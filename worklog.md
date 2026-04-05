@@ -179,3 +179,25 @@ Stage Summary:
 - Bilgi bankası sistemi aktif: /knowledge-base/KNOWLEDGE.md
 - Tüm öğrenilenler kalıcı olarak repoda saklanıyor
 - Worklog güncellendi
+
+---
+Task ID: 6
+Agent: main-agent
+Task: Selahattin Ünlü Instagram reels tam analizi ve sisteme kaydetme
+
+Work Log:
+- @selahattin.unlu Instagram profili analiz edildi (14K follower, 99 posts)
+- 6 farklı web search ile 13+ benzersiz reel konusu bulundu
+- Her reel detaylı okunup analiz edildi
+- 7 GitHub repo referansı tespit edildi
+- Claude Code ipuçları: /simplify, /model opusplan, superpowers extension
+- AI öğrenme: microsoft/generative-ai-for-beginners (105K stars)
+- Web araçları: Storybook, Webstudio, Remotion, Forem, Openscreen
+- /knowledge-base/SELAHATTIN_UNLU_REELS.md oluşturuldu
+- Toplam 13 reel, ~4,080+ beğeni analiz edildi
+
+Stage Summary:
+- 13 reel detaylı analiz edildi ve dokümante edildi
+- 7 GitHub repo referansı sisteme kaydedildi
+- CLAUDE.md'e entegrasyon için hazır
+- knowledge-base/SELAHATTIN_UNLU_REELS.md dosyası oluşturuldu
