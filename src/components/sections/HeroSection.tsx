@@ -1,446 +1,234 @@
 'use client';
 
-import { useRef, useCallback, useEffect } from 'react';
-import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
-import { ChevronDown, Sparkles } from 'lucide-react';
+import { useEffect, useRef, useState, useCallback } from 'react';
+import { motion, useScroll, useTransform, useSpring, useMotionValue } from 'framer-motion';
+import { ChevronDown } from 'lucide-react';
 import { useLanguageStore, translations } from '@/lib/language-store';
-import Image from 'next/image';
-import { AuroraOverlay } from '@/components/AnimatedBackground';
-
-/* ─── Simple SVG Butterfly ─── */
-function ButterflySVG({
-  className,
-  style,
-  color = 'white',
-}: {
-  className?: string;
-  style?: React.CSSProperties;
-  color?: string;
-}) {
-  const strokeColor =
-    color === 'pink' ? 'rgba(212,135,143,0.6)' : 'rgba(255,255,255,0.5)';
-  const fillColor =
-    color === 'pink' ? 'rgba(212,135,143,0.08)' : 'rgba(255,255,255,0.06)';
-  return (
-    <svg
-      viewBox="0 0 60 48"
-      fill={fillColor}
-      xmlns="http://www.w3.org/2000/svg"
-      className={className}
-      style={style}
-    >
-      {/* Upper left wing */}
-      <path
-        d="M30 24C30 24 18 8 8 12C2 15 5 24 10 27C15 30 26 25 30 24Z"
-        stroke={strokeColor}
-        strokeWidth="1.2"
-      />
-      {/* Upper right wing */}
-      <path
-        d="M30 24C30 24 42 8 52 12C58 15 55 24 50 27C45 30 34 25 30 24Z"
-        stroke={strokeColor}
-        strokeWidth="1.2"
-      />
-      {/* Lower left wing */}
-      <path
-        d="M30 24C30 24 20 30 16 38C13 43 17 46 22 43C27 40 29 26 30 24Z"
-        stroke={strokeColor}
-        strokeWidth="1"
-        opacity="0.7"
-      />
-      {/* Lower right wing */}
-      <path
-        d="M30 24C30 24 40 30 44 38C47 43 43 46 38 43C33 40 31 26 30 24Z"
-        stroke={strokeColor}
-        strokeWidth="1"
-        opacity="0.7"
-      />
-      {/* Body */}
-      <line
-        x1="30"
-        y1="10"
-        x2="30"
-        y2="42"
-        stroke={strokeColor}
-        strokeWidth="0.8"
-        opacity="0.5"
-      />
-    </svg>
-  );
-}
-
-/* ─── Butterfly configs ─── */
-const butterflies = [
-  {
-    top: '12%',
-    left: '8%',
-    size: 'w-10 h-8',
-    delay: '0s',
-    duration: '12s',
-    color: 'white' as const,
-  },
-  {
-    top: '20%',
-    left: '78%',
-    size: 'w-8 h-6',
-    delay: '3s',
-    duration: '14s',
-    color: 'pink' as const,
-  },
-  {
-    top: '60%',
-    left: '85%',
-    size: 'w-6 h-5',
-    delay: '6s',
-    duration: '11s',
-    color: 'white' as const,
-  },
-  {
-    top: '70%',
-    left: '12%',
-    size: 'w-7 h-6',
-    delay: '2s',
-    duration: '13s',
-    color: 'pink' as const,
-  },
-  {
-    top: '35%',
-    left: '65%',
-    size: 'w-5 h-4',
-    delay: '8s',
-    duration: '15s',
-    color: 'white' as const,
-  },
-  {
-    top: '80%',
-    left: '50%',
-    size: 'w-6 h-5',
-    delay: '5s',
-    duration: '10s',
-    color: 'pink' as const,
-  },
-];
-
-/* ─── Framer Motion variants ─── */
-const fadeInUp = {
-  hidden: { opacity: 0, y: 30 },
-  visible: (delay: number) => ({
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.8,
-      delay,
-      ease: [0.25, 0.46, 0.45, 0.94],
-    },
-  }),
-};
 
 export default function HeroSection() {
+  const sectionRef = useRef<HTMLElement>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
   const { language } = useLanguageStore();
-  const t = translations[language].hero;
-  const sectionRef = useRef<HTMLDivElement>(null);
-
-  /* ─── Mouse parallax with spring physics ─── */
-  const rawMouseX = useMotionValue(0);
-  const rawMouseY = useMotionValue(0);
-  const smoothX = useSpring(rawMouseX, { stiffness: 40, damping: 30 });
-  const smoothY = useSpring(rawMouseY, { stiffness: 40, damping: 30 });
-
-  /* Parallax transforms at different depths */
-  const bgX = useTransform(smoothX, (v) => v * -8);
-  const bgY = useTransform(smoothY, (v) => v * -8);
-  const auroraX = useTransform(smoothX, (v) => v * -5);
-  const auroraY = useTransform(smoothY, (v) => v * -5);
-  const circleX = useTransform(smoothX, (v) => v * -12);
-  const circleY = useTransform(smoothY, (v) => v * -12);
-
-  const handleMouseMove = useCallback(
-    (e: MouseEvent) => {
-      if (!sectionRef.current) return;
-      const rect = sectionRef.current.getBoundingClientRect();
-      const cx = rect.left + rect.width / 2;
-      const cy = rect.top + rect.height / 2;
-      rawMouseX.set((e.clientX - cx) / rect.width);
-      rawMouseY.set((e.clientY - cy) / rect.height);
-    },
-    [rawMouseX, rawMouseY]
-  );
+  const t = translations[language];
+  const [isMobile, setIsMobile] = useState(true);
 
   useEffect(() => {
-    const el = sectionRef.current;
-    if (!el) return;
-    el.addEventListener('mousemove', handleMouseMove, { passive: true });
-    return () => el.removeEventListener('mousemove', handleMouseMove);
-  }, [handleMouseMove]);
+    const check = () => setIsMobile(window.innerWidth < 768);
+    check();
+    window.addEventListener('resize', check);
+    return () => window.removeEventListener('resize', check);
+  }, []);
 
-  const scrollToSection = (id: string) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+  // Scroll progress
+  const { scrollYProgress } = useScroll({
+    target: sectionRef,
+    offset: ['start start', 'end start'],
+  });
+  const heroOpacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
+  const heroScale = useTransform(scrollYProgress, [0, 0.8], [1, 1.1]);
+  const heroY = useTransform(scrollYProgress, [0, 0.8], [0, -80]);
+
+  // Mouse parallax
+  const mouseX = useMotionValue(0);
+  const mouseY = useMotionValue(0);
+  const springX = useSpring(mouseX, { stiffness: 40, damping: 30 });
+  const springY = useSpring(mouseY, { stiffness: 40, damping: 30 });
+
+  const layer1X = useTransform(springX, [-0.5, 0.5], isMobile ? [-8, 8] : [-15, 15]);
+  const layer1Y = useTransform(springY, [-0.5, 0.5], isMobile ? [-5, 5] : [-10, 10]);
+  const layer2X = useTransform(springX, [-0.5, 0.5], isMobile ? [-15, 15] : [-30, 30]);
+  const layer2Y = useTransform(springY, [-0.5, 0.5], isMobile ? [-10, 10] : [-20, 20]);
+  const layer3X = useTransform(springX, [-0.5, 0.5], isMobile ? [-20, 20] : [-50, 50]);
+  const layer3Y = useTransform(springY, [-0.5, 0.5], isMobile ? [-15, 15] : [-35, 35]);
+
+  const handleMouseMove = useCallback((e: React.MouseEvent) => {
+    const rect = sectionRef.current?.getBoundingClientRect();
+    if (!rect) return;
+    mouseX.set((e.clientX - rect.left) / rect.width - 0.5);
+    mouseY.set((e.clientY - rect.top) / rect.height - 0.5);
+  }, [mouseX, mouseY]);
+
+  const textVariants = {
+    hidden: {},
+    visible: {
+      transition: { staggerChildren: 0.15, delayChildren: 0.3 },
+    },
   };
 
+  const letterVariants = {
+    hidden: { opacity: 0, y: 80, rotateX: -90 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      rotateX: 0,
+      transition: { duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] },
+    },
+  };
+
+  const title = t.hero.title;
+  const subtitle = t.hero.subtitle;
+
   return (
-    <section
-      id="home"
+    <motion.section
       ref={sectionRef}
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
-      style={{ perspective: '1200px' }}
+      id="hero"
+      className="relative h-screen w-full overflow-hidden bg-dark"
+      onMouseMove={handleMouseMove}
     >
-      {/* ═══ Layer 0: Background Image (parallax – slowest) ═══ */}
+      {/* Background Image with Ken Burns */}
       <motion.div
         className="absolute inset-0 z-0"
-        style={{ x: bgX, y: bgY }}
-      >
-        <div className="absolute inset-[-5%]">
-          <Image
-            src="/images/hero-bg.png"
-            alt="Melek Yüksel Hair Beauty Salon"
-            fill
-            className="object-cover"
-            priority
-            quality={85}
-            style={{
-              filter: 'blur(2px) brightness(0.45)',
-              transform: 'scale(1.1)',
-            }}
-          />
-        </div>
-      </motion.div>
-
-      {/* ═══ Layer 1: Dark gradient overlays ═══ */}
-      <div
-        className="absolute inset-0 z-[1]"
-        style={{
-          background:
-            'linear-gradient(160deg, rgba(26,26,46,0.85) 0%, rgba(139,34,82,0.45) 45%, rgba(26,26,46,0.9) 100%)',
-        }}
-      />
-      <div
-        className="absolute inset-0 z-[1]"
-        style={{
-          background:
-            'radial-gradient(ellipse at 25% 50%, rgba(139,34,82,0.2) 0%, transparent 55%)',
-        }}
-      />
-      <div
-        className="absolute inset-0 z-[1]"
-        style={{
-          background:
-            'radial-gradient(ellipse at 80% 30%, rgba(201,169,110,0.06) 0%, transparent 40%)',
-        }}
-      />
-
-      {/* ═══ Layer 2: Aurora (parallax – medium) ═══ */}
-      <motion.div
-        className="absolute inset-0 z-[2]"
-        style={{ x: auroraX, y: auroraY }}
-      >
-        <AuroraOverlay variant="mixed" />
-      </motion.div>
-
-      {/* ═══ Layer 3: Glassmorphic Circle / Ring (left side) ═══ */}
-      <motion.div
-        className="absolute z-[3] pointer-events-none hidden sm:block"
-        style={{
-          top: '10%',
-          left: '-8%',
-          width: 'clamp(280px, 45vw, 550px)',
-          height: 'clamp(280px, 45vw, 550px)',
-          x: circleX,
-          y: circleY,
-        }}
-        initial={{ opacity: 0, scale: 0.8 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 1.5, delay: 0.3, ease: 'easeOut' }}
+        style={{ scale: heroScale, y: heroY }}
       >
         <div
-          className="w-full h-full rounded-full animate-glass-ring"
+          className="absolute inset-0 animate-ken-burns"
           style={{
-            border: '1.5px solid rgba(255,255,255,0.08)',
-            background:
-              'radial-gradient(circle at 30% 30%, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0.01) 50%, transparent 70%)',
-            backdropFilter: 'blur(1px)',
-            WebkitBackdropFilter: 'blur(1px)',
-            boxShadow:
-              'inset 0 0 60px rgba(255,255,255,0.02), 0 0 80px rgba(139,34,82,0.08), 0 0 120px rgba(201,169,110,0.04)',
+            backgroundImage: 'url(/images/hero-bg.png)',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center 30%',
           }}
         />
-        {/* Inner ring */}
-        <div
-          className="absolute inset-[15%] rounded-full animate-glass-ring-reverse"
-          style={{
-            border: '1px solid rgba(201,169,110,0.1)',
-            background:
-              'radial-gradient(circle at 60% 40%, rgba(201,169,110,0.04) 0%, transparent 60%)',
-          }}
-        />
+        {/* Dark overlays */}
+        <div className="absolute inset-0 bg-gradient-to-b from-dark/70 via-dark/50 to-dark" />
+        <div className="absolute inset-0 bg-gradient-to-r from-dark/60 via-transparent to-dark/40" />
       </motion.div>
 
-      {/* ═══ Layer 4: Small glass panel decorations ═══ */}
-      <motion.div
-        className="absolute top-[15%] right-[12%] w-20 h-20 sm:w-28 sm:h-28 rounded-2xl z-[3] pointer-events-none animate-float-slow"
-        style={{
-          background: 'rgba(255,255,255,0.03)',
-          backdropFilter: 'blur(8px)',
-          WebkitBackdropFilter: 'blur(8px)',
-          border: '1px solid rgba(255,255,255,0.06)',
-        }}
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1, duration: 1 }}
-      />
-      <motion.div
-        className="absolute bottom-[20%] left-[5%] w-16 h-16 sm:w-24 sm:h-24 rounded-full z-[3] pointer-events-none animate-float-reverse"
-        style={{
-          background: 'rgba(201,169,110,0.03)',
-          backdropFilter: 'blur(6px)',
-          WebkitBackdropFilter: 'blur(6px)',
-          border: '1px solid rgba(201,169,110,0.06)',
-          animationDelay: '3s',
-        }}
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.2, duration: 1 }}
-      />
+      {/* Gradient Mesh Overlay */}
+      <div className="absolute inset-0 z-[1] bg-gradient-mesh opacity-60" />
 
-      {/* ═══ Layer 5: Floating Butterflies ═══ */}
-      <div className="absolute inset-0 z-[4] pointer-events-none overflow-hidden">
-        {butterflies.map((b, i) => (
-          <ButterflySVG
-            key={i}
-            className={`absolute ${b.size} animate-butterfly-float`}
-            style={{
-              top: b.top,
-              left: b.left,
-              animationDelay: b.delay,
-              animationDuration: b.duration,
-              opacity: i < 2 ? 0.5 : 0.35,
-            }}
-            color={b.color}
-          />
-        ))}
-      </div>
-
-      {/* ═══ Layer 6: Main Content ═══ */}
+      {/* Aurora blobs - Layer 1 (slow parallax) */}
       <motion.div
-        className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 text-center"
-        style={{ transformStyle: 'preserve-3d' }}
-        initial="hidden"
-        animate="visible"
+        className="absolute inset-0 z-[2] pointer-events-none"
+        style={{ x: layer1X, y: layer1Y }}
       >
-        {/* Sparkle icon */}
+        <div className="absolute top-[10%] left-[5%] w-[500px] h-[500px] rounded-full bg-rose/10 blur-[120px] animate-aurora" />
+        <div className="absolute bottom-[10%] right-[10%] w-[400px] h-[400px] rounded-full bg-gold/8 blur-[100px] animate-aurora-2" />
+      </motion.div>
+
+      {/* Floating orbs - Layer 2 (medium parallax) */}
+      <motion.div
+        className="absolute inset-0 z-[3] pointer-events-none"
+        style={{ x: layer2X, y: layer2Y }}
+      >
+        {/* Geometric ring */}
+        <div className="absolute top-[15%] right-[15%] w-32 h-32 md:w-48 md:h-48 border border-rose/15 rounded-full animate-rotate-slow" />
+        <div className="absolute top-[15%] right-[15%] w-24 h-24 md:w-36 md:h-36 border border-gold/10 rounded-full animate-rotate-reverse-slow" />
+        {/* Small diamond */}
+        <div className="absolute top-[25%] left-[20%] w-3 h-3 bg-rose/30 rotate-45 animate-float-slow" />
+        {/* Dots */}
+        <div className="absolute bottom-[30%] left-[10%] w-2 h-2 bg-gold/40 rounded-full animate-float" />
+        <div className="absolute top-[20%] left-[60%] w-1.5 h-1.5 bg-rose/40 rounded-full animate-float-reverse" />
+        <div className="absolute bottom-[20%] right-[30%] w-2.5 h-2.5 bg-gold/25 rounded-full animate-float-slow" />
+        {/* Vertical line decoration */}
+        <div className="absolute top-0 bottom-0 right-[25%] w-px bg-gradient-to-b from-transparent via-rose/10 to-transparent" />
+        {/* Horizontal line decoration */}
+        <div className="absolute left-0 right-0 top-[35%] h-px bg-gradient-to-r from-transparent via-gold/8 to-transparent" />
+      </motion.div>
+
+      {/* Decorative shapes - Layer 3 (fast parallax) */}
+      {!isMobile && (
         <motion.div
-          custom={0.2}
-          variants={fadeInUp}
-          className="flex justify-center mb-4 sm:mb-6"
+          className="absolute inset-0 z-[4] pointer-events-none"
+          style={{ x: layer3X, y: layer3Y }}
         >
-          <Sparkles
-            className="w-6 h-6 sm:w-8 sm:h-8"
-            style={{ color: 'var(--salon-gold)', opacity: 0.8 }}
-          />
+          <div className="absolute top-[60%] left-[5%] w-20 h-20 border border-gold/10 rounded-lg rotate-12 animate-float" />
+          <div className="absolute top-[10%] right-[40%] w-4 h-4 bg-rose/15 rounded-full animate-float-reverse" />
+          <div className="absolute bottom-[15%] left-[40%] w-6 h-6 border border-rose/10 rotate-45 animate-float-slow" />
         </motion.div>
+      )}
 
-        {/* Title: "Melek Yüksel" – large serif with 3D text shadow */}
-        <motion.h1
-          custom={0.4}
-          variants={fadeInUp}
-          className="font-playfair text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-1 sm:mb-2"
-          style={{
-            textShadow:
-              '0 2px 4px rgba(0,0,0,0.3), 0 4px 12px rgba(0,0,0,0.2), 0 8px 24px rgba(139,34,82,0.15)',
-          }}
-        >
-          {t.title}
-        </motion.h1>
-
-        {/* Subtitle: "Hair Beauty" – italic serif, gold */}
-        <motion.p
-          custom={0.6}
-          variants={fadeInUp}
-          className="text-2xl sm:text-3xl md:text-4xl tracking-[0.2em] sm:tracking-[0.3em] uppercase mb-3 sm:mb-4 font-playfair italic"
-          style={{
-            color: 'var(--salon-gold)',
-            textShadow: '0 2px 8px rgba(201,169,110,0.25)',
-          }}
-        >
-          {t.subtitle}
-        </motion.p>
-
-        {/* Description text */}
-        <motion.p
-          custom={0.8}
-          variants={fadeInUp}
-          className="text-sm sm:text-base md:text-lg text-white/60 mb-8 sm:mb-10 max-w-lg mx-auto leading-relaxed"
-        >
-          {t.description}
-        </motion.p>
-
-        {/* CTA Buttons */}
+      {/* Main Content */}
+      <motion.div
+        ref={containerRef}
+        className="relative z-10 h-full flex flex-col items-center justify-center px-6 text-center"
+        style={{ opacity: heroOpacity }}
+      >
         <motion.div
-          custom={1.0}
-          variants={fadeInUp}
-          className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4"
+          variants={textVariants}
+          initial="hidden"
+          animate="visible"
+          className="perspective-1500"
         >
-          {/* Primary CTA – "Randevu Al" */}
-          <motion.button
-            whileHover={{
-              y: -3,
-              boxShadow: '0 12px 35px rgba(139, 34, 82, 0.45)',
-            }}
-            whileTap={{
-              y: 1,
-              boxShadow: '0 4px 15px rgba(139, 34, 82, 0.3)',
-            }}
-            onClick={() => scrollToSection('booking')}
-            className="px-7 sm:px-8 py-3 sm:py-3.5 rounded-full text-white font-semibold text-sm sm:text-base tracking-wide cursor-pointer transition-all duration-300"
-            style={{
-              background:
-                'linear-gradient(135deg, var(--salon-pink), var(--salon-red))',
-              boxShadow: '0 6px 25px rgba(139, 34, 82, 0.35)',
-            }}
+          {/* Top tag */}
+          <motion.div
+            className="mb-6 md:mb-8"
+            variants={letterVariants}
           >
-            {t.cta1}
-          </motion.button>
+            <span className="inline-block px-5 py-2 text-xs md:text-sm tracking-[0.3em] uppercase glass rounded-full text-cream/70 font-body">
+              {t.hero.description}
+            </span>
+          </motion.div>
 
-          {/* Secondary CTA – "Hizmetleri İncele" (outlined/ghost) */}
-          <motion.button
-            whileHover={{
-              y: -3,
-              backgroundColor: 'rgba(255,255,255,0.12)',
-              borderColor: 'rgba(255,255,255,0.45)',
-              boxShadow: '0 8px 25px rgba(0,0,0,0.2)',
-            }}
-            whileTap={{ y: 1, scale: 0.98 }}
-            onClick={() => scrollToSection('services')}
-            className="px-7 sm:px-8 py-3 sm:py-3.5 rounded-full font-semibold text-sm sm:text-base tracking-wide text-white/90 border-2 cursor-pointer transition-all duration-300"
-            style={{
-              borderColor: 'rgba(255,255,255,0.25)',
-              backgroundColor: 'rgba(255,255,255,0.04)',
-              backdropFilter: 'blur(8px)',
-              WebkitBackdropFilter: 'blur(8px)',
-            }}
+          {/* Main Title */}
+          <h1 className="font-display text-5xl md:text-7xl lg:text-8xl xl:text-9xl font-bold tracking-tight leading-[0.95] mb-4 md:mb-6 preserve-3d">
+            <motion.span
+              className="block text-cream"
+              variants={letterVariants}
+            >
+              {title}
+            </motion.span>
+          </h1>
+
+          {/* Subtitle with gold gradient */}
+          <motion.h2
+            className="font-display text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-light italic tracking-wide text-gradient-gold mb-6 md:mb-8"
+            variants={letterVariants}
           >
-            {t.cta2}
-          </motion.button>
+            {subtitle}
+          </motion.h2>
+
+          {/* Decorative line */}
+          <motion.div
+            className="w-24 h-[1px] bg-gradient-to-r from-transparent via-gold/50 to-transparent mx-auto mb-8"
+            variants={letterVariants}
+          />
+
+          {/* CTA Buttons */}
+          <motion.div
+            className="flex flex-col sm:flex-row items-center justify-center gap-4"
+            variants={letterVariants}
+          >
+            <a
+              href="#booking"
+              onClick={(e) => { e.preventDefault(); document.querySelector('#booking')?.scrollIntoView({ behavior: 'smooth' }); }}
+              className="group relative px-8 py-4 bg-gradient-to-r from-rose-deep to-rose rounded-full text-white font-body text-sm tracking-wider uppercase overflow-hidden transition-all duration-300 hover:shadow-[0_10px_40px_rgba(200,80,111,0.3)]"
+            >
+              <span className="relative z-10">{t.hero.cta1}</span>
+              <div className="absolute inset-0 bg-gradient-to-r from-rose to-rose-light opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            </a>
+            <a
+              href="#services"
+              onClick={(e) => { e.preventDefault(); document.querySelector('#services')?.scrollIntoView({ behavior: 'smooth' }); }}
+              className="px-8 py-4 glass rounded-full text-cream/80 font-body text-sm tracking-wider uppercase hover:text-cream hover:border-cream/20 transition-all duration-300"
+            >
+              {t.hero.cta2}
+            </a>
+          </motion.div>
         </motion.div>
       </motion.div>
 
-      {/* ═══ Scroll Down Indicator ═══ */}
+      {/* Scroll Indicator */}
       <motion.div
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 1.8, duration: 0.8 }}
-        className="absolute bottom-6 sm:bottom-8 left-1/2 -translate-x-1/2 z-10"
+        transition={{ delay: 1.5, duration: 0.8 }}
       >
-        <button
-          onClick={() => scrollToSection('services')}
-          className="flex flex-col items-center gap-1.5 cursor-pointer group"
-          aria-label="Scroll down"
+        <span className="text-[10px] tracking-[0.3em] uppercase text-cream/30 font-body">
+          {language === 'tr' ? 'Keşfet' : 'Explore'}
+        </span>
+        <motion.div
+          className="animate-scroll-indicator"
         >
-          <span className="text-white/40 text-[10px] sm:text-xs tracking-widest uppercase">
-            Scroll
-          </span>
-          <ChevronDown className="w-4 h-4 sm:w-5 sm:h-5 text-white/40 animate-scroll-down" />
-        </button>
+          <ChevronDown size={20} className="text-cream/30" />
+        </motion.div>
       </motion.div>
-    </section>
+
+      {/* Bottom gradient fade */}
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-dark to-transparent z-[5]" />
+
+      {/* Noise overlay */}
+      <div className="absolute inset-0 z-[6] noise-overlay pointer-events-none" />
+    </motion.section>
   );
 }

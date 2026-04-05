@@ -1,65 +1,68 @@
 'use client';
 
-import { motion } from 'framer-motion';
-import { MessageCircle, Phone, MapPin } from 'lucide-react';
-
-const buttons = [
-  {
-    icon: MessageCircle,
-    href: 'https://wa.me/905551234567',
-    bgColor: '#25D366',
-    hoverShadow: '0 8px 25px rgba(37, 211, 102, 0.45)',
-    ariaLabel: 'WhatsApp',
-  },
-  {
-    icon: Phone,
-    href: 'tel:+905551234567',
-    bgColor: 'var(--salon-pink)',
-    hoverShadow: '0 8px 25px rgba(139, 34, 82, 0.45)',
-    ariaLabel: 'Phone',
-  },
-  {
-    icon: MapPin,
-    href: 'https://www.google.com/maps/search/Pursaklar,+Ankara',
-    bgColor: 'var(--salon-green)',
-    hoverShadow: '0 8px 25px rgba(45, 80, 22, 0.45)',
-    ariaLabel: 'Location',
-  },
-];
+import { useEffect, useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { MessageCircle, Phone, ArrowUp } from 'lucide-react';
 
 export default function FloatingButtons() {
+  const [showScrollTop, setShowScrollTop] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowScrollTop(window.scrollY > 500);
+    };
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <div className="fixed bottom-6 right-6 z-40 flex flex-col gap-3">
-      {buttons.map((btn, i) => {
-        const Icon = btn.icon;
-        return (
-          <motion.a
-            key={i}
-            href={btn.href}
-            target={btn.href.startsWith('http') ? '_blank' : undefined}
-            rel={btn.href.startsWith('http') ? 'noopener noreferrer' : undefined}
-            aria-label={btn.ariaLabel}
-            initial={{ opacity: 0, y: 20, scale: 0.8 }}
-            animate={{ opacity: 1, y: 0, scale: 1 }}
-            transition={{
-              delay: 1.5 + i * 0.15,
-              duration: 0.4,
-              type: 'spring',
-              stiffness: 200,
-              damping: 15,
-            }}
-            whileHover={{
-              scale: 1.1,
-              boxShadow: btn.hoverShadow,
-            }}
-            whileTap={{ scale: 0.9, y: 2 }}
-            className="w-12 h-12 rounded-full flex items-center justify-center text-white shadow-lg transition-shadow duration-300 cursor-pointer"
-            style={{ backgroundColor: btn.bgColor }}
+      {/* WhatsApp */}
+      <motion.a
+        href="https://wa.me/905551234567"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="w-14 h-14 rounded-full bg-green-500/90 backdrop-blur-md flex items-center justify-center text-white shadow-lg shadow-green-500/20 hover:bg-green-500 transition-all duration-300"
+        initial={{ scale: 0, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ delay: 1, type: 'spring', stiffness: 260, damping: 20 }}
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}
+        aria-label="WhatsApp"
+      >
+        <MessageCircle size={24} />
+      </motion.a>
+
+      {/* Phone */}
+      <motion.a
+        href="tel:+905551234567"
+        className="w-14 h-14 rounded-full glass-strong flex items-center justify-center text-cream/70 hover:text-cream hover:bg-white/10 transition-all duration-300"
+        initial={{ scale: 0, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ delay: 1.1, type: 'spring', stiffness: 260, damping: 20 }}
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}
+        aria-label="Phone"
+      >
+        <Phone size={22} />
+      </motion.a>
+
+      {/* Scroll to Top */}
+      <AnimatePresence>
+        {showScrollTop && (
+          <motion.button
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            className="w-14 h-14 rounded-full glass-strong flex items-center justify-center text-cream/50 hover:text-cream hover:bg-white/10 transition-all duration-300"
+            initial={{ scale: 0, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            exit={{ scale: 0, opacity: 0 }}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            aria-label="Scroll to top"
           >
-            <Icon className="w-5 h-5" />
-          </motion.a>
-        );
-      })}
+            <ArrowUp size={22} />
+          </motion.button>
+        )}
+      </AnimatePresence>
     </div>
   );
 }
