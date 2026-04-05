@@ -96,3 +96,41 @@ Completely rewrote `/src/components/sections/HeroSection.tsx` and appended 3D CS
 - Smaller sizes for all 3D elements on mobile
 
 **Code Quality:** ESLint passes with zero errors. No new packages imported.
+
+---
+## Task ID: 3 - hero-redesign-v2
+### Work Task
+Redesign hero section based on reference screenshot with clean, elegant, subtle 3D effects. Mobile-first design with dark luxurious feel, glassmorphic circle, floating butterflies, and mouse parallax.
+
+### Work Summary
+Completely rewrote `/src/components/sections/HeroSection.tsx` and appended 3 new CSS keyframes to `/src/app/globals.css`.
+
+**Design Philosophy:** Shifted from the previous over-the-top 3D effect approach to a clean, elegant, reference-matching design. The 3D is now subtle and tasteful — layered depth, gentle parallax, and simple decorative elements.
+
+**Hero Section Architecture (back to front):**
+1. **Layer 0 – Background Image**: Blurred hero photo (brightness 0.45, blur 2px) with mouse parallax via `useTransform` + `useSpring` (slowest depth, ±8px)
+2. **Layer 1 – Gradient Overlays**: Three overlays — dark linear gradient (#1A1A2E → #8B2252 → dark), radial pink glow at 25%, subtle gold radial at 80%
+3. **Layer 2 – Aurora**: Mixed aurora overlay with medium parallax depth (±5px)
+4. **Layer 3 – Glassmorphic Circle**: Large semi-transparent ring on the left side with outer ring (gentle 18s rotate/scale animation) and inner gold-accented ring (14s counter-rotation), hidden on mobile. Parallax depth ±12px
+5. **Layer 4 – Glass Panel Decorations**: Two small floating glassmorphic shapes (rounded rect + circle) with float animations
+6. **Layer 5 – Floating Butterflies**: 6 simple SVG outline butterflies (alternating white/pink) scattered across the hero with gentle floating animation (12-15s varied durations)
+7. **Layer 6 – Main Content**: Title (Playfair Display, 3D text-shadow), "Hair Beauty" subtitle (italic gold), description, two CTA buttons (primary pink gradient + ghost outline with backdrop blur)
+
+**Technical Implementation:**
+- Mouse parallax uses framer-motion `useMotionValue` → `useSpring` (stiffness: 40, damping: 30) → `useTransform` for smooth reactive movement at 3 depth levels
+- `fadeInUp` variants with staggered delays (0.2s → 1.0s) for content entrance
+- CTA buttons use `whileHover` lift effect (y: -3px) with enhanced box-shadow
+- Removed duplicate floating action buttons (already exist in global `FloatingButtons` component)
+- Removed unused imports (`MessageCircle`, `Phone`, `useSyncExternalStore`)
+
+**New CSS Keyframes Added:**
+- `glass-ring` (18s): gentle rotation ±3deg with scale pulse and opacity change
+- `glass-ring-reverse` (14s): counter-rotation ±4deg with scale
+- `butterfly-float-gentle` (12s): multi-step float with subtle translate, rotate, and scale variations
+
+**Generated New Hero Background Image:**
+- 1344×768, professional female hair stylist in luxury dark beauty salon
+- Deep purple and dark pink ambient lighting, cinematic dark moody aesthetic
+- Ethereal soft glow, dark vignette edges
+
+**Code Quality:** Zero compile errors. Dev server running clean. No new dependencies added.
