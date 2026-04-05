@@ -1,7 +1,7 @@
 /**
- * useLenisSmoothScroll - darkroomengineering/lenis (#69)
- * Ultra-smooth scroll. Premium sitelerin vazgeçilmezi.
- * Kurulu: @studio-freight/lenis@1.0.42
+ * useLenisSmoothScroll - darkroomengineering/lenis (#69) + GSAP ScrollTrigger
+ * Ultra-smooth scroll with GSAP integration. Premium sitelerin vazgeçilmezi.
+ * Kurulu: @studio-freight/lenis@1.0.42, gsap@3.14.2
  */
 'use client';
 
@@ -20,12 +20,23 @@ export function useLenisSmoothScroll() {
 
     lenisRef.current = lenis;
 
-    function raf(time: number) {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    }
+    // Sync with GSAP ScrollTrigger
+    if (typeof window !== 'undefined') {
+      const initGSAP = async () => {
+        const gsap = (await import('gsap')).default;
+        const ScrollTrigger = (await import('gsap/ScrollTrigger')).default;
+        gsap.registerPlugin(ScrollTrigger);
 
-    requestAnimationFrame(raf);
+        lenis.on('scroll', ScrollTrigger.update);
+
+        gsap.ticker.add((time) => {
+          lenis.raf(time * 1000);
+        });
+
+        gsap.ticker.lagSmoothing(0);
+      };
+      initGSAP();
+    }
 
     return () => {
       lenis.destroy();

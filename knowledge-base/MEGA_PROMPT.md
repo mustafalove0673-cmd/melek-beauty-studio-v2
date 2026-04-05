@@ -1,9 +1,9 @@
 # 🧠 NOVA AI - MEGA PROMPT
 # Bu prompt'u başka bir AI'ya verdiğinde, o AI tüm sistemi anlar ve uygulayabilir.
 
-> **Versiyon:** 7.1
-> **Son Güncelleme:** 2026-04-14
-> **Toplam Repo:** 231 (GitHub API doğrulanmış)
+> **Versiyon:** 8.0
+> **Son Güncelleme:** 2026-06-22
+> **Toplam Repo:** 283 (GitHub API doğrulanmış)
 > **Hedef Repo:** 400+ (12 yeni kategori planlı)
 > **Kurulu Paket:** 19
 > **AI Skill:** 16
@@ -2542,6 +2542,438 @@ vr, game, oyun → cyberpunk
   - `di-sukharev/opencommit` → https://github.com/di-sukharev/opencommit — AI ile otomatik git commit mesajı
 
 > **TOPLAM EKLENEBİLECEK:** ~180+ repo, 12 kategori
-> **Mevcut Toplam:** 489 repo + 180 repo = **669 repo hedef**
+> **Mevcut Toplam:** 283 repo (v8.0'da +52 yeni eklendi)
 > **Eklenme Kuralı:** Kullanıcı ilgili sektör/site türü istediğinde, o kategorinin repoları araştırılıp eklenir
 > **Öncelik Sırası:** İlk olarak Chatbot, Analytics, Auth, Ödeme sistemleri eklenecek
+
+---
+
+## 🔄 GRUP 9: PAGE TRANSITIONS & GEÇİŞ ANİMASYONLARI (#232-247) — v8.0 YENİ
+
+### Repo #232: meursyphus/ssgoi
+- **GitHub:** https://github.com/meursyphus/ssgoi
+- **Açıklama:** SSR framework'ler için sayfa geçiş animasyonu
+- **Stars:** 836
+- **Kategori:** Page Transitions & Geçiş Animasyonları
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Safari dahil tüm tarayıcılarda animated page transition tekniği
+
+### Repo #233: ismamz/next-transition-router
+- **GitHub:** https://github.com/ismamz/next-transition-router
+- **Açıklama:** Next.js App Router sayfa geçiş kütüphanesi
+- **Stars:** 340
+- **Kategori:** Page Transitions & Geçiş Animasyonları
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Next.js App Router + Framer Motion ile sayfa geçiş animasyonları
+
+### Repo #234: FunTechInc/mekuri
+- **GitHub:** https://github.com/FunTechInc/mekuri
+- **Açıklama:** React sayfa geçiş animasyon kütüphanesi
+- **Stars:** 68
+- **Kategori:** Page Transitions & Geçiş Animasyonları
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** React sayfalar arası geçiş animasyonu implementasyonu
+
+### Repo #235: git-chad/daytona-clothing
+- **GitHub:** https://github.com/git-chad/daytona-clothing
+- **Açıklama:** Karmaşık sayfa geçiş animasyonlu concept site
+- **Stars:** 4
+- **Kategori:** Page Transitions & Geçiş Animasyonları
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Next.js + Tailwind + GSAP ile kompleks page transition kalıpları
+
+### Repo #236: adrianhajdin/gsap_cocktails
+- **GitHub:** https://github.com/adrianhajdin/gsap_cocktails
+- **Açıklama:** GSAP ile modern cocktail sitesi — SplitText, parallax, scroll-triggered
+- **Stars:** 315
+- **Kategori:** Page Transitions & Geçiş Animasyonları
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** SplitText reveal, scroll-triggered, parallax, custom carousel teknikleri
+
+### Repo #237: adrianhajdin/jsm_gta_vi_landing
+- **GitHub:** https://github.com/adrianhajdin/jsm_gta_vi_landing
+- **Açıklama:** GTA VI Website Clone — sinematik scroll, pinned sections, synced video
+- **Stars:** 167
+- **Kategori:** Page Transitions & Geçiş Animasyonları
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Scroll-driven cinematic, pinned sections, synced video, parallax, image masking
+
+### Repo #238: codebucks27/The-Weirdos-NFT-Website-Starter-Code
+- **GitHub:** https://github.com/codebucks27/The-Weirdos-NFT-Website-Starter-Code
+- **Açıklama:** GSAP ile NFT site — cool scrolling animasyon
+- **Stars:** 421
+- **Kategori:** Page Transitions & Geçiş Animasyonları
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** GSAP ile premium scroll animasyon kalıpları
+
+### Repo #239: codebucks27/3D-Landing-page-for-Apple-iPhone
+- **GitHub:** https://github.com/codebucks27/3D-Landing-page-for-Apple-iPhone
+- **Açıklama:** Three.js + GSAP ile iPhone landing page
+- **Stars:** 104
+- **Kategori:** Page Transitions & Geçiş Animasyonları
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Three.js 3D model + GSAP scroll animasyon entegrasyonu
+
+### Repo #240: codebucks27/Agency-website
+- **GitHub:** https://github.com/codebucks27/Agency-website
+- **Açıklama:** GSAP ile agency site — smooth scrolling animations
+- **Stars:** 239
+- **Kategori:** Page Transitions & Geçiş Animasyonları
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** React + styled-components + GSAP smooth scroll
+
+### Repo #241: ShowravKormokar/capsule
+- **GitHub:** https://github.com/ShowravKormokar/capsule
+- **Açıklama:** Awwwards-winning "capsule.moyra.co" klonu
+- **Stars:** 40
+- **Kategori:** Page Transitions & Geçiş Animasyonları
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Karmaşık animasyonlar + responsive layout + React + GSAP
+
+### Repo #242: poojahooda22/motion-website
+- **GitHub:** https://github.com/poojahooda22/motion-website
+- **Açıklama:** Awwwards winning site klonu — Vite + React + GSAP + Framer Motion
+- **Stars:** 155
+- **Kategori:** Page Transitions & Geçiş Animasyonları
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Locomotive Scroll + GSAP + Framer Motion kombinasyonu
+
+### Repo #243: IvanSmiths/next-gsap-scroll
+- **GitHub:** https://github.com/IvanSmiths/next-gsap-scroll
+- **Açıklama:** Next.js horizontal scroll + GSAP ScrollTrigger
+- **Stars:** 33
+- **Kategori:** Page Transitions & Geçiş Animasyonları
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Next.js'de horizontal scroll implementasyonu
+
+### Repo #244: WebDevPie/Smooth-Scrolling-For-Your-Website---Lenis-GSAP-Animation-ScrollTrigger
+- **GitHub:** https://github.com/WebDevPie/Smooth-Scrolling-For-Your-Website---Lenis-GSAP-Animation-ScrollTrigger
+- **Açıklama:** Lenis + GSAP ScrollTrigger entegrasyon rehberi
+- **Stars:** 25
+- **Kategori:** Page Transitions & Geçiş Animasyonları
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Lenis smooth scroll + GSAP ScrollTrigger kombinasyonu
+
+### Repo #245: codeaashu/Selemen-Clone
+- **GitHub:** https://github.com/codeaashu/Selemen-Clone
+- **Açıklama:** Selemen website klonu — premium smooth scroll
+- **Stars:** 37
+- **Kategori:** Page Transitions & Geçiş Animasyonları
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Premium smooth scroll + hover effects kalıpları
+
+### Repo #246: hossensumon071/react-immorial
+- **GitHub:** https://github.com/hossensumon071/react-immorial
+- **Açıklama:** Fotoğraf sitesi — React + GSAP ScrollTrigger
+- **Stars:** 32
+- **Kategori:** Page Transitions & Geçiş Animasyonları
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Photography site + ScrollTrigger animasyon
+
+### Repo #247: Pusri27/luxe-digital-landing
+- **GitHub:** https://github.com/Pusri27/luxe-digital-landing
+- **Açıklama:** Premium landing — Next.js 16, Framer Motion, Lenis, cinematic preloader, horizontal scroll, magnetic buttons, infinite marquee
+- **Stars:** 3
+- **Kategori:** Page Transitions & Geçiş Animasyonları
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** **TAM REFERANS SITE** — Preloader, per-character animations, horizontal scroll gallery, morphing blobs, magnetic buttons, infinite marquee
+
+---
+
+## 🖱️ GRUP 10: HORIZONTAL SCROLL & SCROLL EFFECTS (#248-258) — v8.0 YENİ
+
+### Repo #248: Moyowaaaa/Ade
+- **GitHub:** https://github.com/Moyowaaaa/Ade
+- **Açıklama:** Horizontal scroll portfolio — React + Tailwind + GSAP
+- **Stars:** 7
+- **Kategori:** Horizontal Scroll & Scroll Effects
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** GSAP ile horizontal scroll portfolio implementasyonu
+
+### Repo #249: yashsarode45/Exoape-Clone
+- **GitHub:** https://github.com/yashsarode45/Exoape-Clone
+- **Açıklama:** Page transitions + horizontal scroll + debounced scroll
+- **Stars:** 5
+- **Kategori:** Horizontal Scroll & Scroll Effects
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** React + GSAP ile page transitions ve horizontal scroll
+
+### Repo #250: vertasy/Horizontal-Scroll-Section
+- **GitHub:** https://github.com/vertasy/Horizontal-Scroll-Section
+- **Açıklama:** Next.js horizontal scroll — GSAP + Locomotive Scroll
+- **Stars:** 5
+- **Kategori:** Horizontal Scroll & Scroll Effects
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Next.js + GSAP ScrollTrigger horizontal scroll
+
+### Repo #251: KaranChandekar/creative-agency-landing
+- **GitHub:** https://github.com/KaranChandekar/creative-agency-landing
+- **Açıklama:** Awwwards-quality creative agency — Next.js 15, GSAP, Lenis, Tailwind CSS v4, kinetic typography, horizontal scroll, custom cursor
+- **Stars:** 0
+- **Kategori:** Horizontal Scroll & Scroll Effects
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Kinetic typography, horizontal scroll showcase, custom cursor, scroll-driven effects
+
+### Repo #252: yashsarode45/Refokus-Clone
+- **GitHub:** https://github.com/yashsarode45/Refokus-Clone
+- **Açıklama:** Magnetic Button, SVG path animation, pointer linked window-scene
+- **Stars:** 2
+- **Kategori:** Horizontal Scroll & Scroll Effects
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Magnetic button + SVG animation + pointer linked scroll
+
+### Repo #253: Hazrat-Ali9/Mouse-Cursor
+- **GitHub:** https://github.com/Hazrat-Ali9/Mouse-Cursor
+- **Açıklama:** Custom mouse cursor efektleri koleksiyonu
+- **Stars:** 34
+- **Kategori:** Horizontal Scroll & Scroll Effects
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** React + Vanilla JS ile custom cursor animasyonları
+
+### Repo #254: strongui/react-marquee-master
+- **GitHub:** https://github.com/strongui/react-marquee-master
+- **Açıklama:** React marquee component — infinite scrolling, pause on hover
+- **Stars:** 16
+- **Kategori:** Horizontal Scroll & Scroll Effects
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** React infinite marquee component, click interactions
+
+### Repo #255: Yang03/infinite-scrolling
+- **GitHub:** https://github.com/Yang03/infinite-scrolling
+- **Açıklama:** React infinite scroll marquee
+- **Stars:** 7
+- **Kategori:** Horizontal Scroll & Scroll Effects
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Infinite scrolling marquee tekniği
+
+---
+
+## 🏆 GRUP 11: AWWWARDS CLONE & SINEMATİK SİTELER (#256-275) — v8.0 YENİ
+
+### Repo #256: poojahooda22/obys-clone
+- **GitHub:** https://github.com/poojahooda22/obys-clone
+- **Açıklama:** Awwwards design studio klonu — React + GSAP + hover effects
+- **Stars:** 38
+- **Kategori:** Awwwards Clone & Sinematik Siteler
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Awwwards-level hover effects + layout patterns
+
+### Repo #257: jain-rithik/Two-Good-Co
+- **GitHub:** https://github.com/jain-rithik/Two-Good-Co
+- **Açıklama:** Too Good Co. Awwwards klonu
+- **Stars:** 33
+- **Kategori:** Awwwards Clone & Sinematik Siteler
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Awwwards ödüllü site tasarım kalıpları
+
+### Repo #258: ShowravKormokar/SpyltMilk-clone
+- **GitHub:** https://github.com/ShowravKormokar/SpyltMilk-clone
+- **Açıklama:** Awwwards winning Tubik Studio klonu
+- **Stars:** 21
+- **Kategori:** Awwwards Clone & Sinematik Siteler
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** React + Tailwind + GSAP animations + responsive design
+
+### Repo #259: ChillMonger04/Axel-Vanhessche-Portfolio
+- **GitHub:** https://github.com/ChillMonger04/Axel-Vanhessche-Portfolio
+- **Açıklama:** Awwwards-awarded portfolio — SVG mask animations
+- **Stars:** 20
+- **Kategori:** Awwwards Clone & Sinematik Siteler
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** SVG mask animation + Locomotive Scroll + GSAP ScrollTrigger
+
+### Repo #260: manish-850/gentlerain.ai
+- **GitHub:** https://github.com/manish-850/gentlerain.ai
+- **Açıklama:** Gentlerain AI Awwwards klonu — Three.js + Lenis
+- **Stars:** 16
+- **Kategori:** Awwwards Clone & Sinematik Siteler
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Three.js + Lenis smooth scroll ile interaktif site
+
+### Repo #261: lightlessdays/Cynthia-Ugwu
+- **GitHub:** https://github.com/lightlessdays/Cynthia-Ugwu
+- **Açıklama:** Awwwards winning responsive site klonu — GSAP + Locomotive
+- **Stars:** 14
+- **Kategori:** Awwwards Clone & Sinematik Siteler
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Vanilla JS + GSAP + Locomotive Scroll
+
+### Repo #262: LazycoderAayu/Magma-clone
+- **GitHub:** https://github.com/LazycoderAayu/Magma-clone
+- **Açıklama:** Awwwards winning MAGMA klonu — GSAP + Locomotive + ScrollTrigger
+- **Stars:** 10
+- **Kategori:** Awwwards Clone & Sinematik Siteler
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Awwwards site clone kalıpları
+
+### Repo #263: 0xGajendra/awwwards
+- **GitHub:** https://github.com/0xGajendra/awwwards
+- **Açıklama:** Awwwards Website Clone — React + Tailwind + GSAP page transitions
+- **Stars:** 7
+- **Kategori:** Awwwards Clone & Sinematik Siteler
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Page transitions + smooth animations + responsive
+
+### Repo #264: NatSilprasert/gsap-awwwards
+- **GitHub:** https://github.com/NatSilprasert/gsap-awwwards
+- **Açıklama:** GSAP ile Awwwards winning site klonu
+- **Stars:** 6
+- **Kategori:** Awwwards Clone & Sinematik Siteler
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** GSAP animasyon teknikleri
+
+### Repo #265: Mahmoud-ctrl/volt-ui
+- **GitHub:** https://github.com/Mahmoud-ctrl/volt-ui
+- **Açıklama:** 100+ animasyonlu React UI kütüphanesi — Framer Motion + GSAP + Three.js
+- **Stars:** 7
+- **Kategori:** Awwwards Clone & Sinematik Siteler
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Text effects, buttons, cards, cursors, loaders, backgrounds
+
+### Repo #266: smicolon/smi-ui
+- **GitHub:** https://github.com/smicolon/smi-ui
+- **Açıklama:** Animated React UI kütüphanesi — Tailwind + Framer Motion
+- **Stars:** 6
+- **Kategori:** Awwwards Clone & Sinematik Siteler
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** UI primitives + app blocks + stunning effects
+
+### Repo #267: mwaqar29/react-text-animate
+- **GitHub:** https://github.com/mwaqar29/react-text-animate
+- **Açıklama:** Modern text animation React component library
+- **Stars:** 3
+- **Kategori:** Awwwards Clone & Sinematik Siteler
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Framer Motion tabanlı text animation koleksiyonu
+
+### Repo #268: Sletheren/react-spinners-loading
+- **GitHub:** https://github.com/Sletheren/react-spinners-loading
+- **Açıklama:** React loading spinner/animation component
+- **Stars:** 8
+- **Kategori:** Awwwards Clone & Sinematik Siteler
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Loading spinner, document loader, block loading
+
+---
+
+## 🎬 GRUP 12: TEXT REVEAL & PRELOADER SYSTEMS (#269-283) — v8.0 YENİ
+
+### Repo #269: TanmayGadge/Text-Reveal
+- **GitHub:** https://github.com/TanmayGadge/Text-Reveal
+- **Açıklama:** Scroll text reveal — React + GSAP
+- **Stars:** 0
+- **Kategori:** Text Reveal & Preloader Systems
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Scroll-triggered text reveal animasyonu
+
+### Repo #270: abbasg-dev/react-gsap-animation
+- **GitHub:** https://github.com/abbasg-dev/react-gsap-animation
+- **Açıklama:** Parallax + staggered text reveal + image sequence — React + GSAP
+- **Stars:** 0
+- **Kategori:** Text Reveal & Preloader Systems
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Parallax + staggered text reveal + image sequence
+
+### Repo #271: abhishek-builds/cinematic-portfolio
+- **GitHub:** https://github.com/abhijeet-builds/cinematic-portfolio
+- **Açıklama:** GSAP clip-text hero, Lenis smooth scroll, magnetic CTA, lazy image shimmer
+- **Stars:** 0
+- **Kategori:** Text Reveal & Preloader Systems
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Cinematic clip-text hero + Lenis + magnetic buttons
+
+### Repo #272: abbasg-dev/react-motion-fx
+- **GitHub:** https://github.com/abbasg-dev/react-motion-fx
+- **Açıklama:** React + GSAP + Three.js — smooth scroll, parallax, staggered text reveal, wave motion
+- **Stars:** 0
+- **Kategori:** Text Reveal & Preloader Systems
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** WebGL + JavaScript animasyon kombinasyonu
+
+### Repo #273: Jawer-Dev/Aether-Hotel
+- **GitHub:** https://github.com/Jawer-Dev/Aether-Hotel
+- **Açıklama:** Cinematic luxury hotel — React + Tailwind + GSAP, 7 section, parallax, clip-path reveal, split-text, 3D scrolling cards
+- **Stars:** 0
+- **Kategori:** Text Reveal & Preloader Systems
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Parallax, clip-path reveals, split-text animations, 3D scrolling cards, auto sliders, animated contact
+
+### Repo #274: P-Sach/scroll-animation-template
+- **GitHub:** https://github.com/P-Sach/scroll-animation-template
+- **Açıklama:** Scroll-driven template — React + Next.js + GSAP + synced background video
+- **Stars:** 1
+- **Kategori:** Text Reveal & Preloader Systems
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Synchronized background video scrub + smooth content reveal
+
+### Repo #275: sdinesh-webdev/Portfolio-Next-15
+- **GitHub:** https://github.com/sdinesh-webdev/Portfolio-Next-15
+- **Açıklama:** Next.js 15 portfolio — GSAP, mouse-tracking parallax, clip-path transformations
+- **Stars:** 12
+- **Kategori:** Text Reveal & Preloader Systems
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Next.js 15 + TypeScript + GSAP scroll-triggered + mouse parallax
+
+### Repo #276: idimetrix/use-element-on-screen
+- **GitHub:** https://github.com/idimetrix/use-element-on-screen
+- **Açıklama:** Element visibility tracking hook — Intersection Observer
+- **Stars:** 6
+- **Kategori:** Text Reveal & Preloader Systems
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Scroll-triggered animation tetikleme hook'u
+
+### Repo #277: Nsude/horizontal-scroll-text-animations
+- **GitHub:** https://github.com/Nsude/horizontal-scroll-text-animations
+- **Açıklama:** Horizontal scroll text animations koleksiyonu — React + TypeScript + Tailwind + GSAP
+- **Stars:** 0
+- **Kategori:** Text Reveal & Preloader Systems
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Horizontal scroll triggered text animation kalıpları
+
+### Repo #278: harishv6665/react-parallax-scroll
+- **GitHub:** https://github.com/harishv6665/react-parallax-scroll
+- **Açıklama:** Smooth scroll parallax — horizontal, vertical, scale, rotation
+- **Stars:** 0
+- **Kategori:** Text Reveal & Preloader Systems
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** GSAP ile multi-direction parallax scroll
+
+### Repo #279: Thakuma07/CardAnimation-ScrollAnimation
+- **GitHub:** https://github.com/Thakuma07/CardAnimation-ScrollAnimation
+- **Açıklama:** GPU-accelerated horizontal scroll — React + GSAP + Tailwind
+- **Stars:** 0
+- **Kategori:** Text Reveal & Preloader Systems
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Museum-style card gallery + floating card parallax
+
+### Repo #280: WhiiteRose/Splyt
+- **GitHub:** https://github.com/WhiiteRose/Splyt
+- **Açıklama:** Product landing — horizontal flavor carousel + cinematic video reveals
+- **Stars:** 0
+- **Kategori:** Text Reveal & Preloader Systems
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** GSAP ScrollTrigger + horizontal carousel + video reveal
+
+### Repo #281: sendhu2821/landing-site
+- **GitHub:** https://github.com/sendhu2821/landing-site
+- **Açıklama:** Cake shop landing — split-text, horizontal gallery, hero video
+- **Stars:** 0
+- **Kategori:** Text Reveal & Preloader Systems
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** GSAP ScrollTrigger + SplitText + horizontal scroll gallery
+
+### Repo #282: Navaneeth223/CreativeAgencyStyle
+- **GitHub:** https://github.com/Navaneeth223/CreativeAgencyStyle
+- **Açıklama:** Creative agency — smooth parallax, magnetic custom cursor, cinematic animations
+- **Stars:** 1
+- **Kategori:** Text Reveal & Preloader Systems
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Magnetic cursor + cinematic animations + creative agency layout
+
+### Repo #283: Abdelmalik0/Responsive_portfolio
+- **GitHub:** https://github.com/Abdelmalik0/Responsive_portfolio
+- **Açıklama:** Dark luxury portfolio — React 19 + Lenis + Framer Motion + tilt + magnetic buttons
+- **Stars:** 0
+- **Kategori:** Text Reveal & Preloader Systems
+- **Kurulu mu:** Referans
+- **Nasıl Kullanılır:** Tilt effects + magnetic buttons + glassmorphism + smooth scroll
