@@ -60,6 +60,7 @@
     "tailwind-merge": "^3.3.1",
     "three": "^0.183.2",
     "three-mesh-bvh": "^0.9.9",
+    "z-ai-web-dev-sdk": "^0.0.17",
     "zustand": "^5.0.6"
   },
   "devDependencies": {
