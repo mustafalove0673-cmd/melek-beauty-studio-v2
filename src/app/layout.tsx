@@ -10,13 +10,13 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "STRUCTURA | Profesyonel İnşaat Çözümleri",
-  description: "25+ yıllık deneyimle modern inşaat ve mimarlık.",
+  title: "STRUCTURA | Profesyonel İnşaat & Mimarlık",
+  description: "25+ yıllık deneyimle modern inşaat ve mimarlık çözümleri. Hayallerinizi inşa ediyoruz.",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="tr" className="dark" suppressHydrationWarning>
+    <html lang="tr" suppressHydrationWarning>
       <body className={`${inter.variable} font-body antialiased`}>
         {children}
       </body>

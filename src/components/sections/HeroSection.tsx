@@ -1,143 +1,189 @@
 'use client'
 
-import { useRef } from 'react'
-import { motion, useScroll, useTransform } from 'framer-motion'
-import { ArrowDown } from 'lucide-react'
+import { useEffect, useRef, useState } from 'react'
+import { ArrowRight, Play, ChevronDown } from 'lucide-react'
 
 export default function HeroSection() {
-  const ref = useRef<HTMLDivElement>(null)
-  const { scrollYProgress } = useScroll({ target: ref, offset: ['start start', 'end start'] })
-  const y = useTransform(scrollYProgress, [0, 1], ['0%', '40%'])
-  const opacity = useTransform(scrollYProgress, [0, 0.6], [1, 0])
+  const heroRef = useRef<HTMLElement>(null)
+  const [visible, setVisible] = useState(false)
 
-  const words = 'Geleceğin Yapılarını İnşa Ediyoruz'.split(' ')
+  useEffect(() => {
+    const timer = setTimeout(() => setVisible(true), 100)
+    return () => clearTimeout(timer)
+  }, [])
+
+  const scrollToAbout = () => {
+    document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })
+  }
 
   return (
-    <section id="hero" ref={ref} className="relative min-h-screen flex items-center overflow-hidden bg-background">
-      {/* BG */}
-      <motion.div style={{ y }} className="absolute inset-0">
-        <div className="absolute inset-0 grid-bg" />
-        <div className="absolute top-20 left-[10%] w-[500px] h-[500px] bg-accent/[0.06] rounded-full blur-[120px] float-1" />
-        <div className="absolute bottom-20 right-[10%] w-[400px] h-[400px] bg-glow-2/[0.05] rounded-full blur-[100px] float-2" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-accent/[0.03] rounded-full blur-[150px]" />
+    <section
+      id="hero"
+      ref={heroRef}
+      className="relative min-h-screen flex items-center overflow-hidden"
+    >
+      {/* Background image overlay */}
+      <div className="absolute inset-0">
+        <div className="absolute inset-0 bg-gradient-to-br from-dark via-dark-2 to-dark" />
+        <div className="absolute inset-0 dot-pattern opacity-30" />
+        {/* Decorative gradient orb */}
+        <div className="absolute top-1/4 right-1/4 w-[600px] h-[600px] bg-accent/10 rounded-full blur-[120px]" />
+        <div className="absolute bottom-0 left-1/3 w-[400px] h-[400px] bg-accent/5 rounded-full blur-[100px]" />
+      </div>
 
-        {/* Geometric */}
-        <div className="absolute top-32 right-[20%] w-28 h-28 border border-accent/10 rounded-2xl float-2" style={{ animationDuration: '20s' }} />
-        <div className="absolute bottom-40 left-[15%] w-16 h-16 border border-accent/[0.08] rounded-full float-1" />
-        <div className="absolute top-[60%] right-[12%] w-3 h-3 bg-accent/20 rounded-full float-3" />
-        <div className="absolute top-[25%] left-[25%] w-2 h-2 bg-glow-2/30 rounded-full float-2" />
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 lg:py-0 w-full">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          {/* Left content */}
+          <div className="space-y-8">
+            {/* Badge */}
+            <div
+              className={`inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/10 rounded-full px-4 py-2 transition-all duration-700 ${
+                visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
+              }`}
+            >
+              <span className="w-2 h-2 bg-accent rounded-full animate-pulse" />
+              <span className="text-xs font-medium text-white/70 uppercase tracking-wider">
+                25+ Yıl Deneyim
+              </span>
+            </div>
 
-        {/* Lines */}
-        <svg className="absolute inset-0 w-full h-full opacity-[0.03]">
-          <line x1="20%" y1="0" x2="20%" y2="100%" stroke="#e8a838" strokeWidth="1" />
-          <line x1="80%" y1="0" x2="80%" y2="100%" stroke="#e8a838" strokeWidth="1" />
-          <line x1="0" y1="30%" x2="100%" y2="30%" stroke="#e8a838" strokeWidth="1" />
-          <line x1="0" y1="70%" x2="100%" y2="70%" stroke="#e8a838" strokeWidth="1" />
-        </svg>
-      </motion.div>
-
-      {/* Content */}
-      <motion.div style={{ opacity }} className="relative z-10 max-w-7xl mx-auto px-6 w-full pt-32 pb-24">
-        <div className="max-w-4xl">
-          {/* Badge */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.2 }}
-            className="inline-flex items-center gap-3 mb-8"
-          >
-            <div className="relative w-2.5 h-2.5 bg-accent rounded-full pulse-dot" />
-            <span className="text-[11px] font-bold tracking-[0.2em] uppercase text-muted-foreground">
-              1998&apos;den beri • 350+ proje
-            </span>
-          </motion.div>
-
-          {/* Title */}
-          <h1 className="text-[clamp(2.5rem,6vw,5rem)] font-black leading-[1.08] tracking-tight mb-8">
-            {words.map((w, i) => (
-              <motion.span
-                key={i}
-                initial={{ opacity: 0, y: 50, rotateX: -40 }}
-                animate={{ opacity: 1, y: 0, rotateX: 0 }}
-                transition={{ duration: 0.6, delay: 0.4 + i * 0.07, ease: [0.25, 0.46, 0.45, 0.94] }}
-                className="inline-block mr-[0.22em]"
+            {/* Heading */}
+            <div className="space-y-4">
+              <h1
+                className={`text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-[1.1] tracking-tight transition-all duration-700 delay-100 ${
+                  visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
+                }`}
               >
-                {w === 'Yapılarını' || w === 'İnşa' ? (
-                  <span className="text-gradient-gold">{w}</span>
-                ) : w === 'Geleceğin' ? (
-                  <span className="text-accent">{w}</span>
-                ) : (
-                  w
-                )}
-              </motion.span>
-            ))}
-          </h1>
+                Hayallerinizi{' '}
+                <span className="relative">
+                  <span className="text-gradient">İnşa</span>
+                  <span className="text-accent"> Ediyoruz</span>
+                </span>
+              </h1>
+              <p
+                className={`text-base sm:text-lg text-white/50 max-w-lg leading-relaxed transition-all duration-700 delay-200 ${
+                  visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
+                }`}
+              >
+                Profesyonel ekibimiz ve modern teknolojilerimizle, hayalinizdeki yapının her detayını
+                mükemmelleştiriyoruz. Kaliteden ödün vermeden, zamanında teslim.
+              </p>
+            </div>
 
-          {/* Subtitle */}
-          <motion.p
-            initial={{ opacity: 0, y: 25 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 1 }}
-            className="text-lg text-muted-foreground max-w-xl leading-relaxed mb-10"
-          >
-            Konut, ticari ve endüstriyel projelerinizde modern mühendislik, kaliteli malzeme ve zamanında teslim.
-          </motion.p>
-
-          {/* CTAs */}
-          <motion.div
-            initial={{ opacity: 0, y: 25 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 1.2 }}
-            className="flex flex-col sm:flex-row gap-4"
-          >
-            <a
-              href="#contact"
-              className="btn-shine magnetic inline-flex items-center justify-center bg-accent text-dark-card font-bold px-8 py-4 rounded-full glow hover:glow-strong transition-shadow text-[15px]"
+            {/* Buttons */}
+            <div
+              className={`flex flex-col sm:flex-row gap-4 transition-all duration-700 delay-300 ${
+                visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
+              }`}
             >
-              Ücretsiz Keşif &amp; Teklif
-            </a>
-            <a
-              href="#projects"
-              className="magnetic inline-flex items-center justify-center border border-foreground/15 text-foreground font-semibold px-8 py-4 rounded-full hover:bg-white/[0.04] transition-all text-[15px]"
-            >
-              Projelerimiz
-            </a>
-          </motion.div>
+              <a
+                href="#contact"
+                className="btn-shine magnetic inline-flex items-center justify-center gap-2 bg-accent text-white px-8 py-4 rounded-lg text-sm font-semibold shadow-accent hover:bg-accent-dark transition-colors duration-300"
+              >
+                Ücretsiz Danışmanlık
+                <ArrowRight className="w-4 h-4" />
+              </a>
+              <a
+                href="#projects"
+                className="inline-flex items-center justify-center gap-2 bg-white/5 border border-white/10 text-white px-8 py-4 rounded-lg text-sm font-semibold hover:bg-white/10 transition-all duration-300"
+              >
+                <Play className="w-4 h-4" />
+                Projelerimiz
+              </a>
+            </div>
 
-          {/* Quick Stats */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 1.5 }}
-            className="flex flex-wrap gap-10 mt-16 pt-8 border-t border-border/50"
+            {/* Mini stats */}
+            <div
+              className={`flex gap-8 sm:gap-12 pt-4 transition-all duration-700 delay-500 ${
+                visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
+              }`}
+            >
+              {[
+                { value: '500+', label: 'Tamamlanan Proje' },
+                { value: '98%', label: 'Müşteri Memnuniyeti' },
+                { value: '25+', label: 'Yıllık Deneyim' },
+              ].map((stat) => (
+                <div key={stat.label}>
+                  <div className="text-2xl sm:text-3xl font-bold text-white">{stat.value}</div>
+                  <div className="text-xs text-white/40 mt-1">{stat.label}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Right visual */}
+          <div
+            className={`hidden lg:block relative transition-all duration-1000 delay-300 ${
+              visible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'
+            }`}
           >
-            {[
-              { val: '350+', label: 'Proje' },
-              { val: '25+', label: 'Yıl Deneyim' },
-              { val: '500+', label: 'Müşteri' },
-              { val: '28', label: 'Ödül' },
-            ].map((s) => (
-              <div key={s.label}>
-                <div className="text-2xl font-black text-gradient-gold">{s.val}</div>
-                <div className="text-[11px] text-muted-foreground font-medium mt-0.5">{s.label}</div>
+            <div className="relative">
+              {/* Main card */}
+              <div className="border-gradient rounded-2xl overflow-hidden shadow-2xl">
+                <div className="bg-white p-1">
+                  <div className="aspect-[4/3] rounded-xl bg-gradient-to-br from-surface to-muted relative overflow-hidden">
+                    {/* Construction illustration */}
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <div className="text-center space-y-4">
+                        <div className="w-24 h-24 mx-auto bg-accent/10 rounded-2xl flex items-center justify-center float-slow">
+                          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" className="text-accent">
+                            <path d="M2 20H22M5 20V8L12 3L19 8V20" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                            <path d="M9 20V14H15V20" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                            <path d="M3 12H6M18 12H21M12 3V6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+                          </svg>
+                        </div>
+                        <p className="text-sm font-medium text-muted-foreground">Premium Yapılar</p>
+                      </div>
+                    </div>
+                    {/* Grid pattern overlay */}
+                    <div className="absolute inset-0 grid-pattern opacity-50" />
+                  </div>
+                </div>
               </div>
-            ))}
-          </motion.div>
-        </div>
-      </motion.div>
 
-      {/* Scroll */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 2 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
+              {/* Floating badge 1 */}
+              <div className="absolute -top-4 -right-4 bg-white rounded-xl shadow-premium p-4 float-slow">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" className="text-green-600">
+                      <path d="M22 11.08V12C21.9988 14.1564 21.3005 16.2547 20.0093 17.9818C18.7182 19.709 16.9033 20.9725 14.8354 21.5839C12.7674 22.1953 10.5573 22.1219 8.53447 21.3746C6.51168 20.6273 4.78465 19.2461 3.61096 17.4371C2.43727 15.628 1.87979 13.4881 2.02168 11.3363C2.16356 9.18457 2.99721 7.13633 4.39828 5.49707C5.79935 3.85782 7.69279 2.71538 9.79619 2.24015C11.8996 1.76491 14.1003 1.98234 16.07 2.86" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+                      <path d="M22 4L12 14.01L9 11.01" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="text-xs font-bold text-foreground">Tamamlandı</p>
+                    <p className="text-[10px] text-muted-foreground">Bu Ay: 3 Proje</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Floating badge 2 */}
+              <div className="absolute -bottom-4 -left-4 bg-white rounded-xl shadow-premium p-4 float-slow" style={{ animationDelay: '2s' }}>
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 bg-accent-light rounded-lg flex items-center justify-center">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" className="text-accent">
+                      <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="text-xs font-bold text-foreground">4.9/5.0</p>
+                    <p className="text-[10px] text-muted-foreground">Müşteri Puanı</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Scroll indicator */}
+      <button
+        onClick={scrollToAbout}
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 text-white/30 hover:text-white/60 transition-colors animate-bounce"
+        aria-label="Aşağı kaydır"
       >
-        <span className="text-[9px] font-bold tracking-[0.25em] uppercase text-muted-foreground/40">Keşfet</span>
-        <motion.div animate={{ y: [0, 6, 0] }} transition={{ duration: 1.5, repeat: Infinity }}>
-          <ArrowDown className="w-4 h-4 text-muted-foreground/30" />
-        </motion.div>
-      </motion.div>
+        <ChevronDown className="w-6 h-6" />
+      </button>
     </section>
   )
 }
